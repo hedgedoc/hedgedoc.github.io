@@ -1,0 +1,113 @@
+################################### Default Configuration ############################
+
+baseurl = "https://www.hedgedoc.org/"
+title = "HedgeDoc - Collaborative markdown editor"
+theme = "vex-hugo"
+
+# post excert
+summarylength = "20"
+
+# google analytics
+googleAnalytics = "" # Ex: UA-123-45
+
+# disable language
+disableLanguages = [] # disable language from here
+
+#################################### Plugins ##########################################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:300,400,600,700"
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themefisher-font/themefisher-font.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+
+###################################### Navigation ######################################
+
+# homepage section menu
+[[menu.main]]
+name = "Demo"
+URL = "https://demo.hedgedoc.org"
+weight = 1
+
+[[menu.main]]
+name = "Docs"
+URL = "https://docs.hedgedoc.org"
+weight = 2
+
+[[menu.main]]
+name = "GitHub"
+URL = "https://github.com/hedgedoc/hedgedoc"
+weight = 3
+
+[[menu.main]]
+name = "Forum"
+URL = "https://community.hedgedoc.org"
+weight = 4
+
+[[menu.main]]
+name = "Matrix"
+URL = "https://chat.hedgedoc.org"
+weight = 5
+
+# footer menu
+[[menu.footer]]
+name = "GitHub"
+URL = "https://github.com/hedgedoc/hedgedoc"
+weight = 1
+
+[[menu.footer]]
+name = "Help translating"
+URL = "https://translate.hedgedoc.org"
+weight = 2
+
+[[menu.footer]]
+name = "Mastodon"
+URL = "https://social.hedgedoc.org"
+weight = 3
+
+[[menu.footer]]
+name = "Imprint"
+URL = "imprint"
+weight = 4
+
+[[menu.footer]]
+name = "Privacy Policy"
+URL = "privacy-policy"
+weight = 5
+
+########################### Default parameters ##########################
+
+[params]
+logo = "images/banner/hedgedoc_banner_color_horizontal.svg"
+logo_width = "100px"
+
+# Meta data
+description = "The best platform to write and share markdown. "
+author = "The HedgeDoc developers"
+
+# contact form action
+contact_form_action = "#"
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = ""
+
+################################### English language #####################################
+
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+
+# copyright
+copyright = "The HedgeDoc developers. Theme based on [vex-hugo](https://github.com/themefisher/vex-hugo)."
