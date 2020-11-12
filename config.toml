@@ -57,6 +57,11 @@ name = "Matrix"
 URL = "https://chat.hedgedoc.org"
 weight = 5
 
+[[menu.main]]
+name = "FAQ"
+URL = "/faq"
+weight = 6
+
 # footer menu
 [[menu.footer]]
 name = "GitHub"
