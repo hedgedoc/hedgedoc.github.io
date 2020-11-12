@@ -30,10 +30,7 @@
   <meta name="theme-color" content="#b51f08">
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <meta content="HedgeDoc - Collaborative markdown notes" name="description"/>
-
-  {{ with .Params.image }}
-  <meta property="og:image" content="{{ . | absURL }}" />
-  {{ end }}
+  <meta property="og:image" content="{{ `icons/apple-touch-icon.png`| absURL }}" />
   {{ template "_internal/opengraph.html" . }}
 
 </head>
