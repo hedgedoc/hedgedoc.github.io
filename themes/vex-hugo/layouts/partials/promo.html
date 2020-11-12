@@ -12,6 +12,13 @@
         <div class="content">
           <h2 class="subheading text-white font-weight-bold mb-10">{{ .title | markdownify }}</h2>
           <p class="text-white">{{ .content | markdownify }}</p>
+          {{ range .buttons }}
+            {{ if .enable }}
+              {{ with . }}
+                <a href="{{.link|absLangURL}}" class="btn btn-main{{ if .outline }}-outline{{ end }} mb-2 mr-2">{{.label}}</a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
         </div>
       </div>
     </div>

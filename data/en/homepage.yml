@@ -61,14 +61,18 @@ features:
 ############################# promo ############################
 promo:
   enable : true
-  image : "images/watch.png"
-  title : "Get started in less than 5 minutes"
-  content : "Our pre-built docker images allow quick spinning up of new HedgeDoc-instances."
-
+  image : "images/no_codimd.svg"
+  title : "Wasn't it called CodiMD?"
+  content : "Yes, this project was formerly known as CodiMD, but in 2020 we decided to rename our project to HedgeDoc to avoid confusion with another project of the same name."
+  buttons:
+  - enable: true
+    label: "Read the full story"
+    link: "/history"
+    outline: true
 
 ############################# About Product #######################
 about_product:
-  enable : true
+  enable : false
   title : "Why choose HedgeDoc"
   items:
     # about product item loop
@@ -95,7 +99,7 @@ about_product:
 
 ############################## Testimonial ##########################
 testimonial:
-  enable : true
+  enable : false
   title : "Several \"celebrities\" reviewed HedgeDoc..."
   testimonial_item:
     # testimonial item loop
