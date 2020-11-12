@@ -67,7 +67,7 @@ promo:
   buttons:
   - enable: true
     label: "Read the full story"
-    link: "/history"
+    link: "/history/"
     outline: true
 
 ############################# About Product #######################
