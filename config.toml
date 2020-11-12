@@ -59,7 +59,7 @@ weight = 5
 
 [[menu.main]]
 name = "FAQ"
-URL = "/faq"
+URL = "/faq/"
 weight = 6
 
 # footer menu
