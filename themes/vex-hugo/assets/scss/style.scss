@@ -1,23 +1,29 @@
 @import 'mixins';
+@import 'fonts/lato';
+@import 'fonts/kumbh';
 
 // Variables
-$primary-font: 'Josefin Sans',
+$primary-font: 'Kumbh Sans',
 sans-serif;
 $secondary-font: 'Lato',
 serif;
 $primary-color: #b51f08;
 $icon-font: 'themefisher-font' !important;
 
+
 /*--
     Common Css
 --*/
 body {
   font-size: 14px;
-  font-weight: 300;
   line-height: 25px;
   color: #3b4045;
-  font-family: $primary-font;
+  font-family: $secondary-font;
   -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $primary-font;
 }
 
 
@@ -636,5 +642,14 @@ textarea.form-control {
   pre {
     padding: 10px 20px;
     background: #dadada;
+  }
+}
+
+@media(min-width:990px){
+  .bg-face {
+    background-image: url(/images/banner/face.svg);
+    background-repeat: no-repeat;
+    background-size: auto 75%;
+    background-position: center bottom;
   }
 }
