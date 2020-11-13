@@ -12,7 +12,7 @@ There are some third party places where the HedgeDoc Project stores data:
 - [GitHub Pages][github-pages] is the website host. [Please refer to GitHub’s privacy practices document for details][github-privacy].
 - Our Chat is located on [matrix.org][matrix-org] at [#hedgedoc:matrix.org][chat]. [Refer to matrix.org's privacy policy for details][matrix-privacy].
 - The [demo instance][demo] stores login information (email addresses, password, GitHub Access Tokens, Twitter Access Tokens) and note information (content, revision and so on). [For details refer to the privacy notice of the demo instance][demo-privacy].
-- We thankfully use [POEdtor][translate] for our translations. [Refer to POEditor’s privacy practices document for details][github-privacy].
+- We thankfully use [POEditor][translate] for all our translations. [Refer to POEditor’s privacy practices document for details][github-privacy].
 - The HedgeDoc code is stored in git, on [GitHub][github]. The git software does collect names and email addresses in repositories. GitHub has account information. [Refer to GitHub’s privacy policy for details][translate-privacy].
 
 
