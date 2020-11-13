@@ -25,17 +25,17 @@ features:
   left_side:
     # feature item loop
   - title : "Real-time collaboration"
-    icon : "tf-ion-ios-people-outline"
+    icon : "fa fa-users"
     content : "Collaborate in real-time with friends, family and colleagues."
 
     # feature item loop
   - title : "Presentation mode"
-    icon : "tf-presentation"
+    icon : "fa fa-slideshare"
     content : "Use HedgeDoc to build and present slides in markdown. Powered by reveal.js!"
 
     # feature item loop
   - title : "Graphs & diagrams"
-    icon : " tf-linegraph"
+    icon : "fa fa-bar-chart"
     content : "HedgeDoc supports many types of graphs, diagrams and embeddings."
 
 
@@ -43,17 +43,17 @@ features:
   right_side:
     # feature item loop
   - title : "Easy to use permission system"
-    icon : "tf-lock2"
+    icon : "fa fa-lock"
     content : "Manage permissions of your notes with a simple dropdown selection."
 
     # feature item loop
   - title : "Revisions"
-    icon : "tf-ion-ios-undo-outline"
+    icon : "fa fa-undo"
     content : "Revisions keep track of changes to your notes and even let you revert to any older version."
 
     # feature item loop
   - title : "Open source"
-    icon : "tf-ion-social-github-outline"
+    icon : "fa fa-github"
     content : "HedgeDoc is open source and community-driven. It is licensed under AGPLv3."
 
 

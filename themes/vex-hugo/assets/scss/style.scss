@@ -3,14 +3,13 @@ $headings-font-family: 'Kumbh Sans';
 $primary: #b51f08;
 $body-color: #3b4045;
 
+$fa-font-path: '/fonts/forkawesome';
+
 @import 'bootstrap/bootstrap';
+@import 'forkawesome/fork-awesome';
 @import 'mixins';
 @import 'fonts/lato';
 @import 'fonts/kumbh';
-@import 'fonts/themefisher';
-
-// Variables
-$icon-font: 'themefisher-font' !important;
 
 /*--
     Common Css
@@ -61,11 +60,6 @@ p {
   line-height: 25px;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 /*
 a {
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -428,47 +422,6 @@ textarea.form-control {
 }
 
 
-/* product sinngle page */
-
-.product-image-slider {
-  position: sticky;
-  top: 80px;
-  .slick-list {
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-
-  .slick-dots {
-    margin-top: 10px;
-    padding-left: 0;
-    display: flex;
-
-    li {
-      list-style-type: none;
-      margin: 10px;
-      border-radius: 5px;
-      padding: 10px;
-      cursor: pointer;
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      img {
-        max-height: 80px;
-        height: auto;
-        max-width: 100%;
-      }
-    }
-  }
-}
-
-
-
 /* content style */
 .content {
   * {
@@ -486,10 +439,6 @@ textarea.form-control {
   h5,
   h6 {
     margin-bottom: 10px;
-  }
-
-  ol,ul {
-    padding-left: 10px;
   }
 
   table {
