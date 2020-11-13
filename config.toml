@@ -13,6 +13,8 @@ googleAnalytics = "" # Ex: UA-123-45
 # disable language
 disableLanguages = [] # disable language from here
 
+enableRobotsTXT = true
+
 ###################################### Navigation ######################################
 
 # homepage section menu

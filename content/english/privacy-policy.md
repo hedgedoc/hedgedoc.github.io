@@ -2,6 +2,7 @@
 title: "Privacy Policy"
 description : "The privacy policy of the HedgeDoc project"
 draft: false
+noRobots: true
 ---
 ## Preamble: Hosting Details
 
