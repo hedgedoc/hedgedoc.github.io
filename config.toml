@@ -76,7 +76,7 @@ logo = "images/banner/hedgedoc_banner_color_horizontal.svg"
 logo_width = "100px"
 
 # Meta data
-description = "The best platform to write and share markdown. "
+description = "The best platform to write and share markdown."
 author = "The HedgeDoc developers"
 
 # contact form action
