@@ -1,15 +1,15 @@
+$font-family-sans-serif: 'Lato';
+$headings-font-family: 'Kumbh Sans';
+$primary: #b51f08;
+$body-color: #3b4045;
+
+@import 'bootstrap/bootstrap';
 @import 'mixins';
 @import 'fonts/lato';
 @import 'fonts/kumbh';
 
 // Variables
-$primary-font: 'Kumbh Sans',
-sans-serif;
-$secondary-font: 'Lato',
-serif;
-$primary-color: #b51f08;
 $icon-font: 'themefisher-font' !important;
-
 
 /*--
     Common Css
@@ -17,27 +17,7 @@ $icon-font: 'themefisher-font' !important;
 body {
   font-size: 14px;
   line-height: 25px;
-  color: #3b4045;
-  font-family: $secondary-font;
   -webkit-font-smoothing: antialiased;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: $primary-font;
-}
-
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 999999;
-  display: flex;
-  align-items: center;
-  justify-content: center
 }
 
 h1,
@@ -85,24 +65,20 @@ ul {
   margin: 0;
   list-style: none;
 }
-
+/*
 a {
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
-}
+}*/
 
 .mt-100 {
   margin-top: 100px;
 }
 
-.bg-1 {
-  background-image: url(../images/call-to-action.jpg);
-}
-
 .bg-orange {
-  background: $primary-color;
+  background: $primary;
 }
 
 .bg-opacity {
@@ -196,8 +172,8 @@ a:active {
 }
 
 .btn {
-  border-radius: 0;
-  text-decoration: none !important;
+  //border-radius: 0;
+  //text-decoration: none !important;
 }
 
 .btn-main {
@@ -206,31 +182,31 @@ a:active {
   font-size: 18px;
   padding: 15px 40px;
   display: inline-block;
-  background-color: $primary-color;
+  background-color: $primary;
   box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
   background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
 
   &:hover,
   &:focus {
-    background-color: $primary-color;
+    background-color: $primary;
     color: #fff;
   }
 }
 
 .btn-main-outline {
-  color: $primary-color;
+  color: $primary;
   border-radius: 30px;
   font-size: 18px;
   padding: 15px 40px;
   display: inline-block;
-  border-color: $primary-color;
+  border-color: $primary;
   background-color: #fff;
   box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
   background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
 
   &:hover,
   &:focus {
-    background-color: $primary-color;
+    background-color: $primary;
     color: #fff;
   }
 }
@@ -298,7 +274,7 @@ a:active {
 }
 
 .badge-primary{
-  background-color: $primary-color;
+  background-color: $primary;
 }
 
 /*--
@@ -307,69 +283,6 @@ a:active {
 .feature-list {
   .btn-main {
     margin-top: 15px;
-  }
-}
-
-/*--
-  Gallery start
---*/
-.gallery {
-  padding-bottom: 100px;
-
-  .owl-item {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .block {
-    padding: 20px;
-    position: relative;
-
-    &:hover .gallery-overlay {
-      transform: scale(1);
-      opacity: 1;
-      border-radius: 0;
-    }
-  }
-
-  .gallery-overlay {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
-    top: 15px;
-    background: rgba(255, 255, 255, 0.85);
-    text-decoration: none;
-    color: inherit;
-    -webkit-transform: scale(.7);
-    transform: scale(.7);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    z-index: 2;
-    opacity: 0;
-    border-radius: 50%;
-
-    .gallery-popup {
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      background: $primary-color;
-      padding: 5px 10px;
-      border-radius: 40px;
-      width: 50px;
-      height: 50px;
-
-      i {
-        color: #fff;
-        font-size: 30px;
-        line-height: 40px;
-        display: inline-block;
-      }
-    }
   }
 }
 
@@ -384,11 +297,10 @@ a:active {
       font-size: 40px;
       display: inline-block;
       margin-bottom: 20px;
-      color: $primary-color;
+      color: $primary;
     }
 
     p {
-      font-family: $secondary-font;
       font-size: 14px;
       color: #777;
     }
@@ -481,13 +393,11 @@ footer {
 // product single
 p.price {
   font-size: 30px;
-  font-family: $secondary-font;
 }
 
 s.price {
   color: red;
   font-size: 25px;
-  font-family: $secondary-font;
 }
 
 .product-info {
@@ -514,7 +424,7 @@ s.price {
   height: 50px;
 
   &:focus {
-    border-color: $primary-color;
+    border-color: $primary;
     box-shadow: none;
   }
 
@@ -628,7 +538,7 @@ textarea.form-control {
 
 
   blockquote {
-    border-left: 1px solid $primary-color;
+    border-left: 1px solid $primary;
     padding: 20px;
 
     p {

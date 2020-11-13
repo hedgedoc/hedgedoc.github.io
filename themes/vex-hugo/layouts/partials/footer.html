@@ -18,15 +18,7 @@
   </div>
 </footer>
 
-
-<!-- Snipcart public key -->
-{{with site.Params.snipcart_api}}<div hidden id="snipcart" data-api-key="{{.}}"></div>{{end}}
-
 <!-- JS Plugins -->
 {{ range site.Params.plugins.js}}
 <script src="{{ .link | absURL }}"></script>
 {{ end }}
-
-<!-- Main Script -->
-{{ $script := resources.Get "js/script.js" }}
-<script src="{{ $script.Permalink }}"></script>
