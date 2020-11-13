@@ -1,1 +1,4 @@
 resources/_gen
+build/
+public/
+.idea/
