@@ -1,6 +1,6 @@
 ################################### Default Configuration ############################
 
-baseurl = "https://www.hedgedoc.org/"
+baseurl = "https://hedgedoc.github.io/"
 title = "HedgeDoc - Collaborative markdown editor"
 theme = "vex-hugo"
 
