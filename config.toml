@@ -30,7 +30,7 @@ weight = 2
 
 [[menu.main]]
 name = "GitHub"
-URL = "https://github.com/hedgedoc/hedgedoc"
+URL = "https://git.hedgedoc.org"
 weight = 3
 
 [[menu.main]]
@@ -51,7 +51,7 @@ weight = 6
 # footer menu
 [[menu.footer]]
 name = "GitHub"
-URL = "https://github.com/hedgedoc/hedgedoc"
+URL = "https://git.hedgedoc.org"
 weight = 1
 
 [[menu.footer]]
@@ -65,14 +65,9 @@ URL = "https://social.hedgedoc.org"
 weight = 3
 
 [[menu.footer]]
-name = "Imprint"
-URL = "/imprint/"
-weight = 4
-
-[[menu.footer]]
 name = "Privacy Policy"
 URL = "/privacy-policy/"
-weight = 5
+weight = 4
 
 ########################### Default parameters ##########################
 
