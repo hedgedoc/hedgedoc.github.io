@@ -3,13 +3,15 @@
 {{- if $data.homepage.banner.enable }}
 {{- with $data.homepage.banner }}
 <!-- hero area -->
-<section class="section">
+<section class="d-lg-none d-flex align-items-center">
+	<img src="{{ .image | absURL }}" class="w-100" style="height: 300px;" alt="">
+</section>
+<section class="section bg-orange text-white bg-face">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 text-center mb-5 mb-md-0">
-				<img class="img-fluid" src="{{ .image | absURL }}" alt="">
+			<div class="col-lg-6 text-center mb-5 mb-md-0">
 			</div>
-			<div class="col-md-6 align-self-center text-center text-md-left">
+			<div class="col-lg-6 align-self-center text-center text-md-left">
 				<div class="block">
 					<h1 class="font-weight-bold mb-4 ">{{ .title | markdownify }}</h1>
 					<p class="mb-4">{{ .content | markdownify }}</p>
