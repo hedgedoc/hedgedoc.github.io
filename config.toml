@@ -17,8 +17,6 @@ disableLanguages = [] # disable language from here
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "https://fonts.googleapis.com/css?family=Lato:400|Josefin+Sans:300,400,600,700"
-[[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themefisher-font/themefisher-font.min.css"
