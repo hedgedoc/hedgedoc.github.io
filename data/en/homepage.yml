@@ -20,7 +20,6 @@ banner:
 features:
   enable : true
   title : "Our Core Features"
-  image : "/images/hedgedoc_logo_color.png"
 
   # feature at the left of the image
   left_side:
