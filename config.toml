@@ -13,20 +13,6 @@ googleAnalytics = "" # Ex: UA-123-45
 # disable language
 disableLanguages = [] # disable language from here
 
-#################################### Plugins ##########################################
-
-# CSS Plugins
-[[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[params.plugins.css]]
-link = "plugins/themefisher-font/themefisher-font.min.css"
-
-# JS Plugins
-[[params.plugins.js]]
-link = "plugins/jquery/jquery.js"
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-
 ###################################### Navigation ######################################
 
 # homepage section menu
