@@ -21,7 +21,7 @@
         </div>
         <div class="row">
             <div class="col-lg-10 col-md-11 offset-lg-1">
-                <h2 class="my-4">{{.Title | markdownify}}</h2>
+                <h2 id="{{ .Title | urlize }}" class="my-4">{{ .Title | markdownify }}</h2>
                 <div class="content">
                     {{.Content}}
                 </div>
