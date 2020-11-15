@@ -1,6 +1,6 @@
 # HedgeDoc website
 
-This repository contains the source for the [homepage](https://hedgedoc.github.io)
+This repository contains the source for the [homepage](https://hedgedoc.org)
 
 ## Development
 
