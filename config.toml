@@ -29,24 +29,29 @@ URL = "https://docs.hedgedoc.org"
 weight = 2
 
 [[menu.main]]
+name = "Team"
+URL = "/team/"
+weight = 3
+
+[[menu.main]]
 name = "Source Code"
 URL = "https://git.hedgedoc.org"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "Forum"
 URL = "https://community.hedgedoc.org"
-weight = 4
+weight = 5
 
 [[menu.main]]
 name = "Matrix"
 URL = "https://chat.hedgedoc.org"
-weight = 5
+weight = 6
 
 [[menu.main]]
 name = "FAQ"
 URL = "/faq/"
-weight = 6
+weight = 7
 
 # footer menu
 [[menu.footer]]
@@ -97,3 +102,6 @@ weight = 1
 
 # copyright
 copyright = "The HedgeDoc developers. Theme based on [vex-hugo](https://github.com/themefisher/vex-hugo)."
+
+[markup.goldmark.renderer]
+unsafe= true

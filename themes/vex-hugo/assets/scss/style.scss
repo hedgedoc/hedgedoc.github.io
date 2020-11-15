@@ -12,6 +12,10 @@ $fa-font-path: '/fonts/forkawesome';
 @import 'fonts/kumbh';
 @import "additional-theme";
 
+.mw-150px {
+  max-width: 150px;
+}
+
 @media(min-width:990px){
   .bg-face {
     background-image: url(/images/banner/face.svg);
