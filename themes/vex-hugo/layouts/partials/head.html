@@ -17,6 +17,9 @@
   {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
+  <script src="{{ `jquery-3.5.1.slim.min.js` | absURL }}" defer></script>
+  <script src="{{ `bootstrap.min.js`| absURL }}" defer></script>
+
   <link rel="apple-touch-icon" sizes="180x180" href="{{ `icons/apple-touch-icon.png`| absURL }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ `icons/favicon-32x32.png`| absURL }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ `icons/favicon-16x16.png`| absURL }}">
