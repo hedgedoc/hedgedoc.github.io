@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       url: ['http://localhost:1313/'],
-      startServerCommand: 'hugo server',
+      startServerCommand: 'hugo server --minify --disableLiveReload',
     },
     upload: {
       target: 'lhci',
