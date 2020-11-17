@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="{{ .link | absURL }} ">
     {{ end }}
 
+    <link rel="canonical" href="{{ .Permalink }}" />
+
     <!-- favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ `icons/apple-touch-icon.png`| absURL }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ `icons/favicon-32x32.png`| absURL }}">
