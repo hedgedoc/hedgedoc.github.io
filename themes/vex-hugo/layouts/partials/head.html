@@ -11,9 +11,9 @@
     {{ end }}
     {{ hugo.Generator }}
 
-    <link rel="preload" href="/fonts/Lato/Lato-Regular.ttf" as="font" type="font/truetype">
-    <link rel="preload" href="/fonts/forkawesome/forkawesome-webfont.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="/fonts/KumbhSans/KumbhSans-Bold.ttf" as="font" type="font/truetype">
+    <link rel="preload" href="/fonts/Lato/Lato-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="/fonts/forkawesome/forkawesome-webfont.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/KumbhSans/KumbhSans-Bold.ttf" as="font" crossorigin>
 
     <!-- stylesheets -->
     {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
