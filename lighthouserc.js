@@ -6,7 +6,7 @@ module.exports = {
     },
     upload: {
       target: 'lhci',
-      serverBaseUrl: 'https://lighthouse.hedgedoc.net',
+      serverBaseUrl: 'https://lighthouse.hedgedoc.org',
       token: process.env.LHCI_SERVER_ACCESSKEY,
     },
   },
