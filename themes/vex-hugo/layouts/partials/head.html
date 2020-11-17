@@ -11,17 +11,18 @@
     {{ end }}
     {{ hugo.Generator }}
 
-    <!-- plugins -->
+    <link rel="preload" href="{{ `/fonts/Lato/Lato-Regular.ttf` | absURL }}" as="font">
+    <link rel="preload" href="{{ `/fonts/forkawesome/forkawesome-webfont.woff2` | absURL }}" as="font">
+    <link rel="preload" href="{{ `/fonts/KumbhSans/KumbhSans-Bold.ttf` | absURL }}" as="font">
+
+    <!-- stylesheets -->
+    {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
     {{ range site.Params.plugins.css }}
     <link rel="stylesheet" href="{{ .link | absURL }} ">
     {{ end }}
 
-    <!-- Main Stylesheet -->
-    <link rel="preload" href="{{ `/fonts/Lato/Lato-Regular.ttf` | absURL }}" as="font">
-    <link rel="preload" href="{{ `/fonts/forkawesome/forkawesome-webfont.woff2` | absURL }}" as="font">
-    <link rel="preload" href="{{ `/fonts/KumbhSans/KumbhSans-Bold.ttf` | absURL }}" as="font">
-    {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    <!-- favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ `icons/apple-touch-icon.png`| absURL }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ `icons/favicon-32x32.png`| absURL }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ `icons/favicon-16x16.png`| absURL }}">
