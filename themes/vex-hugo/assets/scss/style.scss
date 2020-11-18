@@ -11,3 +11,12 @@ $fa-font-path: '/fonts/forkawesome';
 @import 'fonts/lato';
 @import 'fonts/kumbh';
 @import "additional-theme";
+
+@media(min-width:990px){
+  .bg-face {
+    background-image: url(/images/banner/face.svg);
+    background-repeat: no-repeat;
+    background-size: auto 75%;
+    background-position: center 101%;
+  }
+}
