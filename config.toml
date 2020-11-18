@@ -29,11 +29,6 @@ URL = "https://docs.hedgedoc.org"
 weight = 2
 
 [[menu.main]]
-name = "Team"
-URL = "/team/"
-weight = 3
-
-[[menu.main]]
 name = "Source Code"
 URL = "https://git.hedgedoc.org"
 weight = 4
@@ -60,19 +55,24 @@ URL = "https://git.hedgedoc.org"
 weight = 1
 
 [[menu.footer]]
+name = "Team"
+URL = "/team/"
+weight = 2
+
+[[menu.footer]]
 name = "Help translating"
 URL = "https://translate.hedgedoc.org"
-weight = 2
+weight = 3
 
 [[menu.footer]]
 name = "Mastodon"
 URL = "https://social.hedgedoc.org"
-weight = 3
+weight = 4
 
 [[menu.footer]]
 name = "Privacy Policy"
 URL = "/privacy-policy/"
-weight = 4
+weight = 5
 
 ########################### Default parameters ##########################
 
