@@ -4,7 +4,7 @@
 {{- with $data.homepage.banner }}
 <!-- hero area -->
 <section class="d-lg-none d-flex align-items-center">
-	<img src="{{ .image | absURL }}" class="w-100" width="454" height="300" alt="">
+	<img src="{{ .image | absURL }}" class="w-100" alt="{{ .imageAlt }}" title="{{ .imageAlt }}" width="{{ .imageWidth }}" height="{{ .imageHeight }}">
 </section>
 <section class="section bg-orange text-white bg-face">
 	<div class="container">
