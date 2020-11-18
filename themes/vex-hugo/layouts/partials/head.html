@@ -1,38 +1,45 @@
 <head>
-  <meta charset="utf-8">
-  <title>{{ .Title }}</title>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    {{ with site.Params.author }}
+    <meta name="author" content="{{ . }}">
+    {{ end }}
+    {{ hugo.Generator }}
 
-  <!-- plugins -->
-  {{ range site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .link | absURL }} ">
-  {{ end }}
+    <link rel="preload" href="/fonts/Lato/Lato-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="/fonts/forkawesome/forkawesome-webfont.woff2" as="font" crossorigin>
+    <link rel="preload" href="/fonts/KumbhSans/KumbhSans-Bold.ttf" as="font" crossorigin>
 
-  <!-- Main Stylesheet -->
-  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    <!-- stylesheets -->
+    {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+    {{ range site.Params.plugins.css }}
+    <link rel="stylesheet" href="{{ .link | absURL }} ">
+    {{ end }}
 
-  <script src="{{ `js/mobile-menu.js` | absURL }}" defer></script>
+    <link rel="canonical" href="{{ .Permalink }}" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ `icons/apple-touch-icon.png`| absURL }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ `icons/favicon-32x32.png`| absURL }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ `icons/favicon-16x16.png`| absURL }}">
-  <link rel="manifest" href="{{ `icons/site.webmanifest`| absURL }}">
-  <link rel="mask-icon" href="{{ `icons/safari-pinned-tab.svg" color="#b51f08`| absURL }}">
-  <link rel="shortcut icon" href="{{ `icons/favicon.ico`| absURL }}">
-  <meta name="apple-mobile-web-app-title" content="HedgeDoc">
-  <meta name="application-name" content="HedgeDoc">
-  <meta name="msapplication-TileColor" content="#b51f08">
-  <meta name="msapplication-config" content="{{ `icons/browserconfig.xml`| absURL }}">
-  <meta name="theme-color" content="#b51f08">
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta name="google-site-verification" content="gQ36MdAbZV2llqfbMwYTeOgo4rnL0dSejC_eolu89uw" />
-  <meta property="og:image" content="{{ `icons/apple-touch-icon.png`| absURL }}" />
-  {{ template "_internal/opengraph.html" . }}
+    <!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ `icons/apple-touch-icon.png`| absURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ `icons/favicon-32x32.png`| absURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ `icons/favicon-16x16.png`| absURL }}">
+    <link rel="manifest" href="{{ `icons/site.webmanifest`| absURL }}">
+    <link rel="mask-icon" href="{{ `icons/safari-pinned-tab.svg" color="#b51f08`| absURL }}">
+    <link rel="shortcut icon" href="{{ `icons/favicon.ico`| absURL }}">
+    <meta name="apple-mobile-web-app-title" content="HedgeDoc">
+    <meta name="application-name" content="HedgeDoc">
+    <meta name="msapplication-TileColor" content="#b51f08">
+    <meta name="msapplication-config" content="{{ `icons/browserconfig.xml`| absURL }}">
+    <meta name="theme-color" content="#b51f08">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="google-site-verification" content="gQ36MdAbZV2llqfbMwYTeOgo4rnL0dSejC_eolu89uw"/>
+    <meta property="og:image" content="{{ `icons/apple-touch-icon.png`| absURL }}"/>
+    {{ template "_internal/opengraph.html" . }}
 
+    <script src="{{ `js/mobile-menu.js` | absURL }}" defer></script>
 </head>
