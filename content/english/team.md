@@ -27,4 +27,6 @@ noRobots: true
 
 {{< github-user name="Nick Sweeting" function="CLI" username="pirate" >}}
 
+{{< github-user name="Hugo Peixoto" function="Container" username="hugopeixoto" >}}
+
 </span>
