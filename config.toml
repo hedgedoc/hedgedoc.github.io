@@ -79,6 +79,7 @@ weight = 5
 [params]
 logo = "images/banner/hedgedoc_banner_color_horizontal.svg"
 logo_width = "100px"
+logo_height = "25px"
 
 # Meta data
 description = "The best platform to write and share markdown."
