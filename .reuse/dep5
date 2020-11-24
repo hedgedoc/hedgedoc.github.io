@@ -11,6 +11,10 @@ Files: layouts/*
 Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
 License: CC-BY-SA-4.0
 
+Files: static/history/*
+Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+License: CC-BY-SA-4.0
+
 Files: static/icons/*
 Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
 License: LicenseRef-HedgeDoc-Icon-Usgae-Guidelines
