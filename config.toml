@@ -35,22 +35,22 @@ weight = 2
 [[menu.main]]
 name = "Source Code"
 URL = "https://git.hedgedoc.org"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "Forum"
 URL = "https://community.hedgedoc.org"
-weight = 4
+weight = 5
 
 [[menu.main]]
 name = "Matrix"
 URL = "https://chat.hedgedoc.org"
-weight = 5
+weight = 6
 
 [[menu.main]]
 name = "FAQ"
 URL = "/faq/"
-weight = 6
+weight = 7
 
 # footer menu
 [[menu.footer]]
@@ -59,19 +59,24 @@ URL = "https://git.hedgedoc.org"
 weight = 1
 
 [[menu.footer]]
+name = "Team"
+URL = "/team/"
+weight = 2
+
+[[menu.footer]]
 name = "Help translating"
 URL = "https://translate.hedgedoc.org"
-weight = 2
+weight = 3
 
 [[menu.footer]]
 name = "Mastodon"
 URL = "https://social.hedgedoc.org"
-weight = 3
+weight = 4
 
 [[menu.footer]]
 name = "Privacy Policy"
 URL = "/privacy-policy/"
-weight = 4
+weight = 5
 
 ########################### Default parameters ##########################
 
@@ -102,3 +107,6 @@ weight = 1
 
 # copyright
 copyright = "The HedgeDoc developers. Theme based on [vex-hugo](https://github.com/themefisher/vex-hugo)."
+
+[markup.goldmark.renderer]
+unsafe= true

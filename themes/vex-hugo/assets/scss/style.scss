@@ -13,6 +13,10 @@ $fa-font-path: '/fonts/forkawesome';
 @import "additional-theme";
 @import "history";
 
+.mw-150px {
+  max-width: 150px;
+}
+
 @media(min-width:990px){
   .bg-face {
     background-image: url(/images/banner/face.svg);
