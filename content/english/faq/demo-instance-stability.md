@@ -2,7 +2,7 @@
 title: How stable is the demo instance? 
 ---
 
-The demo instance runs the latest master branch- But generally speaking over the past year, we had a wonderful uptime score and the number of times we were contacted about problems with the demo instance should be countable with one, maximum two hands.
+The demo instance runs the latest master branch. But generally speaking over the past year, we had a wonderful uptime score and the number of times we were contacted about problems with the demo instance should be countable with one, maximum two hands.
 
 We also don’t delete notes there intentionally, so from that perspective you don’t have to expect your notes to be lost every week. **BUT** and that should be said, we also don’t guarantee that your notes won’t be lost. After all, it’s unstable code, and it might do rather weird things. We have daily backups, but we try to avoid using them.
 
