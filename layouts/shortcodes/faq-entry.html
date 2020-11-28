@@ -1,0 +1,11 @@
+{{ if not ( isset .Params "draft" ) }}
+<hr class="my-5">
+<article>
+    <header>
+        <h2>{{ .Params.title }}</h2>
+    </header>
+    <p>
+        {{- .Inner | markdownify -}}
+    </p>
+</article>
+{{ end }}
