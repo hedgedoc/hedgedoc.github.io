@@ -1,0 +1,40 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: hedgedoc.github.io
+Upstream-Contact: The HedgeDoc developers <license@hedgedoc.org>
+Source: https://github.com/hedgedoc/hedgedoc.github.io
+
+Files: content/*
+Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+License: CC-BY-SA-4.0
+
+Files: layouts/*
+Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+License: CC-BY-SA-4.0
+
+Files: static/history/*
+Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+License: CC-BY-SA-4.0
+
+Files: static/icons/*
+Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+License: LicenseRef-HedgeDoc-Icon-Usgae-Guidelines
+
+Files: static/images/banner/*
+Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+License: LicenseRef-HedgeDoc-Icon-Usgae-Guidelines
+
+Files: themes/vex-hugo/*
+Copyright: 2020 Themefisher
+License: MIT
+
+Files: themes/vex-hugo/static/fonts/forkawesome/*
+Copyright: 2020 The fork awesome community
+License: OFL-1.1
+
+Files: themes/vex-hugo/static/fonts/KumbhSans/*
+Copyright: 2020 Saurabh Sharma
+License: OFL-1.1
+
+Files: themes/vex-hugo/static/fonts/Lato/*
+Copyright: 2020 Łukasz Dziedzic
+License: OFL-1.1

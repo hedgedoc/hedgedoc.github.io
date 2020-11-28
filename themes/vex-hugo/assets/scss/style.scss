@@ -11,6 +11,11 @@ $fa-font-path: '/fonts/forkawesome';
 @import 'fonts/lato';
 @import 'fonts/kumbh';
 @import "additional-theme";
+@import "history";
+
+.mw-150px {
+  max-width: 150px;
+}
 
 @media(min-width:990px){
   .bg-face {
