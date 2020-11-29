@@ -6,6 +6,24 @@ draft: false
 
 This page is intended to provide answers to some questions that frequently appear in the community.
 
+{{< faq-entry title="How stable is the demo instance?" >}}
+In the past, the number of problems with our demo instance was very low, but **we don’t guarantee that your notes won’t be lost** because of hardware or software malfunctions.
+The demo instance runs the latest unstable code from our repository, so sometimes things might not work as expected.
+We generally recommend hosting your own instance for more than testing the features.
+{{< /faq-entry >}}
+
+{{< faq-entry title="Why does the demo instance use Cloudflare?" >}}
+Some countries have a too high latency to the demo instance, which means HedgeDoc would be unusable.
+To make the demo available in as many countries as possible, we use [Cloudflare][cloudflare]. One of the [downsides][cloudflare-problems] is that Cloudflare intercepts all TLS traffic between your browser and the demo instance, which makes the demo unsuitable for private notes. You can of course self-host HedgeDoc to avoid all of these latency and privacy issues.
+
+[cloudflare-problems]: https://en.wikipedia.org/wiki/Cloudflare#Controversy
+[cloudflare]: https://www.cloudflare.com/
+{{< /faq-entry >}}
+
+{{< faq-entry title="Can I run multiple instances on the same database?" >}}
+No. The HedgeDoc server process is not entirely stateless and therefore running more than one instance will result in missing/broken content for users. In order to solve issues like HA-capabilities, please use a high level orchestrator that makes sure that always 1 instance is running on your infrastructure and that the database is available. The server process usually starts within seconds and therefore the possible downtime should be minimal.
+{{< /faq-entry >}}
+
 {{< faq-entry title="Why is CodiMD now called HedgeDoc?" >}}
 The short version: There were two CodiMD-projects on GitHub, the community-driven fork and the original project maintained by the HackMD-team. To solve this naming conflict, our community-driven version was renamed to HedgeDoc.
 For a full writeup, check out the [history document](/history/).
@@ -14,10 +32,6 @@ For a full writeup, check out the [history document](/history/).
 {{< faq-entry title="Why was the PDF Export feature removed?" >}}
 We used a chrome-headless instance to generate the PDFs, but that led to some security vulnerabilities and was therefore deactivated. There are currently plans to re-add this feature in a safe way, but this will most likely take some time and can be expected at the earliest with 2.1 (but could also take longer).
 In the meantime you can use your browsers print to PDF Feature. This [page](https://www.digitaltrends.com/computing/how-to-save-a-webpage-as-a-pdf/) explains how to do that for multiple browsers.
-{{< /faq-entry >}}
-
-{{< faq-entry title="Can I run multiple instances on the same database?" >}}
-No. The HedgeDoc server process is not entirely stateless and therefore running more than one instance will result in missing/broken content for users. In order to solve issues like HA-capabilities, please use a high level orchestrator that makes sure that always 1 instance is running on your infrastructure and that the database is available. The server process usually starts within seconds and therefore the possible downtime should be minimal.
 {{< /faq-entry >}}
 
 {{< faq-entry title="Why did you switch from MathJax to KaTeX?" draft=true >}}
