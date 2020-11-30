@@ -4,7 +4,7 @@
         <hr class="my-5">
         <article>
             <header>
-                <h2>{{ .Params.title }}</h2>
+                <h2 id="{{ .Params.title | urlize }}">{{ .Params.title }}</h2>
             </header>
             <p>
                 {{- .Inner | markdownify -}}
