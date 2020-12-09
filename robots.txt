@@ -3,12 +3,7 @@ User-agent: *
 
 
 
-
-
-
 Disallow: /privacy-policy/
 
 Disallow: /team/
-
-
 
