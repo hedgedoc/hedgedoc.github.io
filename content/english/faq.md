@@ -59,3 +59,16 @@ Starting with HedgeDoc 2.0, mermaid is used for rendering sequence-diagrams. The
     John-->>Alice: Great!
     ```
 {{< /faq-entry >}}
+
+{{< faq-entry title="Why can't I embed some PDFs?" >}}  
+Many servers don't allow the embedding of their content on arbitrary sites.
+
+For a more technical explanation:  
+The `X-Frame-Options` header can be used to specify if a given webpage can be embedded.
+For security reasons this header is often set to `SAMEORIGIN`, which disallows embedding on other origins.
+To be able to embed a PDF inside a HedgeDoc note, the server that hosts the PDF must either send no `X-Frame-Options`
+header (which might be insecure) or include the URI of your HedgeDoc instance in an `ALLOW-FROM` statement.
+See [Mozillas docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) for more details.
+Also note that the `X-Frame-Options` header [is being obsoleted](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors)
+by the `frame-ancestors` statement in the `Content-Security-Policy` header.
+{{< /faq-entry >}}
