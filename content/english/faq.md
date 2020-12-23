@@ -67,7 +67,7 @@ Starting with HedgeDoc 2.0, we don't support tag headings in the note anymore.
 #### tags: `tag1`, `tag2`
 ```
 
-Instead please use the [frontmatter metadata](https://demo.hedgedoc.org/yaml-metadata#tags) to specify tags.
+Instead please use the [frontmatter metadata](https://demo.hedgedoc.org/n/yaml-metadata#tags) to specify tags.
 
 {{< /faq-entry >}}
 
