@@ -60,7 +60,7 @@ Starting with HedgeDoc 2.0, mermaid is used for rendering sequence-diagrams. The
     ```
 {{< /faq-entry >}}
 
-{{< faq-entry title="Why do tag headings don't work anymore?" draft=true >}}
+{{< faq-entry title="Why do tags in headings don't work anymore?" draft=true >}}
 Starting with HedgeDoc 2.0, we don't support tag headings in the note anymore. 
 
 ```
@@ -71,8 +71,8 @@ Instead please use the [frontmatter metadata](https://demo.hedgedoc.org/yaml-met
 
 {{< /faq-entry >}}
 
-{{< faq-entry title="Why is the comma-separated definition of tags in the YAML-metadata deprecated?" draft=true >}}
-We try to introduce as few hedgedoc-specific things as possible, especially if there is a normal way to do it anyway. With this in mind the old syntax seems unnecessary extra, instead you should use [YAML Collections](https://yaml.org/spec/1.2/spec.html#id2759963) to specify tags as this is standard way of providing list in YAML.
+{{< faq-entry title="Why is the comma separated definition of tags in the YAML-metadata deprecated?" draft=true >}}
+[YAML already has a definition for lists](https://yaml.org/spec/1.2/spec.html#id2759963). Therefore we don't see any reason to maintain another way to define a list.
 
 **Deprecated**:
 
