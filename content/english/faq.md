@@ -60,6 +60,41 @@ Starting with HedgeDoc 2.0, mermaid is used for rendering sequence-diagrams. The
     ```
 {{< /faq-entry >}}
 
+{{< faq-entry title="Why do tags in headings don't work anymore?" draft=true >}}
+Starting with HedgeDoc 2.0, we don't support tag headings in the note anymore. 
+
+```
+#### tags: `tag1`, `tag2`
+```
+
+Instead please use the [frontmatter metadata](https://demo.hedgedoc.org/n/yaml-metadata#tags) to specify tags.
+
+{{< /faq-entry >}}
+
+{{< faq-entry title="Why is the comma separated definition of tags in the YAML-metadata deprecated?" draft=true >}}
+[YAML already has a definition for lists](https://yaml.org/spec/1.2/spec.html#id2759963). Therefore we don't see any reason to maintain another way to define a list.
+
+**Deprecated**:
+
+    ---
+    tags: tag1, tag2
+    ---
+    
+**New**:
+
+    ---
+    tags:
+     - tag1
+     - tag2
+    ---
+
+**or**
+
+    ---
+    tags: ['tag1', 'tag2']
+    ---
+{{< /faq-entry >}}
+
 {{< faq-entry title="Why can't I embed some PDFs?" >}}  
 Many servers don't allow the embedding of their content on arbitrary sites.
 
