@@ -1,4 +1,4 @@
-{{ if not ( isset .Params "draft" ) }}
+{{ if or (.Site.BuildDrafts) (not ( isset .Params "draft" )) }}
 <div class="row">
     <div class="col-12 col-lg-10 offset-lg-1">
         <hr class="my-5">
