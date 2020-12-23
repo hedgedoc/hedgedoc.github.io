@@ -60,6 +60,36 @@ Starting with HedgeDoc 2.0, mermaid is used for rendering sequence-diagrams. The
     ```
 {{< /faq-entry >}}
 
+{{< faq-entry title="Why did the way tags are set change?" draft=true >}}
+Starting with HedgeDoc 2.0, we don't support tag headings in the note anymore. 
+
+```
+#### tags: `tag1`, `tag2`
+```
+
+Also we deprecated the usage of comma-separated "lists". Instead you should use [YAML Collections](https://yaml.org/spec/1.2/spec.html#id2759963).
+
+**Deprecated**:
+
+    ---
+    tags: tag1, tag2
+    ---
+    
+**New**:
+
+    ---
+    tags:
+     - tag1
+     - tag2
+    ---
+
+**or**
+
+    ---
+    tags: ['tag1', 'tag2']
+    ---
+{{< /faq-entry >}}
+
 {{< faq-entry title="Why can't I embed some PDFs?" >}}  
 Many servers don't allow the embedding of their content on arbitrary sites.
 
