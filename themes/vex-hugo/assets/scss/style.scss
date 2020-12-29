@@ -1,12 +1,13 @@
 $font-family-sans-serif: 'Lato';
 $headings-font-family: 'Kumbh Sans';
+$headings-font-weight: 400;
 $primary: #b51f08;
 $body-color: #3b4045;
 
 $fa-font-path: '/fonts/forkawesome';
 
-@import 'filtered-bootstrap';
-@import 'filtered-fork-awesome';
+@import '../../../../node_modules/bootstrap/scss/bootstrap';
+@import '../../../../node_modules/fork-awesome/scss/fork-awesome';
 @import 'mixins';
 @import 'fonts/lato';
 @import 'fonts/kumbh';
