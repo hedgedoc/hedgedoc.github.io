@@ -1,7 +1,7 @@
 {
   "name": "hedgedoc.github.io",
   "version": "1.0.0",
-  "repository": "git@github.com:hedgedoc/hedgedoc.github.io",
+  "repository": "github:hedgedoc/hedgedoc.github.io",
   "author": "The HedgeDoc Team",
   "license": "CC-BY-SA-4.0",
   "dependencies": {
