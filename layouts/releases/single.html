@@ -8,13 +8,22 @@
 
 <section class="section pb-0 pt-4">
     <div class="container">
-        <a href="/releases">Back to the release list</a>
+        <a href="..">Back to the release list</a>
 
         <h2 class="my-3">Release information</h2>
         <ul class="list-group">
+            {{ $releases := where .Site.Pages "Section" "releases" }}
+            {{ $newerReleases := where $releases "Date" "gt" .Date }}
+            {{ with (index $newerReleases 0) }}
+            <li class="list-group-item bg-danger text-white">
+                <i class="fa fa-times"></i> This is NOT the latest release! Please take a look at the
+                <a class="text-white font-italic" href="..">release list</a>
+            </li>
+            {{ else }}
             <li class="list-group-item">
                 <i class="fa fa-check"></i> This is the latest release!
             </li>
+            {{end}}
             <li class="list-group-item">
                 <i class="fa fa-check"></i> This is a stable release
             </li>
@@ -38,7 +47,9 @@
             </div>
             <div class="row">
                 {{ range .Page.Params.assets }}
-                <button class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;({{ printf "%.2f" (div .size 1000000.0) }}MB)</button>
+                <button class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;({{ printf "%.2f"
+                    (div .size 1000000.0) }}MB)
+                </button>
                 {{ end }}
             </div>
             <hr>
@@ -51,7 +62,7 @@
             </div>
             <hr>
             <div class="row">
-                <h3>Be the Rockstar with Docker</h3>
+                <h3>Docker</h3>
             </div>
             <div class="row">
                 <code>docker pull quay.io/hedgedoc/hedgedoc:alpine</code>
@@ -63,7 +74,8 @@
 <section class="section py-5">
     <div class="container">
         <h2 class="mb-3">Documentation</h2>
-        Do you need help with installation or upgrade? <a href="" title="" target="_blank" rel="noopener noreferrer">Read our docs!</a>
+        Do you need help with installation or upgrade? <a href="" title="" target="_blank" rel="noopener noreferrer">Read
+        our docs!</a>
     </div>
 </section>
 
