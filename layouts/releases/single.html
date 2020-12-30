@@ -49,8 +49,8 @@
             </div>
             <div class="row">
                 {{ range .Page.Params.assets }}
-                <button class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;({{ printf "%.2f"
-                    (div .size 1000000.0) }}MB)
+                <button class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
+                    ({{ printf "%.2f" (div .size 1000000.0) }}MB)
                 </button>
                 {{ end }}
             </div>
