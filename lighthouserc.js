@@ -9,6 +9,7 @@ module.exports = {
     collect: {
       url: ['http://localhost:1313/'],
       startServerCommand: 'hugo server --minify --disableLiveReload',
+      startServerReadyPattern: 'Web Server is available'
     },
     upload: {
       target: 'lhci',
