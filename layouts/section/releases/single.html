@@ -1,0 +1,23 @@
+
+{{ define "main" }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <main class="col">
+                <header>
+                    <h1>Releases</h1>
+                </header>
+                <!-- Ranges through content/posts/*.md -->
+                {{ range .Pages }}
+                <article class="mt-4">
+                    <span><a href="{{.Params.githubLink}}"><h2><i class="fa fa-github"></i>&nbsp;{{.Title}}</h2></a></span>
+                    <div class="mt-4">
+                        {{.Content}}
+                    </div>
+                </article>
+                {{ end }}
+            </main>
+        </div>
+    </div>
+</section>
+{{ end }}
