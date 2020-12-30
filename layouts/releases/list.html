@@ -12,7 +12,10 @@
                 <article class="mt-4">
                     <span><a href="{{.Params.githubLink}}"><h2><i class="fa fa-github"></i>&nbsp;{{.Title}}</h2></a></span>
                     <div class="mt-4">
-                        {{.Content}}
+                        <details>
+                            <summary>Click here to read the release notes</summary>
+                            {{.Content}}
+                        </details>
                     </div>
                 </article>
                 {{ end }}
