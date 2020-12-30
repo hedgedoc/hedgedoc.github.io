@@ -1,0 +1,64 @@
+{{ define "main" }}
+<section class="section bg-orange text-white py-5">
+    <div class="container">
+        <h1>Thank you for downloading {{.Title}} <a href="{{.Params.githubLink}}"><i class="fa fa-github"></i></a>
+        </h1>
+    </div>
+</section>
+
+<section class="section pb-0 pt-5">
+    <div class="container">
+        <h2 class="mb-3">Release information</h2>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <i class="fa fa-check"></i> This is the latest release!
+            </li>
+            <li class="list-group-item">
+                <i class="fa fa-check"></i> This is a stable release
+            </li>
+            <li class="list-group-item">
+                <details>
+                    <summary>Click here to read the release notes</summary>
+                    {{.Content}}
+                </details>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section pb-0 pt-5">
+    <div class="container">
+        <h2 class="mb-3">Download</h2>
+        <div class="col">
+            <div class="row">
+                <h3>Precompiled and ready to use</h3>
+            </div>
+            <div class="row">
+                <button class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .Page.Params.assets.name }}&nbsp;({{ printf "%.2f" (div .Page.Params.assets.size 1000000.0) }}MB)</button>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Just the source code</h3>
+            </div>
+            <div class="row">
+                <button class="btn btn-sm btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</button>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Be the Rockstar with Docker</h3>
+            </div>
+            <div class="row">
+                <code>docker pull quay.io/hedgedoc/hedgedoc:alpine</code>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section py-5">
+    <div class="container">
+        <h2 class="mb-3">Documentation</h2>
+        Do you need help with installation or upgrade? <a href="" title="" target="_blank" rel="noopener noreferrer">Read our docs!</a>
+    </div>
+</section>
+
+{{ end }}
