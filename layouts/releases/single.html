@@ -49,7 +49,7 @@
             </div>
             <div class="row">
                 {{ range .Page.Params.assets }}
-                <button class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
+                <button class="btn btn-success my-2"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
                     ({{ printf "%.2f" (div .size 1000000.0) }}MB)
                 </button>
                 {{ end }}
@@ -60,7 +60,7 @@
                 <h3>Just the source code</h3>
             </div>
             <div class="row">
-                <button class="btn btn-sm btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</button>
+                <button class="btn btn-sm btn-primary my-2"><i class="fa fa-download"></i>&nbsp;Source code</button>
             </div>
             <hr>
             <div class="row">
