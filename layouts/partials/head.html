@@ -15,6 +15,11 @@
     <link rel="preload" href="/fonts/kumbh-sans/kumbh-sans-latin-400-normal.woff2" as="font" crossorigin>
     <link rel="preload" href="/fonts/forkawesome/forkawesome-webfont.woff2?v=1.1.7" as="font" crossorigin>
 
+    {{ if eq .RelPermalink "/latest-release/" }}
+    {{ $latestRelease := (index (where .Site.Pages "Section" "releases") 0) }}
+    <meta http-equiv="refresh" content="0; URL={{ $latestRelease.Permalink }}">
+    {{ end }}
+
     <!-- stylesheets -->
     {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">

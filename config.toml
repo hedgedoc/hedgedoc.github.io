@@ -33,7 +33,7 @@ weight = 2
 
 [[menu.main]]
 name = "Download"
-URL = "/releases"
+URL = "/latest-release/"
 weight = 3
 
 [[menu.main]]
