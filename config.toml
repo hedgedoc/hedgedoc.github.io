@@ -32,6 +32,11 @@ URL = "https://docs.hedgedoc.org"
 weight = 2
 
 [[menu.main]]
+name = "Download"
+URL = "/releases"
+weight = 3
+
+[[menu.main]]
 name = "Source Code"
 URL = "https://git.hedgedoc.org"
 weight = 4
