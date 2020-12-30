@@ -14,16 +14,16 @@ gulp.task("copy:font:lato", async () => {
   ]).pipe(gulp.dest('./static/fonts/lato'))
 });
 
-gulp.task("copy:font:kumbh", async () => {
+gulp.task("copy:font:kumbh-sans", async () => {
   gulp.src([
     './node_modules/@fontsource/kumbh-sans/files/kumbh-sans-latin-ext-400-normal.woff2',
     './node_modules/@fontsource/kumbh-sans/files/kumbh-sans-all-400-normal.woff',
     './node_modules/@fontsource/kumbh-sans/files/kumbh-sans-latin-400-normal.woff2'
-  ]).pipe(gulp.dest('./static/fonts/kumbh'))
+  ]).pipe(gulp.dest('./static/fonts/kumbh-sans'))
 });
 
 gulp.task("copy:font:fork-awesome", async () => {
   gulp.src('./node_modules/fork-awesome/fonts/*').pipe(gulp.dest('./static/fonts/forkawesome'))
 });
 
-gulp.task("default", gulp.parallel("copy:font:lato", "copy:font:kumbh", "copy:font:fork-awesome"))
+gulp.task("default", gulp.parallel("copy:font:lato", "copy:font:kumbh-sans", "copy:font:fork-awesome"))
