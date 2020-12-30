@@ -6,3 +6,6 @@ resources/_gen
 build/
 public/
 .idea/
+static/fonts
+node_modules
+yarn-error.log

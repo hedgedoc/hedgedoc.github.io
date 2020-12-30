@@ -18,14 +18,30 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-      - name: Use Node.js 12
+
+      - name: Use Node.js 14
         uses: actions/setup-node@v2
         with:
-          node-version: 12
-      - name: run Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.6.x
-          lhci autorun
+          node-version: 14
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile --prefer-offline
+
+      - name: Run Lighthouse CI
+        run: yarn run lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_TOKEN }}
           LHCI_SERVER_ACCESSKEY: ${{ secrets.LHCI_SERVER_ACCESSKEY }}
