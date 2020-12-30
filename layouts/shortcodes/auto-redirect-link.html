@@ -1,3 +1,2 @@
-{{ $releases := where .Site.Pages "Section" "releases" }}
-{{ $newestRelease := index $releases 0 }}
-If your browsers doesn't redirect you to the release page, then click <a href="{{ $newestRelease.Permalink }}" title="link to the release">here</a>
+{{ $latestRelease := (index (where .Site.Pages.ByExpiryDate "Section" "releases") 0) }}
+If your browsers doesn't redirect you to the release page, then click <a href="{{ $latestRelease.Permalink }}" title="link to the release">here</a>
