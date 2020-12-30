@@ -1,0 +1,5 @@
+{{- if .Pre -}}
+{{- site.BaseURL | absLangURL}}{{.Pre}}{{ .URL -}}
+{{- else -}}
+{{- .URL | absLangURL -}}
+{{- end -}}
