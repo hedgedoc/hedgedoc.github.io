@@ -7,6 +7,7 @@
 import gulp from 'gulp'
 import https from 'https'
 import fs from 'fs/promises'
+import yaml from 'yaml'
 
 gulp.task("copy:font:lato", async () => {
   gulp.src([
@@ -70,12 +71,22 @@ gulp.task("github-releases", async () => {
       //apiResult = apiResult.sort((a: GitHubReleaseEntry, b: GitHubReleaseEntry) => semver.gte(a.tag_name, b.tag_name) ? -1 : 1);
 
       apiResult.forEach(entry => {
+        const frontmatterJson = {
+          Title: entry.name,
+          date: entry.created_at,
+          tarball: entry.tarball_url,
+          assets: entry.assets.map(asset => {
+            return {
+              name: asset.name,
+              url: asset.browser_download_url,
+              size: asset.size
+            }
+          }),
+          githubLink: entry.html_url
+        };
+
         const content = `---
-Title: ${entry.name}
-date: ${entry.created_at}
-tarball: ${entry.tarball_url}
-assets: [{${entry.assets.map(asset => `name: ${asset.name}, url: ${asset.browser_download_url}, size: ${asset.size}`).join('}, {')}}]
-githubLink: ${entry.html_url}
+${yaml.stringify(frontmatterJson)}
 ---
 ${entry.body}`;
 
