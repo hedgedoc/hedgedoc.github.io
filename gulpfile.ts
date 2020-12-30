@@ -4,7 +4,7 @@
  SPDX-License-Identifier: AGPL-3.0-only
 */
 
-const gulp = require('gulp')
+import gulp from 'gulp'
 
 gulp.task("copy:font:lato", async () => {
   gulp.src([
