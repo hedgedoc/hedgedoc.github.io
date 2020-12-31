@@ -47,9 +47,9 @@
     <div class="container">
         <h2 class="mb-3">Documentation</h2>
         <p>
-        Do you need help with installation or upgrade? <a href="http://docs.hedgedoc.org/"
-                                                          title="HedgeDoc Documentation" target="_blank"
-                                                          rel="noopener noreferrer">Read our docs!</a>
+            Do you need help with installation or upgrade? <a href="http://docs.hedgedoc.org/"
+                                                              title="HedgeDoc Documentation" target="_blank"
+                                                              rel="noopener noreferrer">Read our docs!</a>
         </p>
     </div>
 </section>
@@ -67,7 +67,8 @@
                     </div>
                     <div class="row">
                         {{ range .Page.Params.assets }}
-                        <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
+                        <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i
+                                class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
                             ({{ printf "%.2f" (div .size 1000000.0) }}MB)
                         </a>
                         {{ end }}
@@ -81,7 +82,8 @@
                         <h3 class="mb-3">Just the source code</h3>
                     </div>
                     <div class="row">
-                        <a href="{{.Page.Params.tarball}}" target="_blank" rel="noopener noreferer" class="btn btn-sm btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</a>
+                        <a href="{{.Page.Params.tarball}}" target="_blank" rel="noopener noreferer"
+                           class="btn btn-sm btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</a>
                     </div>
                 </div>
             </li>
@@ -93,7 +95,9 @@
                     </div>
                     <div class="row">
                         <p>
-                        Check out our docker repository on&nbsp;<a href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank" rel="noopener noreferer">quay.io</a>
+                            Check out our docker repository on&nbsp;<a
+                                href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank"
+                                rel="noopener noreferer">quay.io</a>
                         </p>
                     </div>
                 </div>
