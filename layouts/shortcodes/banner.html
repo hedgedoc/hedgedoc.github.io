@@ -11,17 +11,8 @@
 			<div class="col-lg-6 text-center mb-5 mb-md-0">
 			</div>
 			<div class="col-lg-6 align-self-center text-center text-md-left">
-				<h1 class="font-weight-bold mb-4 ">{{ .title | markdownify }}</h1>
-				<p class="mb-4">{{ .content | markdownify }}</p>
-				<p>
-				{{ range .buttons }}
-					{{ if .enable }}
-					{{ with . }}
-					<a href="{{.link|absLangURL}}" class="btn btn-lg btn{{ if .outline }}-outline{{ end }}-primary mb-2 mr-2">{{.label}}</a>
-					{{ end }}
-					{{ end }}
-				{{ end }}
-				</p>
+				<h1 class="font-weight-bold mb-4 ">{{ $.Params.title | markdownify }}</h1>
+				<p class="mb-4">{{ $.Inner | markdownify }}</p>
 			</div>
 		</div><!-- .row close -->
 	</div><!-- .container close -->
