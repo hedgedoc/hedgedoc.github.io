@@ -4,7 +4,6 @@
 
 ############################# Feature ############################
 corefeatures:
-  enable : true
   title : "Our Core Features"
 
   # feature at the left of the image

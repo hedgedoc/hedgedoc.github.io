@@ -4,7 +4,6 @@
 
 ############################# promo ############################
 nocodimd:
-  enable : true
   image : "images/no_codimd.svg"
   imageHeight: "177"
   imageWidth: "178"
