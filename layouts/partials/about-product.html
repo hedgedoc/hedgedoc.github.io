@@ -23,7 +23,7 @@
           <p>{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
+          <a href="{{ .link | absURL }}" class="btn btn-primary">{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>
@@ -37,7 +37,7 @@
           <p>{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
+          <a href="{{ .link | absURL }}" class="btn btn-primary">{{ .label }}</a>
           {{ end }}
           {{ end }}
         </div>

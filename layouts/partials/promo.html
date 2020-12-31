@@ -2,7 +2,7 @@
 
 {{ if $data.homepage.promo.enable }}
 {{ with $data.homepage.promo }}
-<section class="bg-orange section">
+<section class="bg-primary section">
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center mb-5 mb-lg-0">
@@ -14,7 +14,7 @@
                 {{ range .buttons }}
                 {{ if .enable }}
                 {{ with . }}
-                <a href="{{.link|absLangURL}}" class="btn btn-main{{ if .outline }}-outline{{ end }} mb-2 mr-2">{{.label}}</a>
+                <a href="{{.link|absLangURL}}" class="btn btn{{ if .outline }}-outline{{ end }}-primary mb-2 mr-2">{{.label}}</a>
                 {{ end }}
                 {{ end }}
                 {{ end }}

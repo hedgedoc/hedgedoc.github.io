@@ -13,7 +13,7 @@
       <div class="col-md-6">
         {{ range .left_side }}
         <div class="mb-40 text-center text-md-left">
-          <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
+          <h2><i class="d-inline-block mb-10 {{ .icon }}"></i></h2>
           <h3 class="font-weight-bold mb-2">{{ .title | markdownify }}</h3>
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -22,7 +22,7 @@
       <div class="col-md-6">
           {{ range .right_side }}
         <div class="mb-40 text-center text-md-left">
-          <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
+          <h2><i class="d-inline-block mb-10 {{ .icon }}"></i></h2>
           <h3 class="font-weight-bold mb-2">{{ .title | markdownify }}</h3>
           <p>{{ .content | markdownify }}</p>
         </div>

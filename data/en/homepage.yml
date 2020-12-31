@@ -5,7 +5,7 @@
 ############################# banner ############################
 banner:
   enable : true
-  title : "The best platform to write and share markdown."
+  title : "HedgeDoc - The best platform to write and share markdown."
   content : "HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown editor.
 
              With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time.

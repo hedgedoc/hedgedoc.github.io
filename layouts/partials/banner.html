@@ -6,23 +6,23 @@
 <section class="d-lg-none d-flex align-items-center">
 	<img src="{{ .image | absURL }}" class="w-100" alt="{{ .imageAlt }}" title="{{ .imageAlt }}" width="{{ .imageWidth }}" height="{{ .imageHeight }}">
 </section>
-<section class="section bg-orange text-white bg-face">
+<section class="section bg-primary text-white bg-face">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 text-center mb-5 mb-md-0">
 			</div>
 			<div class="col-lg-6 align-self-center text-center text-md-left">
-				<div class="block">
-					<h1 class="font-weight-bold mb-4 ">{{ .title | markdownify }}</h1>
-					<p class="mb-4">{{ .content | markdownify }}</p>
-					{{ range .buttons }}
-						{{ if .enable }}
-						{{ with . }}
-						<a href="{{.link|absLangURL}}" class="btn btn-main{{ if .outline }}-outline{{ end }} mb-2 mr-2">{{.label}}</a>
-						{{ end }}
-						{{ end }}
+				<h1 class="font-weight-bold mb-4 ">{{ .title | markdownify }}</h1>
+				<p class="mb-4">{{ .content | markdownify }}</p>
+				<p>
+				{{ range .buttons }}
+					{{ if .enable }}
+					{{ with . }}
+					<a href="{{.link|absLangURL}}" class="btn btn-lg btn{{ if .outline }}-outline{{ end }}-primary mb-2 mr-2">{{.label}}</a>
 					{{ end }}
-				</div>
+					{{ end }}
+				{{ end }}
+				</p>
 			</div>
 		</div><!-- .row close -->
 	</div><!-- .container close -->
