@@ -4,9 +4,9 @@
 <section class="{{ if .backgroundPrimary }}bg-primary text-white{{ end }} section">
     <div class="container">
         <div class="row">
-            {{ if not (or (isset . "right") .right) }}
+            {{ if not .right }}
             <div class="col-md-6 text-center mb-5 mb-lg-0">
-                <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .imageAlt }}" title="{{ .imageAlt }}" width="{{ .imageWidth }}" height="{{ .imageHeight }}">
+                <img class="img-fluid" src="{{ .image.url | absURL }}" alt="{{ .image.alt }}" title="{{ .image.alt }}" width="{{ .image.width }}" height="{{ .image.height }}">
             </div>
             {{ end }}
             <div class="col-md-6 align-self-center text-center text-md-left">
@@ -20,7 +20,7 @@
                 {{ end }}
                 {{ end }}
             </div>
-            {{ if and (isset . "right") .right }}
+            {{ if .right }}
             <div class="col-md-6 text-center mb-5 mb-lg-0">
                 <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .imageAlt }}" title="{{ .imageAlt }}" width="{{ .imageWidth }}" height="{{ .imageHeight }}">
             </div>

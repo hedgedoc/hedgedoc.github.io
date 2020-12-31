@@ -4,11 +4,12 @@
 
 ############################# promo ############################
 nocodimd:
-  image : "images/no_codimd.svg"
   backgroundPrimary: true
-  imageHeight: "177"
-  imageWidth: "178"
-  imageAlt: "CodiMD is gone."
+  image:
+    url: "images/no_codimd.svg"
+    height: "177"
+    width: "178"
+    alt: "CodiMD is gone."
   title : "Wasn't it called CodiMD?"
   content : "Yes, this project was formerly known as CodiMD, but in 2020 we decided to rename our project to HedgeDoc to avoid confusion with another project of the same name."
   buttons:
