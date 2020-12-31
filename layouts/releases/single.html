@@ -65,9 +65,9 @@
                     </div>
                     <div class="row">
                         {{ range .Page.Params.assets }}
-                        <button class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
+                        <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
                             ({{ printf "%.2f" (div .size 1000000.0) }}MB)
-                        </button>
+                        </a>
                         {{ end }}
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                         <h3 class="mb-3">Just the source code</h3>
                     </div>
                     <div class="row">
-                        <button class="btn btn-sm btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</button>
+                        <a href="{{.Page.Params.tarball}}" target="_blank" rel="noopener noreferer" class="btn btn-sm btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</a>
                     </div>
                 </div>
             </li>
