@@ -5,6 +5,7 @@
 ############################# promo ############################
 nocodimd:
   image : "images/no_codimd.svg"
+  colorPrimary: true
   imageHeight: "177"
   imageWidth: "178"
   imageAlt: "CodiMD is gone."

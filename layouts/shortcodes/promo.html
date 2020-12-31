@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{- with index $data.promo (.Get "id") }}
 
-<section class="bg-primary section">
+<section class="{{ if .colorPrimary }}bg-primary text-white{{ end }} section">
     <div class="container">
         <div class="row">
             {{ if not (or (isset . "right") .right) }}
@@ -10,8 +10,8 @@
             </div>
             {{ end }}
             <div class="col-md-6 align-self-center text-center text-md-left">
-                <h2 class="subheading text-white font-weight-bold mb-10">{{ .title | markdownify }}</h2>
-                <p class="text-white">{{ .content | markdownify }}</p>
+                <h2 class="subheading font-weight-bold mb-10">{{ .title | markdownify }}</h2>
+                <p>{{ .content | markdownify }}</p>
                 {{ range .buttons }}
                 {{ if .enable }}
                 {{ with . }}
