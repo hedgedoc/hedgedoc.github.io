@@ -98,3 +98,6 @@ weight = 1
 
 # copyright
 copyright = "The HedgeDoc developers. Made with ❤️ and Hugo. Theme based on [vex-hugo](https://github.com/themefisher/vex-hugo)."
+
+[markup.goldmark.renderer]
+unsafe= true
