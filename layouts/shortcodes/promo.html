@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{- with index $data.promo (.Get "id") }}
 
-<section class="{{ if .colorPrimary }}bg-primary text-white{{ end }} section">
+<section class="{{ if .backgroundPrimary }}bg-primary text-white{{ end }} section">
     <div class="container">
         <div class="row">
             {{ if not (or (isset . "right") .right) }}
