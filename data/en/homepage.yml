@@ -17,7 +17,7 @@ banner:
   buttons:
   - enable : true
     label : "Getting started"
-    link : "https://docs.hedgedoc.org/tutorial/getting-started"
+    link : "https://github.com/hedgedoc/hedgedoc/#installation--upgrading"
   - enable: true
     label: "Visit the demo"
     link: "https://demo.hedgedoc.org/"
