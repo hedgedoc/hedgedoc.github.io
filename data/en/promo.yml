@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+############################# promo ############################
+nocodimd:
+  enable : true
+  image : "images/no_codimd.svg"
+  imageHeight: "177"
+  imageWidth: "178"
+  imageAlt: "CodiMD is gone."
+  title : "Wasn't it called CodiMD?"
+  content : "Yes, this project was formerly known as CodiMD, but in 2020 we decided to rename our project to HedgeDoc to avoid confusion with another project of the same name."
+  buttons:
+  - enable: true
+    label: "Read the full story"
+    link: "/history/"
+    outline: true

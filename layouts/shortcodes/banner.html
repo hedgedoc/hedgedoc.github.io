@@ -1,7 +1,6 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{- with index $data.banner (.Get "id") }}
 
-{{- if $data.homepage.banner.enable }}
-{{- with $data.homepage.banner }}
 <!-- hero area -->
 <section class="d-lg-none d-flex align-items-center">
 	<img src="{{ .image | absURL }}" class="w-100" alt="{{ .imageAlt }}" title="{{ .imageAlt }}" width="{{ .imageWidth }}" height="{{ .imageHeight }}">
@@ -27,5 +26,4 @@
 		</div><!-- .row close -->
 	</div><!-- .container close -->
 </section><!-- header close -->
-{{- end }}
 {{- end }}

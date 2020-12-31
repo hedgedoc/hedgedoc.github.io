@@ -1,7 +1,6 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{- with index $data.features (.Get "id") }}
 
-{{- if $data.homepage.features.enable }}
-{{- with $data.homepage.features }}
 <section class="section" id="features">
   <div class="container">
     <div class="row">
@@ -31,5 +30,4 @@
     </div>
   </div><!-- .container close -->
 </section>
-{{- end }}
 {{- end }}

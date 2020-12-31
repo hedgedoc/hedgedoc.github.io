@@ -1,7 +1,6 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{- with index $data.promo (.Get "id") }}
 
-{{ if $data.homepage.promo.enable }}
-{{ with $data.homepage.promo }}
 <section class="bg-primary section">
     <div class="container">
         <div class="row">
@@ -22,5 +21,4 @@
         </div>
     </div>
 </section>
-{{ end }}
 {{ end }}

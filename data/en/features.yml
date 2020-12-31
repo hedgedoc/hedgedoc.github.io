@@ -1,0 +1,43 @@
+# SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+############################# Feature ############################
+corefeatures:
+  enable : true
+  title : "Our Core Features"
+
+  # feature at the left of the image
+  left_side:
+    # feature item loop
+  - title : "Real-time collaboration"
+    icon : "fa fa-users"
+    content : "Collaborate in real-time with friends, family and colleagues."
+
+    # feature item loop
+  - title : "Presentation mode"
+    icon : "fa fa-slideshare"
+    content : "Use HedgeDoc to build and present slides in markdown. Powered by reveal.js!"
+
+    # feature item loop
+  - title : "Graphs & diagrams"
+    icon : "fa fa-bar-chart"
+    content : "HedgeDoc supports many types of graphs, diagrams and embeddings."
+
+
+  # feature at the right of the image
+  right_side:
+    # feature item loop
+  - title : "Easy to use permission system"
+    icon : "fa fa-lock"
+    content : "Manage permissions of your notes with a simple dropdown selection."
+
+    # feature item loop
+  - title : "Revisions"
+    icon : "fa fa-undo"
+    content : "Revisions keep track of changes to your notes and even let you revert to any older version."
+
+    # feature item loop
+  - title : "Open source"
+    icon : "fa fa-github"
+    content : "HedgeDoc is open source and community-driven. It is licensed under AGPLv3."

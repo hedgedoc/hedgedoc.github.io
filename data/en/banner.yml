@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+############################# banner ############################
+index:
+  enable : true
+  title : "HedgeDoc - The best platform to write and share markdown."
+  content : "HedgeDoc (formerly known as CodiMD) is an open-source collaborative markdown editor.
+
+             With HedgeDoc you can easily collaborate on notes, graphs and even presentations in real-time.
+             All you need to do is to share your note-link to your co-workers, and they're ready to go."
+  image : "images/banner/hedgedoc_banner_color_vertical.svg"
+  imageAlt: "HedgeDoc Logo"
+  imageWidth: 454
+  imageHeight: 300
+  buttons:
+  - enable : true
+    label : "Getting started"
+    link : "https://docs.hedgedoc.org/tutorial/getting-started"
+  - enable: true
+    label: "Visit the demo"
+    link: "https://demo.hedgedoc.org/"
+    outline: true
