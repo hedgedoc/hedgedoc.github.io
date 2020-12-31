@@ -14,7 +14,7 @@
                 {{ range .buttons }}
                 {{ if .enable }}
                 {{ with . }}
-                <a href="{{.link|absLangURL}}" class="btn btn{{ if .outline }}-outline{{ end }}-primary mb-2 mr-2">{{.label}}</a>
+                <a href="{{.link|absLangURL}}" class="btn btn-lg btn{{ if .outline }}-outline{{ end }}-primary mb-2 mr-2">{{.label}}</a>
                 {{ end }}
                 {{ end }}
                 {{ end }}
