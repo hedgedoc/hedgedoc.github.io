@@ -9,3 +9,9 @@ nocodimd:
     height: "177"
     width: "178"
     alt: "CodiMD is gone."
+
+screenshot:
+  image:
+    url: "/images/screenshot.webp"
+    alt: "Screenshot of HedgeDoc 1.7.1"
+    class: "screenshot-shadow"
