@@ -16,8 +16,9 @@
     <link rel="preload" href="/fonts/forkawesome/forkawesome-webfont.woff2?v=1.1.7" as="font" crossorigin>
 
     {{ if eq .RelPermalink "/latest-release/" }}
-    {{ $latestRelease := (index (where .Site.Pages.ByExpiryDate "Section" "releases") 0) }}
-    {{ if isset . $latestRelease }}
+    {{ $releases := where .Site.Pages.ByExpiryDate "Section" "releases" }}
+    {{ if gt (len $releases) 0 }}
+    {{ $latestRelease := index $releases 0 }}
     <meta http-equiv="refresh" content="0; URL={{ $latestRelease.Permalink }}">
     {{ end }}
     {{ end }}
