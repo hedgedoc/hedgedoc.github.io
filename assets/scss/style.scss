@@ -6,24 +6,20 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 $font-family-sans-serif: 'Lato';
 $headings-font-family: 'Kumbh Sans';
-$headings-font-weight: 400;
+$headings-font-weight: 700;
 
 $primary: #b51f08;
 $secondary: #fcca8c;
 $body-color: #3b4045;
-
 $dark: #3b4045;
 
-$headings-font-weight: 700;
-
-$btn-border-radius:       30px;
-$btn-border-radius-lg:     $btn-border-radius   ;
-$btn-border-radius-sm:   $btn-border-radius     ;
+$btn-border-radius:     30px;
+$btn-border-radius-lg:  $btn-border-radius;
+$btn-border-radius-sm:  $btn-border-radius;
 $btn-padding-x: 30px;
 $btn-padding-y: 10px;
 
 $navbar-light-color: $body-color;
-
 
 $fa-font-path: '/fonts/forkawesome';
 
