@@ -26,6 +26,6 @@ corefeatures:
       icon: "fa fa-undo"
       content: "Revisions keep track of changes to your notes and even let you revert to any older version."
 
-    - title: "Open source"
-      icon: "fa fa-github"
-      content: "HedgeDoc is open source and community-driven. It is licensed under AGPLv3."
+    - title : "Low system requirements"
+      icon : "fa fa-heartbeat"
+      content : "HedgeDoc doesn't need much resources. It even runs smooth on a raspberry pi!"

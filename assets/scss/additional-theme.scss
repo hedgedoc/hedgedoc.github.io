@@ -27,35 +27,6 @@ a:focus,
   margin-bottom: 40px;
 }
 
-.heading {
-  text-align: center;
-  color: #777777;
-  padding-bottom: 70px;
-
-  h2 {
-    color: #3c3c3c;
-    padding-bottom: 15px;
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
-  }
-
-  p {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 300;
-  }
-}
-
-.subheading {
-  padding-bottom: 15px;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 45px;
-}
-
 .bg-primary {
   .btn-primary {
     border: solid 2px #fdd49a;
@@ -97,13 +68,6 @@ a:focus,
   padding: 10px 20px !important;
 }
 
-.lang-list {
-  border: 0;
-  margin: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 .footer-menu {
   a {
     font-weight: 700;
@@ -136,80 +100,7 @@ footer {
   }
 }
 
-.form-control {
-  border: 1px solid #dadada;
-  border-radius: 35px;
-  height: 50px;
-
-  &:focus {
-    border-color: $primary;
-    box-shadow: none;
-  }
-
-  &::placeholder {
-    font-size: 80%;
-  }
-}
-
-/* content style */
 .content {
-  * {
-    margin-bottom: 20px;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 10px;
-  }
-
-  table {
-    text-align: left;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    border: 1px solid #dee2e6;
-
-    th,
-    td {
-      padding: .75rem;
-      vertical-align: top;
-      border: 1px solid #dee2e6
-    }
-
-    thead {
-      background: darken($color: #dadada, $amount: 2);
-    }
-
-    tbody {
-      background: #dadada;
-
-      td {
-        text-align: left !important;
-      }
-    }
-  }
-
-
-  blockquote {
-    border-left: 1px solid $primary;
-    padding: 20px;
-
-    p {
-      margin-bottom: 0;
-      font-style: italic;
-      font-size: 22px;
-      font-weight: 500;
-    }
-  }
-
   pre {
     padding: 10px 20px;
     background: #dadada;

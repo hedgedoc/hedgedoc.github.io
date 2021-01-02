@@ -8,13 +8,16 @@ $font-family-sans-serif: 'Lato';
 $headings-font-family: 'Kumbh Sans';
 $headings-font-weight: 400;
 $primary: #b51f08;
+$secondary: #fcca8c;
 $body-color: #3b4045;
+
+$headings-font-weight: 700;
 
 $btn-border-radius:       30px;
 $btn-border-radius-lg:     $btn-border-radius   ;
 $btn-border-radius-sm:   $btn-border-radius     ;
-$btn-padding-x-lg: 40px;
-$btn-padding-y-lg: 15px;
+$btn-padding-x: 30px;
+$btn-padding-y: 10px;
 
 $navbar-light-color: $body-color;
 
@@ -73,4 +76,8 @@ $fa-font-path: '/fonts/forkawesome';
     }
 
   }
+}
+
+.screenshot-shadow {
+  box-shadow: fade-out($black, 0.2) 0 0 20px 0;
 }

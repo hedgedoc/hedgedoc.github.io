@@ -1,0 +1,22 @@
+{{ with .Params }}
+<section class="{{ if isset . "background" }}bg-{{.background}}{{ end }}{{ if eq .background "primary" }} text-white{{end}} section">
+    <div class="container">
+        <div class="row">
+            {{ if not .right }}
+            <div class="col-md-6 text-center d-flex align-items-center justify-content-center mb-5 mb-lg-0">
+                <i class="fa fa-{{.icon}} fa-5x"></i>
+            </div>
+            {{ end }}
+            <div class="col-md-6 align-self-center text-center text-md-left">
+                <h2 class="mb-10">{{ $.Params.title | markdownify }}</h2>
+                <p>{{ $.Inner | markdownify }}</p>
+            </div>
+            {{ if .right }}
+            <div class="col-md-6 text-center d-flex align-items-center justify-content-center mb-5 mb-lg-0">
+                <i class="fa fa-{{.icon}} fa-5x"></i>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

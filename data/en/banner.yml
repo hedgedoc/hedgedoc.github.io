@@ -9,11 +9,3 @@ index:
     alt: "HedgeDoc Logo"
     width: 454
     height: 300
-  buttons:
-  - enable : true
-    label : "Getting started"
-    link : "https://docs.hedgedoc.org/tutorial/getting-started"
-  - enable: true
-    label: "Visit the demo"
-    link: "https://demo.hedgedoc.org/"
-    outline: true

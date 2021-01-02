@@ -10,8 +10,8 @@
 		<div class="row">
 			<div class="col-lg-6 text-center mb-5 mb-md-0"></div>
 			<div class="col-lg-6 align-self-center text-center text-md-left">
-				<h1 class="font-weight-bold">{{ $.Params.title | markdownify }}</h1>
-				<h2>{{ $.Params.subtitle | markdownify }}</h2>
+				<h1>{{ $.Params.title | markdownify }}</h1>
+				<h2 class="font-weight-normal">{{ $.Params.subtitle | markdownify }}</h2>
 				<p>{{ $.Inner | markdownify }}</p>
 			</div>
 		</div><!-- .row close -->
