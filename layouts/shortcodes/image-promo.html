@@ -3,21 +3,14 @@
 
 <section class="{{ if isset $.Params "background" }}bg-{{$.Params.background}}{{ end }}{{ if eq $.Params.background "primary" }} text-white{{end}} section">
     <div class="container">
-        <div class="row">
-            {{ if not .right }}
+        <div class="row {{ if .right }}flex-md-row-reverse{{end}}">
             <div class="col-md-6 text-center mb-5 mb-lg-0">
                 <img class="img-fluid" src="{{ .image.url | absURL }}" alt="{{ .image.alt }}" title="{{ .image.alt }}" width="{{ .image.width }}" height="{{ .image.height }}">
             </div>
-            {{ end }}
             <div class="col-md-6 align-self-center text-center text-md-left">
                 <h2 class="mb-10">{{ $.Params.title | markdownify }}</h2>
                 <p>{{ $.Inner | markdownify }}</p>
             </div>
-            {{ if .right }}
-            <div class="col-md-6 text-center mb-5 mb-lg-0">
-                <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .imageAlt }}" title="{{ .imageAlt }}" width="{{ .imageWidth }}" height="{{ .imageHeight }}">
-            </div>
-            {{ end }}
         </div>
     </div>
 </section>
