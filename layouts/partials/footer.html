@@ -1,8 +1,7 @@
-<footer>
-  <div class="container text-center">
+<footer class="text-center py-5">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="block">
           <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">
             {{ if site.Params.logo }}
             <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}} {{with site.Params.logo_height}}height="{{.}}"{{end}}>
@@ -10,15 +9,14 @@
             {{- .Title -}}
             {{ end }}
           </a>
-          <ul class="list-inline footer-menu">
+          <ul class="list-inline font-weight-bold">
             {{ range site.Menus.footer }}
-            <li class="list-inline-item">
+            <li class="list-inline-item p-2">
               <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
             </li>
             {{ end }}
           </ul>
-          <p class="copyright-text">{{ site.Params.copyright | markdownify }}</p>
-        </div>
+          <p class="copyright-text small">{{ site.Params.copyright | markdownify }}</p>
       </div>
     </div>
   </div>
