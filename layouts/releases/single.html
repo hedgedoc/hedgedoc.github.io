@@ -87,20 +87,18 @@
                 </div>
             </li>
 
+            {{ if isset .Params "docker-tag" }}
             <li class="list-group-item p-3">
                 <div class="col">
                     <div class="row">
                         <h3 class="mb-3">Docker</h3>
                     </div>
-                    <div class="row">
-                        <p>
-                            Check out our docker repository on&nbsp;<a
-                                href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank"
-                                rel="noopener noreferer">quay.io</a>
-                        </p>
+                    <div class="row docker-command">
+                        <pre><code>docker pull quay.io/hedgedoc/hedgedoc:{{ index .Params "docker-tag" }}</code></pre>
                     </div>
                 </div>
             </li>
+            {{ end }}
         </ul>
     </div>
 </section>
