@@ -6,6 +6,7 @@
 
 baseurl = "https://hedgedoc.org/"
 title = "HedgeDoc - Collaborative markdown editor"
+enableEmoji = true
 
 # post excert
 summarylength = "20"
