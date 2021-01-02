@@ -15,3 +15,5 @@ screenshot:
     url: "/images/screenshot.webp"
     alt: "Screenshot of HedgeDoc 1.7.1"
     class: "screenshot-shadow"
+    height: "307"
+    width: "540"
