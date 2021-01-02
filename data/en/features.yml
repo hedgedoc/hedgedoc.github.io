@@ -4,7 +4,7 @@
 
 ############################# Feature ############################
 corefeatures:
-  title: "Our Core Features"
+  title: "Our core features"
   columns:
     - title: "Real-time collaboration"
       icon: "fa fa-users"
