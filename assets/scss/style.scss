@@ -40,3 +40,37 @@ $fa-font-path: '/fonts/forkawesome';
     background-position: center 101%;
   }
 }
+
+.features-section {
+  display: grid;
+  grid-auto-flow: column;
+
+  @media screen and (min-width: 786px) {
+    grid-template-columns: 50% 50%;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  h2,h3,p {
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-column: 1;
+
+    @media screen and (min-width: 786px)  {
+      &:nth-child(6n+1),
+      &:nth-child(6n+2),
+      &:nth-child(6n+3) {
+        grid-column: 1;
+      }
+
+      &:nth-child(6n+4),
+      &:nth-child(6n+5),
+      &:nth-child(6n+6) {
+        grid-column: 2;
+      }
+    }
+
+  }
+}

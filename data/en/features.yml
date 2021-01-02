@@ -4,39 +4,28 @@
 
 ############################# Feature ############################
 corefeatures:
-  title : "Our Core Features"
+  title: "Our Core Features"
+  columns:
+    - title: "Real-time collaboration"
+      icon: "fa fa-users"
+      content: "Collaborate in real-time with friends, family and colleagues."
 
-  # feature at the left of the image
-  left_side:
-    # feature item loop
-  - title : "Real-time collaboration"
-    icon : "fa fa-users"
-    content : "Collaborate in real-time with friends, family and colleagues."
+    - title: "Presentation mode"
+      icon: "fa fa-slideshare"
+      content: "Use HedgeDoc to build and present slides in markdown. Powered by reveal.js!"
 
-    # feature item loop
-  - title : "Presentation mode"
-    icon : "fa fa-slideshare"
-    content : "Use HedgeDoc to build and present slides in markdown. Powered by reveal.js!"
+    - title: "Graphs & diagrams"
+      icon: "fa fa-bar-chart"
+      content: "HedgeDoc supports many types of graphs, diagrams and embeddings."
 
-    # feature item loop
-  - title : "Graphs & diagrams"
-    icon : "fa fa-bar-chart"
-    content : "HedgeDoc supports many types of graphs, diagrams and embeddings."
+    - title: "Easy to use permission system"
+      icon: "fa fa-lock"
+      content: "Manage permissions of your notes with a simple dropdown selection."
 
+    - title: "Revisions"
+      icon: "fa fa-undo"
+      content: "Revisions keep track of changes to your notes and even let you revert to any older version."
 
-  # feature at the right of the image
-  right_side:
-    # feature item loop
-  - title : "Easy to use permission system"
-    icon : "fa fa-lock"
-    content : "Manage permissions of your notes with a simple dropdown selection."
-
-    # feature item loop
-  - title : "Revisions"
-    icon : "fa fa-undo"
-    content : "Revisions keep track of changes to your notes and even let you revert to any older version."
-
-    # feature item loop
-  - title : "Open source"
-    icon : "fa fa-github"
-    content : "HedgeDoc is open source and community-driven. It is licensed under AGPLv3."
+    - title: "Open source"
+      icon: "fa fa-github"
+      content: "HedgeDoc is open source and community-driven. It is licensed under AGPLv3."
