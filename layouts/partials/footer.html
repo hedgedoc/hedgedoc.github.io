@@ -2,13 +2,6 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-          <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">
-            {{ if site.Params.logo }}
-            <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}} {{with site.Params.logo_height}}height="{{.}}"{{end}}>
-            {{ else }}
-            {{- .Title -}}
-            {{ end }}
-          </a>
           <ul class="list-inline font-weight-bold">
             {{ range site.Menus.footer }}
             <li class="list-inline-item p-2">
