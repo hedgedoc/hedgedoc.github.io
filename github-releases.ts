@@ -27,6 +27,10 @@ interface GitHubReleaseEntry {
 
 export const githubReleases = async () => {
   fetch('https://api.github.com/repos/hedgedoc/hedgedoc/releases')
+    .catch(err => {
+      console.log("Can't connect to GitHub API ", err);
+      process.exit();
+    })
     .then(res => res.json())
     .then((json: GitHubReleaseEntry[]) => {
       json = json.filter((entry: GitHubReleaseEntry) => !entry.prerelease && !entry.draft)
