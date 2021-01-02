@@ -3,7 +3,7 @@
 
 <section class="{{ if isset $.Params "background" }}bg-{{$.Params.background}}{{ end }}{{ if eq $.Params.background "primary" }} text-white{{end}} section">
     <div class="container">
-        <div class="row {{ if .right }}flex-md-row-reverse{{end}}">
+        <div class="row {{ if $.Params.right }}flex-md-row-reverse{{end}}">
             <div class="col-md-6 text-center mb-5 mb-lg-0">
                 <img class="img-fluid" src="{{ .image.url | absURL }}" alt="{{ .image.alt }}" title="{{ .image.alt }}" width="{{ .image.width }}" height="{{ .image.height }}">
             </div>
