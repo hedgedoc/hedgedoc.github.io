@@ -28,4 +28,4 @@ corefeatures:
 
     - title : "Low system requirements"
       icon : "fa fa-heartbeat"
-      content : "HedgeDoc doesn't need much resources. It even runs smooth on a raspberry pi!"
+      content : "HedgeDoc doesn't need much resources. It even runs smooth on a Raspberry Pi!"
