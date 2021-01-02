@@ -17,23 +17,23 @@
             {{ $newerReleases := where $releases "Date" "gt" .Date }}
             {{ with (index $newerReleases 0) }}
             <li class="list-group-item bg-orange text-white py-2 px-3">
-                <i class="fa fa-times"></i> This is NOT the latest release! Please take a look at the
+                <i class="fa fa-fw fa-times"></i> This is NOT the latest release! Please take a look at the
                 <a class="text-white font-italic" href="..">release list</a>
             </li>
             {{ else }}
             <li class="list-group-item py-2 px-3">
-                <i class="fa fa-check"></i> This is the latest release!
+                <i class="fa fa-fw fa-check"></i> This is the latest release!
             </li>
             {{end}}
             <li class="list-group-item py-2 px-3">
-                <i class="fa fa-check"></i> This is a stable release
+                <i class="fa fa-fw fa-check"></i> This is a stable release
             </li>
             <li class="list-group-item py-2 px-3">
                 <a href="{{.Params.githubLink}}" title="View on GitHub" rel="noreferrer noopener" target="_blank"><i
-                        class="fa fa-github"></i>&nbsp;View on GitHub</a>
+                        class="fa fa-fw fa-github"></i>&nbsp;View on GitHub</a>
             </li>
             <li class="list-group-item py-2 px-3">
-                <details>
+                <details class="ml-1">
                     <summary>Click here to read the release notes</summary>
                     {{.Content}}
                 </details>
