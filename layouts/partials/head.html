@@ -17,7 +17,9 @@
 
     {{ if eq .RelPermalink "/latest-release/" }}
     {{ $latestRelease := (index (where .Site.Pages.ByExpiryDate "Section" "releases") 0) }}
+    {{ if isset . $latestRelease }}
     <meta http-equiv="refresh" content="0; URL={{ $latestRelease.Permalink }}">
+    {{ end }}
     {{ end }}
 
     <!-- stylesheets -->
