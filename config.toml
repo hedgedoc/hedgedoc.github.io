@@ -103,7 +103,7 @@ contentDir = "content/english"
 weight = 1
 
 # copyright
-copyright = "By the HedgeDoc developers. Made with ❤️ and Hugo."
+copyright = "By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and Hugo."
 
 [markup.goldmark.renderer]
 unsafe= true
