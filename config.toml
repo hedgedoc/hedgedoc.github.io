@@ -6,6 +6,7 @@
 
 baseurl = "https://hedgedoc.org/"
 title = "HedgeDoc - Collaborative markdown editor"
+enableEmoji = true
 
 # post excert
 summarylength = "20"
@@ -30,6 +31,11 @@ weight = 1
 name = "Docs"
 URL = "https://docs.hedgedoc.org"
 weight = 2
+
+[[menu.main]]
+name = "Download"
+URL = "/latest-release/"
+weight = 3
 
 [[menu.main]]
 name = "Source Code"

@@ -5,6 +5,7 @@
 */
 
 import gulp from 'gulp'
+import {githubReleases} from "./github-releases";
 
 gulp.task("copy:font:lato", async () => {
   gulp.src([
@@ -26,4 +27,8 @@ gulp.task("copy:font:fork-awesome", async () => {
   gulp.src('./node_modules/fork-awesome/fonts/*').pipe(gulp.dest('./static/fonts/forkawesome'))
 });
 
-gulp.task("default", gulp.parallel("copy:font:lato", "copy:font:kumbh-sans", "copy:font:fork-awesome"))
+gulp.task("github-releases", async () => {
+  await githubReleases();
+});
+
+gulp.task("default", gulp.parallel("copy:font:lato", "copy:font:kumbh-sans", "copy:font:fork-awesome", "github-releases"))

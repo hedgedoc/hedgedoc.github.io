@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <main class="col">
+                <header>
+                    <h1>Releases</h1>
+                </header>
+                {{ range .Pages }}
+                <article class="mt-4">
+                    <span><a href="{{.Permalink}}"><h2>{{.Title}}</h2></a></span>
+                    <div class="mt-4">
+                        <details>
+                            <summary>Click here to read the release notes</summary>
+                            {{.Content}}
+                        </details>
+                    </div>
+                </article>
+                {{ end }}
+            </main>
+        </div>
+    </div>
+</section>
+{{ end }}

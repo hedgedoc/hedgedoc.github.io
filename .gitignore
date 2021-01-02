@@ -9,3 +9,4 @@ public/
 static/fonts
 node_modules
 yarn-error.log
+content/english/releases/*.md

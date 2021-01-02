@@ -1,0 +1,108 @@
+{{ define "main" }}
+<section class="section bg-primary text-white py-5">
+    <div class="container">
+        <h1>
+            Thank you for downloading {{.Title}}
+        </h1>
+    </div>
+</section>
+
+<section class="section pb-0 pt-4">
+    <div class="container">
+        <a href="..">Back to the release list</a>
+
+        <h2 class="my-3">Release information</h2>
+        <ul class="list-group">
+            {{ $releases := where .Site.Pages "Section" "releases" }}
+            {{ $newerReleases := where $releases "Date" "gt" .Date }}
+            {{ with (index $newerReleases 0) }}
+            <li class="list-group-item bg-primary text-white py-2 px-3">
+                <i class="fa fa-fw fa-times"></i> This is NOT the latest release! Please take a look at the
+                <a class="text-white font-italic" href="..">release list</a>
+            </li>
+            {{ else }}
+            <li class="list-group-item py-2 px-3">
+                <i class="fa fa-fw fa-check"></i> This is the latest release!
+            </li>
+            {{end}}
+            <li class="list-group-item py-2 px-3">
+                <i class="fa fa-fw fa-check"></i> This is a stable release
+            </li>
+            <li class="list-group-item py-2 px-3">
+                <a href="{{.Params.githubLink}}" title="View on GitHub" rel="noreferrer noopener" target="_blank"><i
+                        class="fa fa-fw fa-github"></i>&nbsp;View on GitHub</a>
+            </li>
+            <li class="list-group-item py-2 px-3">
+                <details class="ml-1">
+                    <summary>Click here to read the release notes</summary>
+                    {{.Content}}
+                </details>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section pb-0 pt-5">
+    <div class="container">
+        <h2 class="mb-3">Documentation</h2>
+        <p>
+            Do you need help with installation or upgrade? <a href="http://docs.hedgedoc.org/"
+                                                              title="HedgeDoc Documentation" target="_blank"
+                                                              rel="noopener noreferrer">Read our docs!</a>
+        </p>
+    </div>
+</section>
+
+<section class="section pt-5">
+    <div class="container">
+        <h2 class="mb-3">Download</h2>
+        <ul class="list-group">
+
+            {{ if gt (len .Page.Params.assets) 0 }}
+            <li class="list-group-item p-3">
+                <div class="col">
+                    <div class="row">
+                        <h3 class="mb-3">Precompiled and ready to use</h3>
+                    </div>
+                    <div class="row">
+                        {{ range .Page.Params.assets }}
+                        <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i
+                                class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
+                            ({{ printf "%.2f" (div .size 1000000.0) }}MB)
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+            </li>
+            {{ end }}
+            <li class="list-group-item p-3">
+                <div class="col">
+                    <div class="row">
+                        <h3 class="mb-3">Just the source code</h3>
+                    </div>
+                    <div class="row">
+                        <a href="{{.Page.Params.tarball}}" target="_blank" rel="noopener noreferer"
+                           class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item p-3">
+                <div class="col">
+                    <div class="row">
+                        <h3 class="mb-3">Docker</h3>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Check out our docker repository on&nbsp;<a
+                                href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank"
+                                rel="noopener noreferer">quay.io</a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+{{ end }}
