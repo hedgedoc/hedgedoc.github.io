@@ -4,7 +4,6 @@
 
 ############################# promo ############################
 nocodimd:
-  backgroundPrimary: true
   image:
     url: "images/no_codimd.svg"
     height: "177"
