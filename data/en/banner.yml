@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
+############################# banner ############################
+index:
+  image:
+    url: "images/banner/hedgedoc_banner_color_vertical.svg"
+    alt: "HedgeDoc Logo"
+    width: 454
+    height: 300

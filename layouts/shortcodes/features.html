@@ -1,0 +1,21 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{- with index $data.features (.Get "id") }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mb-5">{{ .title | markdownify }}</h1>
+      </div>
+
+      <div class="features-section">
+        {{ range .columns }}
+          <h2><i class="d-inline-block mb-10 {{ .icon }}"></i></h2>
+          <h3 class="mb-2">{{ .title | markdownify }}</h3>
+          <p>{{ .content | markdownify }}</p>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>
+{{- end }}

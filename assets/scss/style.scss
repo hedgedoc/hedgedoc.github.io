@@ -1,0 +1,83 @@
+/**
+SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+**/
+
+$font-family-sans-serif: 'Lato';
+$headings-font-family: 'Kumbh Sans';
+$headings-font-weight: 400;
+$primary: #b51f08;
+$secondary: #fcca8c;
+$body-color: #3b4045;
+
+$headings-font-weight: 700;
+
+$btn-border-radius:       30px;
+$btn-border-radius-lg:     $btn-border-radius   ;
+$btn-border-radius-sm:   $btn-border-radius     ;
+$btn-padding-x: 30px;
+$btn-padding-y: 10px;
+
+$navbar-light-color: $body-color;
+
+
+$fa-font-path: '/fonts/forkawesome';
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/fork-awesome/scss/fork-awesome';
+@import 'fonts/lato';
+@import 'fonts/kumbh-sans';
+@import "additional-theme";
+@import "history";
+
+.mw-150px {
+  max-width: 150px;
+}
+
+@media(min-width:990px){
+  .bg-face {
+    background-image: url(/images/banner/face.svg);
+    background-repeat: no-repeat;
+    background-size: auto 75%;
+    background-position: center 101%;
+  }
+}
+
+.features-section {
+  display: grid;
+  grid-auto-flow: column;
+
+  @media screen and (min-width: 786px) {
+    grid-template-columns: 50% 50%;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  h2,h3,p {
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-column: 1;
+
+    @media screen and (min-width: 786px)  {
+      &:nth-child(6n+1),
+      &:nth-child(6n+2),
+      &:nth-child(6n+3) {
+        grid-column: 1;
+      }
+
+      &:nth-child(6n+4),
+      &:nth-child(6n+5),
+      &:nth-child(6n+6) {
+        grid-column: 2;
+      }
+    }
+
+  }
+}
+
+.screenshot-shadow {
+  box-shadow: fade-out($black, 0.2) 0 0 20px 0;
+}

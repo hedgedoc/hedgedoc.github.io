@@ -6,7 +6,6 @@
 
 baseurl = "https://hedgedoc.org/"
 title = "HedgeDoc - Collaborative markdown editor"
-theme = "vex-hugo"
 
 # post excert
 summarylength = "20"
@@ -89,14 +88,6 @@ logo_height = "25px"
 description = "The best platform to write and share markdown."
 author = "The HedgeDoc developers"
 
-# contact form action
-contact_form_action = "#"
-
-# Preloader
-[params.preloader]
-enable = false
-preloader = ""
-
 ################################### English language #####################################
 
 [Languages.en]
@@ -106,7 +97,7 @@ contentDir = "content/english"
 weight = 1
 
 # copyright
-copyright = "The HedgeDoc developers. Theme based on [vex-hugo](https://github.com/themefisher/vex-hugo)."
+copyright = "The HedgeDoc developers. Made with ❤️ and Hugo."
 
 [markup.goldmark.renderer]
 unsafe= true
