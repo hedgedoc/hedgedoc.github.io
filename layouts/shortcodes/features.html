@@ -1,6 +1,6 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{- with index $data.features (.Get "id") }}
-<section class="section">
+<section class="section {{ if isset $.Params "background" }}bg-{{$.Params.background}}{{ end }}">
   <div class="container">
     <div class="row">
       <div class="col-12">
