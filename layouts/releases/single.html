@@ -102,7 +102,7 @@
                     {{ end }}
 
                     {{ if ne .Page.Params.docker nil }}
-                    <h4>Docker-based image</h4>
+                    <h4>Debian-based image</h4>
                     <p>
                         You can pull our docker image directly with the command below. It is based on Debian Linux ({{ printf "%.2f" (div .Page.Params.docker.size 1000000.0) }} MB).
                     </p>
