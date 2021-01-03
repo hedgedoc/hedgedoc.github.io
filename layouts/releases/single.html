@@ -68,7 +68,7 @@
                         {{ range .Page.Params.assets }}
                         <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i
                                 class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
-                            ({{ printf "%.2f" (div .size 1000000.0) }}MB)
+                            ({{ printf "%.2f" (div .size 1000000.0) }} MB)
                         </a>
                         {{ end }}
                     </div>
@@ -86,19 +86,42 @@
                     </div>
                 </div>
             </li>
-
-            {{ if isset .Params "docker-tag" }}
             <li class="list-group-item p-3">
                 <div class="col">
                     <div class="row">
                         <h3 class="mb-3">Docker</h3>
                     </div>
+                    <p>
+                        Our docker images are located on quay.io at <a href="https://quay.io/repository/hedgedoc/hedgedoc">hedgedoc/hedgedoc</a>.
+                    </p>
+                    {{ if eq .Page.Params.docker nil }}
+                    <p>
+                        This version was released before the rebranding to HedgeDoc. Docker images can be found in the old repository:
+                        <a href="https://quay.io/repository/codimd/server?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io/codimd/server</a>
+                    </p>
+                    {{ end }}
+
+                    {{ if ne .Page.Params.docker nil }}
+                    <h4>Docker-based image</h4>
+                    <p>
+                        You can pull our docker image directly with the command below. It is based on Debian Linux ({{ printf "%.2f" (div .Page.Params.docker.size 1000000.0) }} MB).
+                    </p>
                     <div class="row docker-command">
-                        <pre><code>docker pull quay.io/hedgedoc/hedgedoc:{{ index .Params "docker-tag" }}</code></pre>
+                        <pre><code>docker pull quay.io/hedgedoc/hedgedoc:{{ .Page.Params.docker.tag }}</code></pre>
                     </div>
+                    {{ if eq .Page.Params.docker.alpine true }}
+                    <br>
+                    <h4>Alpine-based image</h4>
+                    <p>
+                        The alpine-based image is much smaller than the debian-based image, but does not contain <i>glibc</i> resulting in some debugging software not working properly in the container.
+                    </p>
+                    <div class="row docker-command">
+                        <pre><code>docker pull quay.io/hedgedoc/hedgedoc:{{ .Page.Params.docker.tag }}-alpine</code></pre>
+                    </div>
+                    {{ end }}
+                    {{ end }}
                 </div>
             </li>
-            {{ end }}
         </ul>
     </div>
 </section>
