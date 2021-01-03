@@ -1,4 +1,10 @@
 {{ define "main" }}
+<section class="section p-0">
+    <div class="container">
+    <a href="..">Back to the release list</a>
+    </div>
+</section>
+
 <section class="section bg-primary text-white py-5">
     <div class="container">
         <h1>
@@ -9,9 +15,7 @@
 
 <section class="section pb-0 pt-4">
     <div class="container">
-        <a href="..">Back to the release list</a>
-
-        <h2 class="my-3">Release information</h2>
+        <h2 class="my-3">Details</h2>
         <ul class="list-group">
             {{ $releases := where .Site.Pages "Section" "releases" }}
             {{ $newerReleases := where $releases "Date" "gt" .Date }}
