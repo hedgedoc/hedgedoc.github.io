@@ -7,9 +7,9 @@
         <h1 class="text-center mb-5">{{ .title | markdownify }}</h1>
       </div>
 
-      <div class="features-section">
+      <div class="features-section text-center text-md-left">
         {{ range .columns }}
-          <h2><i class="d-inline-block mb-10 {{ .icon }}"></i></h2>
+          <h2 class="mb-10"><i class="{{ .icon }}"></i></h2>
           <h3 class="mb-2">{{ .title | markdownify }}</h3>
           <p>{{ .content | markdownify }}</p>
         {{ end }}
