@@ -6,21 +6,20 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 $font-family-sans-serif: 'Lato';
 $headings-font-family: 'Kumbh Sans';
-$headings-font-weight: 400;
+$headings-font-weight: 700;
+
 $primary: #b51f08;
 $secondary: #fcca8c;
 $body-color: #3b4045;
+$dark: #3b4045;
 
-$headings-font-weight: 700;
-
-$btn-border-radius:       30px;
-$btn-border-radius-lg:     $btn-border-radius   ;
-$btn-border-radius-sm:   $btn-border-radius     ;
+$btn-border-radius:     30px;
+$btn-border-radius-lg:  $btn-border-radius;
+$btn-border-radius-sm:  $btn-border-radius;
 $btn-padding-x: 30px;
 $btn-padding-y: 10px;
 
 $navbar-light-color: $body-color;
-
 
 $fa-font-path: '/fonts/forkawesome';
 
@@ -35,7 +34,7 @@ $fa-font-path: '/fonts/forkawesome';
   max-width: 150px;
 }
 
-@media(min-width:990px){
+@media(min-width:993px){
   .bg-face {
     background-image: url(/images/banner/face.svg);
     background-repeat: no-repeat;
@@ -80,4 +79,15 @@ $fa-font-path: '/fonts/forkawesome';
 
 .screenshot-shadow {
   box-shadow: fade-out($black, 0.2) 0 0 20px 0;
+}
+
+.navbar-collapse {
+  @media screen and (max-width: 992px) {
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    background: white;
+    left: 0;
+    border-bottom: solid 2px black;
+  }
 }
