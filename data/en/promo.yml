@@ -17,10 +17,3 @@ screenshot:
     class: "screenshot-shadow"
     height: "307"
     width: "540"
-
-osi:
-  image:
-    url: "/images/osi.svg"
-    width: "100"
-    height: "96"
-    alt: "Open Source Initiative Logo"
