@@ -18,7 +18,7 @@
         <ul class="navbar-nav ml-auto">
           {{ range site.Menus.main }}
           <li class="nav-item">
-            <a class="nav-link" href="{{ partial "nav-link" . }}">{{ .Name }}</a>
+            <a class="nav-link font-weight-bold mx-2" href="{{ partial "nav-link" . }}">{{ .Name }}</a>
           </li>
           {{ end }}
         </ul>

@@ -4,10 +4,6 @@ SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
 SPDX-License-Identifier: CC-BY-SA-4.0
 **/
 
-.mt-100 {
-  margin-top: 100px;
-}
-
 a:focus,
 .btn:focus,
 .btn:active:focus {
@@ -25,6 +21,10 @@ a:focus,
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.bg-dark {
+  color: $light;
 }
 
 .bg-primary {
@@ -48,54 +48,6 @@ a:focus,
       color: $white;
       background-color: $primary;
       border-color: #fdd49a;
-    }
-  }
-}
-
-/* navigation */
-.navbar {
-  &-brand {
-    color: #444;
-    font-size: 25px;
-    margin: 0;
-    line-height: 1;
-  }
-}
-
-.nav-link {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px !important;
-}
-
-.footer-menu {
-  a {
-    font-weight: 700;
-    color: #444;
-    padding: 10px;
-  }
-}
-
-footer {
-  text-align: center;
-  background: #f4f4f4;
-  padding: 50px 0px;
-
-  .footer-logo {
-    color: #555;
-    display: block;
-  }
-
-  p.copyright-text {
-    font-size: 12px;
-    margin-top: 15px;
-
-    a {
-      color: #282828;
-
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 }
