@@ -5,14 +5,14 @@
 ############################# promo ############################
 nocodimd:
   image:
-    url: "images/no_codimd.svg"
+    src: "images/no_codimd.svg"
     height: "177"
     width: "178"
     alt: "CodiMD is gone."
 
 screenshot:
   image:
-    url: "/images/screenshot.webp"
+    src: "/images/screenshot.png"
     alt: "Screenshot of HedgeDoc 1.7.1"
     class: "screenshot-shadow"
     height: "307"

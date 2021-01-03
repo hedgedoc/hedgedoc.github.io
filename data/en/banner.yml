@@ -5,7 +5,7 @@
 ############################# banner ############################
 index:
   image:
-    url: "images/banner/hedgedoc_banner_color_vertical.svg"
+    src: "images/banner/hedgedoc_banner_color_vertical.svg"
     alt: "HedgeDoc Logo"
     width: 454
     height: 300
