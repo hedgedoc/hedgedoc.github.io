@@ -96,8 +96,12 @@
                     </p>
                     {{ if eq .Page.Params.docker nil }}
                     <p>
+                        {{ if eq .Page.Params.legacyRelease true }}
                         This version was released before the rebranding to HedgeDoc. Docker images can be found in the old repository:
                         <a href="https://quay.io/repository/codimd/server?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io/codimd/server</a>
+                        {{ else }}
+                        This version hasn't been released as docker image yet. Come back soon or check out our docker repository at <a href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io hedgedoc/hedgedoc</a>
+                        {{ end }}
                     </p>
                     {{ end }}
 

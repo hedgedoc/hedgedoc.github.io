@@ -65,6 +65,7 @@ export const githubReleases = async () => {
               Title: entry.name,
               date: entry.created_at,
               tarball: entry.tarball_url,
+              legacyRelease: entry.name.includes('CodiMD'),
               docker: dockerTag
                 ? {
                   tag: dockerTag.name,
