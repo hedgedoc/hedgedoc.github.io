@@ -52,9 +52,12 @@ a:focus,
   }
 }
 
-.content {
+.docker-command {
   pre {
     padding: 10px 20px;
-    background: #dadada;
+    background: #f7f7f9;
+  }
+  code:before {
+    content: "> "
   }
 }
