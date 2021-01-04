@@ -109,7 +109,7 @@
                     <div class="row docker-command">
                         <pre><code>docker pull quay.io/hedgedoc/hedgedoc:{{ .Page.Params.docker.tag }}</code></pre>
                     </div>
-                    {{ if eq .Page.Params.docker.alpine true }}
+                    {{ if eq .Page.Params.docker.alpineImageAvailable true }}
                     <br>
                     <h4>Alpine-based image</h4>
                     <p>

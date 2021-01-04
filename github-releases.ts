@@ -69,7 +69,7 @@ export const githubReleases = async () => {
                 ? {
                   tag: dockerTag.name,
                   size: dockerTag.size,
-                  alpine: dockerTags.has(`${entry.tag_name}-alpine`)
+                  alpineImageAvailable: dockerTags.has(`${entry.tag_name}-alpine`)
                 }
                 : undefined
               ,
