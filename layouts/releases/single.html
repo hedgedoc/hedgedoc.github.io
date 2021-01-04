@@ -91,21 +91,21 @@
                     <div class="row">
                         <h3 class="mb-3">Docker</h3>
                     </div>
-                    <p>
-                        Our docker images are located on quay.io at <a href="https://quay.io/repository/hedgedoc/hedgedoc">hedgedoc/hedgedoc</a>.
-                    </p>
                     {{ if eq .Page.Params.docker nil }}
                     <p>
                         {{ if eq .Page.Params.legacyRelease true }}
                         This version was released before the rebranding to HedgeDoc. Docker images can be found in the old repository:
                         <a href="https://quay.io/repository/codimd/server?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io/codimd/server</a>
                         {{ else }}
-                        This version hasn't been released as docker image yet. Come back soon or check out our docker repository at <a href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io hedgedoc/hedgedoc</a>
+                        This version hasn't been released as docker image yet. Come back later or check out our docker repository at <a href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io hedgedoc/hedgedoc</a>
                         {{ end }}
                     </p>
                     {{ end }}
 
                     {{ if ne .Page.Params.docker nil }}
+                    <p>
+                        Our docker images are located on quay.io at <a href="https://quay.io/repository/hedgedoc/hedgedoc">hedgedoc/hedgedoc</a>.
+                    </p>
                     <h4>Debian-based image</h4>
                     <p>
                         You can pull our docker image directly with the command below. It is based on Debian Linux ({{ printf "%.2f" (div .Page.Params.docker.size 1000000.0) }} MB).
