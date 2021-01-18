@@ -17,3 +17,10 @@ screenshot:
     class: "screenshot-shadow"
     height: "307"
     width: "540"
+
+social:
+  image:
+    src: "/images/social.svg"
+    alt: "Twitter and Mastodon logo"
+    height: "250"
+    width: "250"
