@@ -79,9 +79,14 @@ URL = "https://social.hedgedoc.org"
 weight = 4
 
 [[menu.footer]]
+name = "Twitter"
+URL = "https://social.hedgedoc.org/twitter"
+weight = 5
+
+[[menu.footer]]
 name = "Privacy Policy"
 URL = "/privacy-policy/"
-weight = 5
+weight = 6
 
 ########################### Default parameters ##########################
 
