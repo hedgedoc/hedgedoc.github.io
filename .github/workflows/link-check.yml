@@ -1,0 +1,19 @@
+name: Check links
+
+on: 
+  push:
+  schedule:
+    - cron: "0 3 * * *"
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    name: Check for broken links
+    steps:
+    - name: Check for broken links
+      id: link-report
+      uses: celinekurpershoek/link-checker@v1.0.1
+      with:
+        url: 'https://hedgedoc.org/'
+    - name: Get link check results
+      run: echo "${{steps.link-report.outputs.result}}"
