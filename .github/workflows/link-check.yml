@@ -47,4 +47,5 @@ jobs:
         run: hugo server -e production --minify -b http://localhost:1313/ & sleep 5
  
       - name: Check for broken links
-        run: node_modules/.bin/blc http://localhost:1313/ -ro
+        # GitHub is excluded because we otherwise run into rate-limits and get many HTTP_429 link errors.
+        run: node_modules/.bin/blc http://localhost:1313/ -ro --exclude "https://github.com/*"
