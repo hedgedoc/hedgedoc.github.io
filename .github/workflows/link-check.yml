@@ -48,4 +48,5 @@ jobs:
  
       - name: Check for broken links
         # GitHub is excluded because we otherwise run into rate-limits and get many HTTP_429 link errors.
-        run: node_modules/.bin/blc http://localhost:1313/ -ro --exclude "https://github.com/*"
+        # Twitter (via our redirector) is excluded because they seem to block such checks, resulting in HTTP_400 errors.
+        run: node_modules/.bin/blc http://localhost:1313/ -ro --exclude "https://github.com/*" --exclude "https://social.hedgedoc.org/twitter"
