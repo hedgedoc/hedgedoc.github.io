@@ -6,7 +6,7 @@
   "license": "CC-BY-SA-4.0",
   "dependencies": {
     "@fontsource/kumbh-sans": "4.2.1",
-    "@fontsource/lato": "4.2.1",
+    "@fontsource/lato": "4.2.2",
     "@types/gulp": "4.0.8",
     "bootstrap": "4.6.0",
     "fork-awesome": "1.1.7",
