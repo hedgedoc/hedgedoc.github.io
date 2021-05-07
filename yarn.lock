@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-4.3.0.tgz#5c765d80620d5cb1f6cf06e919fc1e94e27f378b"
   integrity sha512-qJVsgQ9zG1fN755jv0nDdoiSorXMqfgIMS003eQtHQiyxT/AP/vdgEvUBLKUllQaa6LwUvlo8eXyfAicgqkmSQ==
 
-"@fontsource/lato@4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-4.2.2.tgz#e0e592180bf7f2276190b4448aea2feaac888d1f"
-  integrity sha512-ZE5WvqZQZinXpH8MaEiM9klDsUOfCHVQJ/tZKpNVQhi8mHt9WqPCROu500oI5jC3s6jaJuWsM7LfJ1zyEeW+XA==
+"@fontsource/lato@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-4.3.0.tgz#78710130f8bfccae41b637cf62d3c68bd1193cc1"
+  integrity sha512-/qm5j4mEjaOSOl7OI8Q2tzt/QDzDMYNDhSvJPiFqY/ClxYGtqt1nBW5DRHiZOirI/IWl0tX3adoILOBMz/cRWA==
 
 "@lhci/cli@0.7.2":
   version "0.7.2"
