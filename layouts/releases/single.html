@@ -74,12 +74,12 @@
                         <h3 class="mb-3">Bundled and ready to use</h3>
                     </div>
                     <div class="row">
-                        {{ range .Page.Params.assets }}
-                        <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i
-                                class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;
-                            ({{ printf "%.2f" (div .size 1000000.0) }} MB)
-                        </a>
-                        {{ end }}
+                        <div class="col">
+                            {{ range .Page.Params.assets }}
+                            <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;({{ printf "%.2f" (div .size 1000000.0) }} MB)
+                            </a>
+                            {{ end }}
+                        </div>
                     </div>
                 </div>
             </li>
@@ -87,11 +87,14 @@
             <li class="list-group-item p-3">
                 <div class="col">
                     <div class="row">
-                        <h3 class="mb-3">Just the source code</h3>
+                        <div class="col">
+                            <h3 class="mb-3">Just the source code</h3>
+                        </div>
                     </div>
                     <div class="row">
-                        <a href="{{.Page.Params.tarball}}" target="_blank" rel="noopener noreferer"
-                           class="btn btn-primary"><i class="fa fa-download"></i>&nbsp;Source code</a>
+                        <div class="col">
+                            <a href="{{.Page.Params.tarball}}" target="_blank" rel="noopener noreferer" class="btn btn-primary d-inline-block"><i class="fa fa-download"></i>&nbsp;Source code</a>
+			</div>
                     </div>
                 </div>
             </li>
