@@ -7,7 +7,7 @@
             <div class="col-md-6 text-center mb-5 mb-lg-0 align-self-center">
                 <img class="img-fluid {{ .image.class }}" src="{{ .image.src | absURL }}" alt="{{ .image.alt }}" title="{{ .image.alt }}" width="{{ .image.width }}" height="{{ .image.height }}">
             </div>
-            <div class="col-md-6 align-self-center text-center text-md-left">
+            <div class="col-md-6 align-self-center text-center text-md-start">
                 <h2 class="mb-10">{{ $.Params.title | markdownify }}</h2>
                 <p>{{ $.Inner | markdownify }}</p>
             </div>
