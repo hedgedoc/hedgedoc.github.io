@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@fontsource/kumbh-sans@4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-4.3.0.tgz#5c765d80620d5cb1f6cf06e919fc1e94e27f378b"
-  integrity sha512-qJVsgQ9zG1fN755jv0nDdoiSorXMqfgIMS003eQtHQiyxT/AP/vdgEvUBLKUllQaa6LwUvlo8eXyfAicgqkmSQ==
+"@fontsource/kumbh-sans@4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-4.4.2.tgz#82e4c8d7713aec714fbc3733baa4a658d6e9c8aa"
+  integrity sha512-AO0Ci4ekm7hclJotLOs1/OGj5xbh7GQRwq8AxatCb1EaTkCMTpwXwFbmaX03xh1uv6JeOjbLhMksZCH42WYPqQ==
 
 "@fontsource/lato@4.3.0":
   version "4.3.0"
