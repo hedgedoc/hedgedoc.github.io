@@ -3,5 +3,12 @@
     "config:base",
     ":gitSignOff",
     ":maintainLockFilesWeekly"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": [
+        "pin"
+      ]
+    }
   ]
 }
