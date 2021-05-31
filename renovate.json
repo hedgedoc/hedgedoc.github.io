@@ -4,12 +4,8 @@
     ":gitSignOff",
     ":maintainLockFilesWeekly"
   ],
-  "packageRules": [
-    {
-      "updateTypes": [
-        "pin"
-      ]
-    }
-  ],
-  "prHourlyLimit": 0
+  "prHourlyLimit": 0,
+  "schedule": [
+    "every 1 hour"
+  ]
 }
