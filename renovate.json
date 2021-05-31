@@ -10,5 +10,6 @@
         "pin"
       ]
     }
-  ]
+  ],
+  "prHourlyLimit": 0
 }
