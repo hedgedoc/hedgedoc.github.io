@@ -7,6 +7,6 @@
   ],
   "prHourlyLimit": 0,
   "schedule": [
-    "every 1 hour"
+    "every 1 hours"
   ]
 }
