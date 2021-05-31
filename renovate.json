@@ -3,10 +3,8 @@
     "config:base",
     ":gitSignOff",
     ":maintainLockFilesWeekly",
-    ":dependencyDashboard"
+    ":dependencyDashboard",
+    "schedule:daily"
   ],
-  "prHourlyLimit": 0,
-  "schedule": [
-    "every 1 hours"
-  ]
+  "prHourlyLimit": 0
 }
