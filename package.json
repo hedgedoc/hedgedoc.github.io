@@ -5,8 +5,8 @@
   "author": "The HedgeDoc Team",
   "license": "CC-BY-SA-4.0",
   "dependencies": {
-    "@fontsource/kumbh-sans": "4.4.2",
-    "@fontsource/lato": "4.4.2",
+    "@fontsource/kumbh-sans": "4.4.5",
+    "@fontsource/lato": "4.4.5",
     "@types/gulp": "4.0.8",
     "bootstrap": "5.0.1",
     "fork-awesome": "1.1.7",
