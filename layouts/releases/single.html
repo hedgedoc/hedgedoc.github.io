@@ -18,7 +18,7 @@
         <h2 class="my-3">Details</h2>
         <ul class="list-group">
             <li class="list-group-item py-2 px-3">
-                <i class="fa fa-fw fa-calendar"></i> Released on <b><time datetime="{{ .Params.date }}">{{ .Params.date.Format "2006-01-02 03:04:05 PM" }}</time></b>
+                <i class="fa fa-fw fa-calendar"></i> Released on <b><time datetime="{{ .Params.date }}">{{ .Params.date.Format "2006-01-02" }}</time></b>
             </li>
             {{ $releases := where .Site.Pages "Section" "releases" }}
             {{ $newerReleases := where $releases "Date" "gt" .Date }}
