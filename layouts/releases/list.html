@@ -6,9 +6,22 @@
                 <header>
                     <h1>Releases</h1>
                 </header>
+                {{ $releases := where .Site.Pages "Section" "releases" }}
                 {{ range .Pages }}
+                {{ $newerReleases := where $releases "Date" "gt" .Date }}
                 <article class="mt-4">
                     <span><a href="{{.Permalink}}"><h2>{{.Title}}</h2></a></span>
+                    <small>
+                        <i class="fa fa-fw fa-calendar"></i> Released on <b><time datetime="{{ .Params.date }}">{{ .Params.date.Format "2006-01-02" }}</time></b>
+                    </small>
+
+                    {{ with  not (index $newerReleases 0) }}
+                    <br/>
+                    <small>
+                        <i class="fa fa-fw fa-check"></i> This is the latest release
+                    </small>
+                    {{end}}
+
                     <div class="mt-4">
                         <details>
                             <summary>Click here to read the release notes</summary>
@@ -16,6 +29,9 @@
                         </details>
                     </div>
                 </article>
+                {{ with  not (index $newerReleases 0) }}
+                    <hr/>
+                {{end}}
                 {{ end }}
             </main>
         </div>
