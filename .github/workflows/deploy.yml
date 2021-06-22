@@ -19,6 +19,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
+          # renovate: datasource=github-releases depName=gohugoio/hugo versioning=semver
           hugo-version: '0.83.1'
           extended: true
 
