@@ -6,5 +6,15 @@
     ":dependencyDashboard",
     "schedule:daily"
   ],
-  "prHourlyLimit": 0
+  "prHourlyLimit": 0,
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.yml$", "\\.yaml$"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)( versioning=(?<versioning>.*?))?\\s+\\S+:\\s+\"?(?<currentValue>[^\"]*?)\"?\\s"
+      ],
+      "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
+      "extractVersion": "^v(?<version>.*)$"
+    }
+  ]
 }
