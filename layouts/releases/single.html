@@ -36,7 +36,7 @@
                 <i class="fa fa-fw fa-check"></i> This is a stable release
             </li>
             <li class="list-group-item py-2 px-3">
-                <a href="{{.Params.githubLink}}" title="View on GitHub" rel="noreferrer noopener" target="_blank"><i
+                <a href="{{.Params.githubLink}}" title="View on GitHub"><i
                         class="fa fa-fw fa-github"></i>&nbsp;View on GitHub</a>
             </li>
         </ul>
@@ -59,8 +59,7 @@
         <h2 class="mb-3">Documentation</h2>
         <p>
             Do you need help with installation or upgrade? <a href="http://docs.hedgedoc.org/"
-                                                              title="HedgeDoc Documentation" target="_blank"
-                                                              rel="noopener noreferrer">Read our docs!</a>
+                                                              title="HedgeDoc Documentation">Read our docs!</a>
         </p>
     </div>
 </section>
@@ -79,7 +78,7 @@
                     <div class="row">
                         <div class="col">
                             {{ range .Page.Params.assets }}
-                            <a href="{{.url}}" target="_blank" rel="noopener noreferer" class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;({{ printf "%.2f" (div .size 1000000.0) }} MB)
+                            <a href="{{.url}}" class="btn btn-success"><i class="fa fa-download"></i>&nbsp;{{ .name }}&nbsp;({{ printf "%.2f" (div .size 1000000.0) }} MB)
                             </a>
                             {{ end }}
                         </div>
@@ -96,7 +95,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <a href="{{.Page.Params.tarball}}" target="_blank" rel="noopener noreferer" class="btn btn-primary d-inline-block"><i class="fa fa-download"></i>&nbsp;Source code</a>
+                            <a href="{{.Page.Params.tarball}}" class="btn btn-primary d-inline-block"><i class="fa fa-download"></i>&nbsp;Source code</a>
 			</div>
                     </div>
                 </div>
@@ -110,9 +109,9 @@
                     <p>
                         {{ if eq .Page.Params.legacyRelease true }}
                         This version was released before the rebranding to HedgeDoc. Docker images can be found in the old repository:
-                        <a href="https://quay.io/repository/codimd/server?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io/codimd/server</a>
+                        <a href="https://quay.io/repository/codimd/server?tab=tags">quay.io/codimd/server</a>
                         {{ else }}
-                        This version hasn't been released as docker image yet. Come back later or check out our docker repository at <a href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags" target="_blank" rel="noreferrer nofollow">quay.io hedgedoc/hedgedoc</a>
+                        This version hasn't been released as docker image yet. Come back later or check out our docker repository at <a href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags">quay.io hedgedoc/hedgedoc</a>
                         {{ end }}
                     </p>
                     {{ end }}
