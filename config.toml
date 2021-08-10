@@ -28,7 +28,7 @@ URL = "https://demo.hedgedoc.org"
 weight = 1
 
 [[menu.main]]
-name = "Docs"
+name = "Documentation"
 URL = "https://docs.hedgedoc.org"
 weight = 2
 
