@@ -24,7 +24,7 @@ enableRobotsTXT = true
 # homepage section menu
 [[menu.main]]
 name = "Demo"
-URL = "https://demo.hedgedoc.org"
+URL = "/demo/"
 weight = 1
 
 [[menu.main]]
@@ -54,7 +54,7 @@ weight = 6
 
 [[menu.main]]
 name = "FAQ"
-URL = "/faq/"
+URL = "https://docs.hedgedoc.org/faq/"
 weight = 7
 
 # footer menu
