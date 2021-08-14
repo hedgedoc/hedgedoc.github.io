@@ -24,7 +24,7 @@ corefeatures:
 
     - title: "Graphs & diagrams"
       icon: "fa fa-bar-chart"
-      content: "HedgeDoc supports many types of graphs, diagrams and embeddings."
+      content: "HedgeDoc supports many types of graphs, diagrams and embedded content."
 
     - title: "Easy to use permission system"
       icon: "fa fa-lock"
