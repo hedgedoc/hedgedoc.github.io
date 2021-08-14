@@ -6,6 +6,14 @@
 corefeatures:
   title: "Our core features"
   columns:
+    - title: "Web-based"
+      icon: "fa fa-html5"
+      content: "You don't need extra software. The editor runs in your browser."
+
+    - title: "Self-hosted"
+      icon: "fa fa-server"
+      content: "Stay in control of your data. Keep it on your server."
+
     - title: "Real-time collaboration"
       icon: "fa fa-users"
       content: "Collaborate in real-time with friends, family and colleagues."
