@@ -79,13 +79,75 @@
 <h1>Releases</h1>
 </header>
 <article class=mt-4>
-<span><a href=https://hedgedoc.org/releases/1.8.2/><h2>HedgeDoc 1.8.2</h2></a></span>
+<span><a href=https://hedgedoc.org/releases/1.9.0/><h2>HedgeDoc 1.9.0</h2></a></span>
 <small>
-<i class="fa fa-fw fa-calendar"></i> Released on <b><time datetime="2021-05-11 19:41:11 +0000 UTC">2021-05-11</time></b>
+<i class="fa fa-fw fa-calendar"></i> Released on <b><time datetime="2021-09-13 20:22:51 +0000 UTC">2021-09-13</time></b>
 </small>
 <br>
 <small>
 <i class="fa fa-fw fa-check"></i> This is the latest release
+</small>
+<div class=mt-4>
+<details>
+<summary>Click here to read the release notes</summary>
+<h2 id=security-fixes>Security Fixes</h2>
+<ul>
+<li><a href=https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-j748-779h-9697>CVE-2021-39175: XSS vector in slide mode speaker-view</a></li>
+<li>This release removes Google Analytics and Disqus domains from our default Content Security Policy, because they were repeatedly used to exploit security vulnerabilities.<br>
+If you want to continue using Google Analytics or Disqus, you can re-enable them in the config.
+See <a href=https://docs.hedgedoc.org/configuration/#web-security-aspects>the docs</a> for details</li>
+</ul>
+<h2 id=features>Features</h2>
+<ul>
+<li>HedgeDoc now automatically retries connecting to the database up to 30 times on startup</li>
+<li>This release introduces the <code>csp.allowFraming</code> config option, which controls whether embedding a HedgeDoc instance in other webpages is allowed.
+We <strong>strongly recommend disabling</strong> this option to reduce the risk of XSS attacks</li>
+<li>This release introduces the <code>csp.allowPDFEmbed</code> config option, which controls whether embedding PDFs inside HedgeDoc notes is allowed. We recommend disabling this option if you don&rsquo;t use the feature, to reduce the attack surface of XSS attacks</li>
+<li>Add additional environment variables to configure the database.
+This allows easier configuration in containerized environments, such as Kubernetes</li>
+</ul>
+<h2 id=enhancements>Enhancements</h2>
+<ul>
+<li>Further improvements to the frontend build process, reducing the initial bundle size by 60%</li>
+<li>Improve the error handling of the <code>filesystem</code> upload method</li>
+<li>Improve the error message of failing migrations</li>
+</ul>
+<h2 id=bugfixes>Bugfixes</h2>
+<ul>
+<li>Fix crash when trying to read the current Git commit on startup</li>
+<li>Fix endless loop on shutdown when HedgeDoc can&rsquo;t connect to the database</li>
+<li>Ensure that all cookies are set with the <code>secure</code> flag, if HedgeDoc is loaded via HTTPS</li>
+<li>Fix session cookies being created on calls to <code>/metrics</code> and <code>/status</code></li>
+<li>Fix incorrect creation of S3 endpoint domain (thanks to <a href=https://github.com/matejc>@matejc</a>)</li>
+<li>Remove CDN support, fixing inconsistencies in library versions delivered to the client</li>
+<li>Fix font display issues when having some variants of fonts used by HedgeDoc installed locally</li>
+<li>Fix links between slides not working</li>
+<li>Fix Vimeo integration using a deprecated API</li>
+</ul>
+<h2 id=miscellaneous>Miscellaneous</h2>
+<ul>
+<li>Removed MSSQL support, as migrations from 2018 are broken with SQL Server and nobody seems to use it</li>
+</ul>
+<h2 id=contributors>Contributors</h2>
+<ul>
+<li>Bogdan Cuza (translator)</li>
+<li>Heimen Stoffels (translator)</li>
+<li>igg17 (translator)</li>
+<li>Klorophatu (translator)</li>
+<li>Martin (translator)</li>
+<li>Matija (translator)</li>
+<li>Matthieu Devillers (translator)</li>
+<li>Mindaugas (translator)</li>
+<li>Quentin Pagès (translator)</li>
+</ul>
+</details>
+</div>
+</article>
+<hr>
+<article class=mt-4>
+<span><a href=https://hedgedoc.org/releases/1.8.2/><h2>HedgeDoc 1.8.2</h2></a></span>
+<small>
+<i class="fa fa-fw fa-calendar"></i> Released on <b><time datetime="2021-05-11 19:41:11 +0000 UTC">2021-05-11</time></b>
 </small>
 <div class=mt-4>
 <details>
@@ -99,7 +161,6 @@
 </details>
 </div>
 </article>
-<hr>
 <article class=mt-4>
 <span><a href=https://hedgedoc.org/releases/1.8.1/><h2>HedgeDoc 1.8.1</h2></a></span>
 <small>
