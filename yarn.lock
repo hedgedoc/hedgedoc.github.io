@@ -132,9 +132,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "16.11.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.9.tgz#879be3ad7af29f4c1a5c433421bf99fab7047185"
-  integrity sha512-MKmdASMf3LtPzwLyRrFjtFFZ48cMf8jmX5VRYrDQiJa8Ybu5VAmkqBWqKU8fdCwD8ysw4mQ9nrEHvzg6gunR7A==
+  version "16.11.11"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
+  integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
 
 "@types/undertaker-registry@*":
   version "1.0.1"
@@ -1020,9 +1020,9 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
     ms "2.0.0"
 
 debug@^4.3.1:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
-  integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
+  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
   dependencies:
     ms "2.1.2"
 
@@ -2423,9 +2423,9 @@ lighthouse-logger@^1.0.0, lighthouse-logger@^1.2.0:
     marky "^1.2.2"
 
 lighthouse-stack-packs@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/lighthouse-stack-packs/-/lighthouse-stack-packs-1.5.0.tgz#c191f2b94db21602254baaebfb0bb90307a00ffa"
-  integrity sha512-ntVOqFsrrTQYrNf+W+sNE9GjddW+ab5QN0WrrCikjMFsUvEQ28CvT0SXcHPZXFtcsb1lMSuVaNCmEuj7oXtYGQ==
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/lighthouse-stack-packs/-/lighthouse-stack-packs-1.6.0.tgz#f7327352089f65f4ca61135956c77b9d13f6d681"
+  integrity sha512-isv4qY9YCiRis5Z3ijy14IUyAbl6AoD+Q8Co1t0GBBuQK2ZUTSK6mLgFd91MVJrhXaF3LXJRcO+JXaUFHedHhA==
 
 lighthouse@8.0.0:
   version "8.0.0"
@@ -3786,9 +3786,9 @@ term-size@^2.1.0:
   integrity sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==
 
 third-party-web@^0.12.2:
-  version "0.12.6"
-  resolved "https://registry.yarnpkg.com/third-party-web/-/third-party-web-0.12.6.tgz#2745d5dfccd526ee180be833c45578deba7e9e40"
-  integrity sha512-g01h+wXG7UsPOPOEGRnz8bvRr7XWYckI0afFaX6JPkAeuHbS1RUKmiZ5Y56em3CNAMu8iz1rxJEpkfjbAuVkMQ==
+  version "0.12.7"
+  resolved "https://registry.yarnpkg.com/third-party-web/-/third-party-web-0.12.7.tgz#64445702379abf1a29066d636a965173e4e423c6"
+  integrity sha512-9d/OfjEOjyeOpnm4F9o0KSK6BI6ytvi9DINSB5h1+jdlCvQlhKpViMSxWpBN9WstdfDQ61BS6NxWqcPCuQCAJg==
 
 through2-filter@^3.0.0:
   version "3.0.0"
