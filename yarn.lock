@@ -14,10 +14,10 @@
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
 
-"@fontsource/kumbh-sans@4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-4.5.2.tgz#9e87c6f2b43b6de6ade7a080a940d92ab78765fd"
-  integrity sha512-MxceQBfN30CgsHLX/ei4f/7SAG3DxsATt0RWy2ynBNFbBm5DMPLFwa5Msis+NXcIif0MSdXK3bt926B58762KA==
+"@fontsource/kumbh-sans@4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-4.5.3.tgz#48375876bf48519bb9fbeeaa238f93bb10d2f095"
+  integrity sha512-8yZ3MNUThv1tx+4s41EnETQzpWuO/RsDiw5IubHuaZH1WjybYE9zTq99psp5Zg4HX3VbSxxl6KO0M1kI688oMQ==
 
 "@fontsource/lato@4.5.1":
   version "4.5.1"
