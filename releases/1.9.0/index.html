@@ -1,10 +1,9 @@
 <!doctype html><html lang=en-us><head>
 <meta charset=utf-8>
-<title>HedgeDoc 1.9.0</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
+<title>HedgeDoc 1.9.0</title><meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="The best platform to write and share markdown.">
 <meta name=author content="The HedgeDoc developers">
-<meta name=generator content="Hugo 0.92.2">
+<meta name=generator content="Hugo 0.93.0">
 <link rel=preload href=/fonts/lato/lato-latin-400-normal.woff2 as=font crossorigin>
 <link rel=preload href=/fonts/kumbh-sans/kumbh-sans-latin-400-normal.woff2 as=font crossorigin>
 <link rel=preload href="/fonts/forkawesome/forkawesome-webfont.woff2?v=1.1.7" as=font crossorigin>
@@ -32,8 +31,7 @@
 <link rel=me href=https://social.snopyta.org/@hedgedoc>
 <meta name=google-site-verification content="gQ36MdAbZV2llqfbMwYTeOgo4rnL0dSejC_eolu89uw">
 <script src=https://hedgedoc.org/js/mobile-menu.js defer></script>
-</head>
-<body>
+</head><body>
 <header class="sticky-top bg-white">
 <div class=container>
 <div class="navbar navbar-expand-lg navbar-light">
@@ -48,175 +46,78 @@
 <ul class="navbar-nav ms-auto">
 <li class=nav-item>
 <a class="nav-link fw-bold mx-2" href=https://hedgedoc.org/demo/>Demo</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link fw-bold mx-2" href=https://docs.hedgedoc.org>Documentation</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link fw-bold mx-2" href=https://hedgedoc.org/latest-release/>Download</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link fw-bold mx-2" href=https://git.hedgedoc.org>Source Code</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link fw-bold mx-2" href=https://community.hedgedoc.org>Forum</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link fw-bold mx-2" href=https://chat.hedgedoc.org>Matrix</a>
-</li>
-<li class=nav-item>
+</li><li class=nav-item>
 <a class="nav-link fw-bold mx-2" href=https://docs.hedgedoc.org/faq/>FAQ</a>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-</header>
-<section class="section bg-primary text-white py-5">
+</li></ul></nav></div></div></div></header><section class="section bg-primary text-white py-5">
 <div class=container>
 <h1>
 Thank you for downloading HedgeDoc 1.9.0
-</h1>
-</div>
-</section>
-<section class="section p-0 pt-2">
+</h1></div></section><section class="section p-0 pt-2">
 <div class=container>
 <a href=..>Back to the release list</a>
-</div>
-</section>
-<section class="section pb-0 pt-4">
+</div></section><section class="section pb-0 pt-4">
 <div class=container>
-<h2 class=my-3>Details</h2>
-<ul class=list-group>
+<h2 class=my-3>Details</h2><ul class=list-group>
 <li class="list-group-item py-2 px-3">
 <i class="fa fa-fw fa-calendar"></i> Released on <b><time datetime="2021-09-13 20:22:51 +0000 UTC">2021-09-13</time></b>
-</li>
-<li class="list-group-item bg-primary text-white py-2 px-3">
+</li><li class="list-group-item bg-primary text-white py-2 px-3">
 <i class="fa fa-fw fa-times"></i> This is NOT the latest release! Please take a look at the
 <a class="text-white font-italic" href=..>release list</a>
-</li>
-<li class="list-group-item py-2 px-3">
+</li><li class="list-group-item py-2 px-3">
 <i class="fa fa-fw fa-check"></i> This is a stable release
-</li>
-<li class="list-group-item py-2 px-3">
+</li><li class="list-group-item py-2 px-3">
 <a href=https://github.com/hedgedoc/hedgedoc/releases/tag/1.9.0 title="View on GitHub"><i class="fa fa-fw fa-github"></i>&nbsp;View on GitHub</a>
-</li>
-</ul>
-</div>
-</section>
-<section class="section pb-0 pt-5">
+</li></ul></div></section><section class="section pb-0 pt-5">
 <div class=container>
-<h2>Release notes</h2>
-<ul class=list-group>
+<h2>Release notes</h2><ul class=list-group>
 <li class="list-group-item py-2 px-3">
-<h2 id=security-fixes>Security Fixes</h2>
-<ul>
-<li><a href=https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-j748-779h-9697>CVE-2021-39175: XSS vector in slide mode speaker-view</a></li>
-<li>This release removes Google Analytics and Disqus domains from our default Content Security Policy, because they were repeatedly used to exploit security vulnerabilities.<br>
+<h2 id=security-fixes>Security Fixes</h2><ul>
+<li><a href=https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-j748-779h-9697>CVE-2021-39175: XSS vector in slide mode speaker-view</a></li><li>This release removes Google Analytics and Disqus domains from our default Content Security Policy, because they were repeatedly used to exploit security vulnerabilities.<br>
 If you want to continue using Google Analytics or Disqus, you can re-enable them in the config.
-See <a href=https://docs.hedgedoc.org/configuration/#web-security-aspects>the docs</a> for details</li>
-</ul>
-<h2 id=features>Features</h2>
-<ul>
-<li>HedgeDoc now automatically retries connecting to the database up to 30 times on startup</li>
-<li>This release introduces the <code>csp.allowFraming</code> config option, which controls whether embedding a HedgeDoc instance in other webpages is allowed.
-We <strong>strongly recommend disabling</strong> this option to reduce the risk of XSS attacks</li>
-<li>This release introduces the <code>csp.allowPDFEmbed</code> config option, which controls whether embedding PDFs inside HedgeDoc notes is allowed. We recommend disabling this option if you don&rsquo;t use the feature, to reduce the attack surface of XSS attacks</li>
-<li>Add additional environment variables to configure the database.
-This allows easier configuration in containerized environments, such as Kubernetes</li>
-</ul>
-<h2 id=enhancements>Enhancements</h2>
-<ul>
-<li>Further improvements to the frontend build process, reducing the initial bundle size by 60%</li>
-<li>Improve the error handling of the <code>filesystem</code> upload method</li>
-<li>Improve the error message of failing migrations</li>
-</ul>
-<h2 id=bugfixes>Bugfixes</h2>
-<ul>
-<li>Fix crash when trying to read the current Git commit on startup</li>
-<li>Fix endless loop on shutdown when HedgeDoc can&rsquo;t connect to the database</li>
-<li>Ensure that all cookies are set with the <code>secure</code> flag, if HedgeDoc is loaded via HTTPS</li>
-<li>Fix session cookies being created on calls to <code>/metrics</code> and <code>/status</code></li>
-<li>Fix incorrect creation of S3 endpoint domain (thanks to <a href=https://github.com/matejc>@matejc</a>)</li>
-<li>Remove CDN support, fixing inconsistencies in library versions delivered to the client</li>
-<li>Fix font display issues when having some variants of fonts used by HedgeDoc installed locally</li>
-<li>Fix links between slides not working</li>
-<li>Fix Vimeo integration using a deprecated API</li>
-</ul>
-<h2 id=miscellaneous>Miscellaneous</h2>
-<ul>
-<li>Removed MSSQL support, as migrations from 2018 are broken with SQL Server and nobody seems to use it</li>
-</ul>
-<h2 id=contributors>Contributors</h2>
-<ul>
-<li>Bogdan Cuza (translator)</li>
-<li>Heimen Stoffels (translator)</li>
-<li>igg17 (translator)</li>
-<li>Klorophatu (translator)</li>
-<li>Martin (translator)</li>
-<li>Matija (translator)</li>
-<li>Matthieu Devillers (translator)</li>
-<li>Mindaugas (translator)</li>
-<li>Quentin Pagès (translator)</li>
-</ul>
-</li>
-</ul>
-</div>
-</section>
-<section class="section pb-0 pt-5">
+See <a href=https://docs.hedgedoc.org/configuration/#web-security-aspects>the docs</a> for details</li></ul><h2 id=features>Features</h2><ul>
+<li>HedgeDoc now automatically retries connecting to the database up to 30 times on startup</li><li>This release introduces the <code>csp.allowFraming</code> config option, which controls whether embedding a HedgeDoc instance in other webpages is allowed.
+We <strong>strongly recommend disabling</strong> this option to reduce the risk of XSS attacks</li><li>This release introduces the <code>csp.allowPDFEmbed</code> config option, which controls whether embedding PDFs inside HedgeDoc notes is allowed. We recommend disabling this option if you don&rsquo;t use the feature, to reduce the attack surface of XSS attacks</li><li>Add additional environment variables to configure the database.
+This allows easier configuration in containerized environments, such as Kubernetes</li></ul><h2 id=enhancements>Enhancements</h2><ul>
+<li>Further improvements to the frontend build process, reducing the initial bundle size by 60%</li><li>Improve the error handling of the <code>filesystem</code> upload method</li><li>Improve the error message of failing migrations</li></ul><h2 id=bugfixes>Bugfixes</h2><ul>
+<li>Fix crash when trying to read the current Git commit on startup</li><li>Fix endless loop on shutdown when HedgeDoc can&rsquo;t connect to the database</li><li>Ensure that all cookies are set with the <code>secure</code> flag, if HedgeDoc is loaded via HTTPS</li><li>Fix session cookies being created on calls to <code>/metrics</code> and <code>/status</code></li><li>Fix incorrect creation of S3 endpoint domain (thanks to <a href=https://github.com/matejc>@matejc</a>)</li><li>Remove CDN support, fixing inconsistencies in library versions delivered to the client</li><li>Fix font display issues when having some variants of fonts used by HedgeDoc installed locally</li><li>Fix links between slides not working</li><li>Fix Vimeo integration using a deprecated API</li></ul><h2 id=miscellaneous>Miscellaneous</h2><ul>
+<li>Removed MSSQL support, as migrations from 2018 are broken with SQL Server and nobody seems to use it</li></ul><h2 id=contributors>Contributors</h2><ul>
+<li>Bogdan Cuza (translator)</li><li>Heimen Stoffels (translator)</li><li>igg17 (translator)</li><li>Klorophatu (translator)</li><li>Martin (translator)</li><li>Matija (translator)</li><li>Matthieu Devillers (translator)</li><li>Mindaugas (translator)</li><li>Quentin Pagès (translator)</li></ul></li></ul></div></section><section class="section pb-0 pt-5">
 <div class=container>
-<h2 class=mb-3>Documentation</h2>
-<p>
+<h2 class=mb-3>Documentation</h2><p>
 Do you need help with installation or upgrade? <a href=http://docs.hedgedoc.org/ title="HedgeDoc Documentation">Read our docs!</a>
-</p>
-</div>
-</section>
-<section class="section pt-5">
+</p></div></section><section class="section pt-5">
 <div class=container>
-<h2 class=mb-3>Download</h2>
-<ul class=list-group>
+<h2 class=mb-3>Download</h2><ul class=list-group>
 <li class="list-group-item p-3">
 <div class=col>
 <div class=row>
-<h3 class=mb-3>Bundled and ready to use</h3>
-</div>
-<div class=row>
+<h3 class=mb-3>Bundled and ready to use</h3></div><div class=row>
 <div class=col>
 <a href=https://github.com/hedgedoc/hedgedoc/releases/download/1.9.0/hedgedoc-1.9.0.tar.gz class="btn btn-success"><i class="fa fa-download"></i>&nbsp;hedgedoc-1.9.0.tar.gz&nbsp;(59.26 MB)
 </a>
-</div>
-</div>
-</div>
-</li>
-<li class="list-group-item p-3">
+</div></div></div></li><li class="list-group-item p-3">
 <div class=col>
 <div class=row>
 <div class=col>
-<h3 class=mb-3>Just the source code</h3>
-</div>
-</div>
-<div class=row>
+<h3 class=mb-3>Just the source code</h3></div></div><div class=row>
 <div class=col>
 <a href=https://api.github.com/repos/hedgedoc/hedgedoc/tarball/1.9.0 class="btn btn-primary d-inline-block"><i class="fa fa-download"></i>&nbsp;Source code</a>
-</div>
-</div>
-</div>
-</li>
-<li class="list-group-item p-3">
+</div></div></div></li><li class="list-group-item p-3">
 <div class=col>
 <div class=row>
-<h3 class=mb-3>Docker</h3>
-</div>
-<p>
+<h3 class=mb-3>Docker</h3></div><p>
 This version hasn't been released as docker image yet. Come back later or check out our docker repository at <a href="https://quay.io/repository/hedgedoc/hedgedoc?tab=tags">quay.io hedgedoc/hedgedoc</a>
-</p>
-</div>
-</li>
-</ul>
-</div>
-</section>
-<footer class="text-center py-5">
+</p></div></li></ul></div></section><footer class="text-center py-5">
 <div class=container>
 <div class=row>
 <div class=col-md-12>
@@ -226,27 +127,14 @@ This version hasn't been released as docker image yet. Come back later or check 
 <ul class="list-inline fw-bold">
 <li class="list-inline-item p-2">
 <a class=text-decoration-none href=https://git.hedgedoc.org>Source Code</a>
-</li>
-<li class="list-inline-item p-2">
+</li><li class="list-inline-item p-2">
 <a class=text-decoration-none href=https://hedgedoc.org/team/>Team</a>
-</li>
-<li class="list-inline-item p-2">
+</li><li class="list-inline-item p-2">
 <a class=text-decoration-none href=https://translate.hedgedoc.org>Help translating</a>
-</li>
-<li class="list-inline-item p-2">
+</li><li class="list-inline-item p-2">
 <a class=text-decoration-none href=https://social.hedgedoc.org>Mastodon</a>
-</li>
-<li class="list-inline-item p-2">
+</li><li class="list-inline-item p-2">
 <a class=text-decoration-none href=https://social.hedgedoc.org/twitter>Twitter</a>
-</li>
-<li class="list-inline-item p-2">
+</li><li class="list-inline-item p-2">
 <a class=text-decoration-none href=https://hedgedoc.org/privacy-policy/>Privacy Policy</a>
-</li>
-</ul>
-<p class="copyright-text small">By the HedgeDoc developers. Made with <img src=/images/heart.svg alt=love>️ and <a href=https://gohugo.io/>Hugo</a>.</p>
-</div>
-</div>
-</div>
-</footer>
-</body>
-</html>
+</li></ul><p class="copyright-text small">By the HedgeDoc developers. Made with <img src=/images/heart.svg alt=love>️ and <a href=https://gohugo.io/>Hugo</a>.</p></div></div></div></footer></body></html>
