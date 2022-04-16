@@ -19,8 +19,8 @@ There are some third party places where the HedgeDoc Project stores data:
 
 
 [github]: https://github.com/
-[github-pages]: https://help.github.com/articles/what-is-github-pages/
-[github-privacy]: https://help.github.com/articles/global-privacy-practices/
+[github-pages]: https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages
+[github-privacy]: https://docs.github.com/en/site-policy/privacy-policies/global-privacy-practices
 
 [chat]: https://chat.hedgedoc.org
 [matrix-org]: https://matrix.org/
