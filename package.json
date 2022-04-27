@@ -21,6 +21,7 @@
     "@lhci/cli": "0.9.0"
   },
   "scripts": {
-    "prepare": "gulp"
+    "prepare": "gulp",
+    "start": "hugo server"
   }
 }
