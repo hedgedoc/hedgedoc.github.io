@@ -22,3 +22,7 @@ License: LicenseRef-HedgeDoc-Icon-Usage-Guidelines
 Files: static/images/banner/*
 Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
 License: LicenseRef-HedgeDoc-Icon-Usage-Guidelines
+
+Files: .run/*
+Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+License: CC-BY-SA-4.0
