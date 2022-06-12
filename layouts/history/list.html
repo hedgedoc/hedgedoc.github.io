@@ -1,1 +1,16 @@
-{{- block "main" . }}{{- end }}
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-4">{{.Title | markdownify}}</h1>
+        <main>
+          {{.Content}}
+        </main>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
