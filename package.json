@@ -8,7 +8,7 @@
     "@fontsource/kumbh-sans": "4.5.11",
     "@fontsource/lato": "4.5.10",
     "@types/gulp": "4.0.10",
-    "bootstrap": "5.2.2",
+    "bootstrap": "5.2.3",
     "fork-awesome": "1.2.0",
     "gulp": "4.0.2",
     "node-fetch": "2.6.7",
