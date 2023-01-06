@@ -1,6 +1,20 @@
 {
   "compilerOptions": {
+    "target": "esnext",
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "declaration": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
-    "strict": true
+    "allowJs": true,
+    "sourceMap": true
   }
 }
