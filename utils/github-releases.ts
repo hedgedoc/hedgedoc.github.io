@@ -4,7 +4,7 @@
  SPDX-License-Identifier: AGPL-3.0-only
 */
 
-import fetch from 'node-fetch';
+import fetch, { Response } from 'node-fetch';
 import yaml from 'yaml';
 import fs from 'fs/promises';
 
@@ -55,13 +55,27 @@ async function fetchQuayResponses(): Promise<QuayResponse> {
   }
 }
 
-async function fetchHedgeDocReleases(): Promise<GitHubReleaseEntry[]> {
+async function doGithubApiRequest(): Promise<unknown> {
+  let response: Response;
   try {
-    const response = await fetch('https://api.github.com/repos/hedgedoc/hedgedoc/releases')
-    return ((await response.json()) as GitHubReleaseEntry[])
+    response = await fetch('https://api.github.com/repos/hedgedoc/hedgedoc/releases')
+  } catch (error) {
+    console.error("Can't connect to GitHub API", error);
+    process.exit(1);
+  }
+
+  return response.json();
+}
+
+async function fetchHedgeDocReleases(): Promise<GitHubReleaseEntry[]> {
+  const entries = (await doGithubApiRequest()) as GitHubReleaseEntry[];
+
+  try {
+    return entries
       .filter((entry: GitHubReleaseEntry) => !entry.prerelease && !entry.draft)
   } catch (error) {
-    console.error("Can't connect to GitHub API: ", error);
+    console.error("API response malformed", error);
+    console.error("Response was: ", entries)
     process.exit(1);
   }
 }
