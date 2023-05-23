@@ -7,7 +7,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource/kumbh-sans": "4.5.12",
-    "@fontsource/lato": "4.5.10",
+    "@fontsource/lato": "5.0.1",
     "bootstrap": "5.2.3",
     "fork-awesome": "1.2.0",
     "node-fetch": "3.3.1",
