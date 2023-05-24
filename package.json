@@ -6,7 +6,7 @@
   "license": "CC-BY-SA-4.0",
   "type": "module",
   "dependencies": {
-    "@fontsource/kumbh-sans": "4.5.12",
+    "@fontsource/kumbh-sans": "5.0.1",
     "@fontsource/lato": "5.0.1",
     "bootstrap": "5.2.3",
     "fork-awesome": "1.2.0",
