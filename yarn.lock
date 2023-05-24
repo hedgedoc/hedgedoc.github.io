@@ -9,10 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@fontsource/kumbh-sans@4.5.12":
-  version "4.5.12"
-  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-4.5.12.tgz#6586227ea137880304f7ace6723a03e7887c4fb0"
-  integrity sha512-Gy7ZH09uYE9P9jSdw3wEOYl2Cpej7FMAkjYkBqVR8zRqBSa/Gwq5yoraIb3p0c3cCmVRiOahTgchpWlmhMB9BQ==
+"@fontsource/kumbh-sans@5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-5.0.1.tgz#d8372c83774b7bb3c21f92ce5c4b5445446c0a4a"
+  integrity sha512-ViY4YFaRGmRIavtIF7wVeBvTAipLL/jRPhVDE8G6RmAz0QWUSBoQ7K8zXaHMEylAqWc4FRojiZLY4h8IohlmYQ==
 
 "@fontsource/lato@5.0.1":
   version "5.0.1"
