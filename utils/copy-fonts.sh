@@ -12,12 +12,10 @@ echo "Copy font lato"
 mkdir -p static/fonts/lato
 cp node_modules/@fontsource/lato/files/lato-latin-ext-400-normal.woff2 static/fonts/lato/lato-latin-ext-400-normal.woff2
 cp node_modules/@fontsource/lato/files/lato-latin-400-normal.woff2 static/fonts/lato/lato-latin-400-normal.woff2
-cp node_modules/@fontsource/lato/files/lato-all-400-normal.woff static/fonts/lato/lato-all-400-normal.woff
 
 echo "Copy font kumbh"
 mkdir -p static/fonts/kumbh-sans
 cp node_modules/@fontsource/kumbh-sans/files/kumbh-sans-latin-ext-400-normal.woff2 static/fonts/kumbh-sans/kumbh-sans-latin-ext-400-normal.woff2
-cp node_modules/@fontsource/kumbh-sans/files/kumbh-sans-all-400-normal.woff static/fonts/kumbh-sans/kumbh-sans-all-400-normal.woff
 cp node_modules/@fontsource/kumbh-sans/files/kumbh-sans-latin-400-normal.woff2 static/fonts/kumbh-sans/kumbh-sans-latin-400-normal.woff2
 
 echo "Copy font forkawesome"
