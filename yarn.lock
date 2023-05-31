@@ -14,10 +14,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-5.0.1.tgz#d8372c83774b7bb3c21f92ce5c4b5445446c0a4a"
   integrity sha512-ViY4YFaRGmRIavtIF7wVeBvTAipLL/jRPhVDE8G6RmAz0QWUSBoQ7K8zXaHMEylAqWc4FRojiZLY4h8IohlmYQ==
 
-"@fontsource/lato@5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.1.tgz#393a4295663c7151b835922a60260bf03233b13a"
-  integrity sha512-/ZUqq3x4uuG5tM0a8JlZM3ulwFREPGI80FJr6yQ3gFs4c9Mr6bhKiPd2XGpI0OPeR9W7zF59vB8C3XLYfSauUA==
+"@fontsource/lato@5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.2.tgz#5a00d7776985d291a9943175e9f32fb98fb0fd08"
+  integrity sha512-28FpWT8Ge+Awg+OSg50BSd9WoJBlFUi/uC8l+2vnMNpjUGy0qtxNtgQNgIrDj3FAlaah6T8VDVkgBU72uMpPqw==
 
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.1"
