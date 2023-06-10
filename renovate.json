@@ -16,5 +16,13 @@
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}",
       "extractVersionTemplate": "^v(?<version>.*)$"
     }
+  ],
+  "packageRules": [
+    {
+      "groupName": "Fonts",
+      "packagePatterns": [
+        "^@fontsource/"
+      ]
+    }
   ]
 }
