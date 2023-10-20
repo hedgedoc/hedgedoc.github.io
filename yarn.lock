@@ -9,15 +9,15 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@fontsource/kumbh-sans@5.0.8":
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-5.0.8.tgz#869e7789abdfad8a08c57648af4729ee64e871b3"
-  integrity sha512-rznFG75T9XNImUM1vzd8Jga09C9Ar+Sgszp+NrBJcbYhLnkSlxZ3Me7ThR9u0ad27u3cj8ELtljq0+KLFOsyLA==
+"@fontsource/kumbh-sans@5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@fontsource/kumbh-sans/-/kumbh-sans-5.0.12.tgz#611cc7a73c59a38de3c8230d166e29611dfb8637"
+  integrity sha512-oclwKIUg8VtRa7nrmmwXPz36I1QfUFWkXQrr1WXdnCHerbNxdfWovnG9fhDQRWdgWtqCFvdC9DThfxRVE9VWUA==
 
-"@fontsource/lato@5.0.15":
-  version "5.0.15"
-  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.15.tgz#e6eb2bb7b6dbac915eeafb4a990c4badc3ff4bae"
-  integrity sha512-9aDcNLhisbUHLa4sisBtN7qh7Bzs4oCMO5q3xypc7WNY6ZOtGwf0HF8u/DuYhVMmwo6C/QvlpwUgjYJO8PPL1g==
+"@fontsource/lato@5.0.16":
+  version "5.0.16"
+  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.16.tgz#cc9c05abc4ff0e8b51f1b6842d2c387a6133a7d1"
+  integrity sha512-wLT0TW9+yiK//mlxjuAeHAu4/dhpE0/gk7memLezvzGwoJ8INTSxFHM7WUx2hux+3tnkTopdvVwUrw/5J4QkKg==
 
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.1"
