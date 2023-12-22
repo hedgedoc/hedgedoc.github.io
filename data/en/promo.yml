@@ -21,6 +21,6 @@ screenshot:
 social:
   image:
     src: "/images/social.svg"
-    alt: "Twitter and Mastodon logo"
+    alt: "Mastodon logo"
     height: "250"
     width: "250"
