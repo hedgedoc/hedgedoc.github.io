@@ -17,7 +17,7 @@
     "@types/node-fetch": "2.6.9"
   },
   "scripts": {
-    "prepare": "bash utils/copy-fonts.sh && ts-node-esm utils/github-releases.ts",
+    "prepare": "bash utils/copy-fonts.sh && node --experimental-specifier-resolution=node --loader ts-node/esm utils/github-releases.ts",
     "start": "hugo server"
   }
 }
