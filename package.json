@@ -14,7 +14,7 @@
     "ts-node": "10.9.2",
     "typescript": "5.3.3",
     "yaml": "2.3.4",
-    "@types/node-fetch": "2.6.10"
+    "@types/node-fetch": "2.6.11"
   },
   "scripts": {
     "prepare": "bash utils/copy-fonts.sh && node --experimental-specifier-resolution=node --loader ts-node/esm utils/github-releases.ts",
