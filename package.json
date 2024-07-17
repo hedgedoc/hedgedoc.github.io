@@ -12,7 +12,7 @@
     "fork-awesome": "1.2.0",
     "node-fetch": "3.3.2",
     "ts-node": "10.9.2",
-    "typescript": "5.4.5",
+    "typescript": "5.5.3",
     "yaml": "2.4.2",
     "@types/node-fetch": "2.6.11"
   },
