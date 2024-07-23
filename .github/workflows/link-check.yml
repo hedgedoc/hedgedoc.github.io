@@ -49,4 +49,4 @@ jobs:
       - name: Check for broken links
         # GitHub is excluded because we otherwise run into rate-limits and get many HTTP_429 link errors.
         # Domains under hedgedoc.org are excluded since they always fail due to our bot-protection mode on Cloudflare.
-        run: node_modules/.bin/blc http://127.0.0.1:1313/ -ro --exclude "https://github.com/*" --exclude "https://docs.github.com/*" --exclude "https://docs.hedgedoc.org/*" --exclude "https://demo.hedgedoc.org" --exclude "https://hedgedoc.org/*"  --exclude "https://hackmd.io"
+        run: node_modules/.bin/blc http://127.0.0.1:1313/ -ro --exclude "https://github.com/*" --exclude "https://docs.github.com/*" --exclude "https://docs.hedgedoc.org" --exclude "https://demo.hedgedoc.org" --exclude "https://hedgedoc.org"  --exclude "https://hackmd.io"
