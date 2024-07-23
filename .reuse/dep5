@@ -15,8 +15,8 @@ Files: static/history/*
 Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
 License: CC-BY-SA-4.0
 
-Files: static/survey.html
-Copyright: 2020 The HedgeDoc developers (see AUTHORS file)
+Files: static/security.txt
+Copyright: 2024 The HedgeDoc developers (see AUTHORS file)
 License: CC-BY-SA-4.0
 
 Files: static/icons/*

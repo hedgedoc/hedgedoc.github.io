@@ -1,0 +1,8 @@
+Contact: https://github.com/hedgedoc/hedgedoc/security/advisories/new
+Policy: https://github.com/hedgedoc/hedgedoc/blob/HEAD/SECURITY.md
+Preferred-Languages: en, de
+
+Acknowledgments: https://github.com/hedgedoc/hedgedoc/security/advisories
+
+Canonical: https://hedgedoc.org/security.txt
+Expires: 2099-12-31T22:59:00.000Z
