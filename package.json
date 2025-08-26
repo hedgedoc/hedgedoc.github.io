@@ -8,7 +8,7 @@
   "dependencies": {
     "@fontsource/kumbh-sans": "5.0.21",
     "@fontsource/lato": "5.0.22",
-    "bootstrap": "5.3.3",
+    "bootstrap": "5.3.8",
     "fork-awesome": "1.2.0",
     "node-fetch": "3.3.2",
     "ts-node": "10.9.2",
