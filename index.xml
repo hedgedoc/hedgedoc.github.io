@@ -1,15 +1,252 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HedgeDoc - Ideas grow better together on HedgeDoc - Collaborative markdown editor</title><link>https://hedgedoc.org/</link><description>Recent content in HedgeDoc - Ideas grow better together on HedgeDoc - Collaborative markdown editor</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Wed, 04 Feb 2026 19:27:41 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.10.6</title><link>https://hedgedoc.org/releases/1.10.6/</link><pubDate>Wed, 04 Feb 2026 19:27:41 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.6/</guid><description>Security fixes This release contains two medium severity security fixes:
-GHSA-x74j-jmf9-534w reports a bug where security headers for upload files were not set correctly.</description></item><item><title>HedgeDoc 1.10.5</title><link>https://hedgedoc.org/releases/1.10.5/</link><pubDate>Sat, 06 Dec 2025 16:45:55 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.5/</guid><description>This release is just a fix for the docker container. It does not contain any changes to HedgeDoc itself.
-Bugfixes Fix the bundled healthcheck in the docker container</description></item><item><title>HedgeDoc 1.10.4</title><link>https://hedgedoc.org/releases/1.10.4/</link><pubDate>Fri, 05 Dec 2025 22:36:12 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.4/</guid><description>Security fixes This release contains two low severity security fixes:
-GHSA-gmgw-rcmh-7x47 reports potential cross-site side-effects due to not applying sandboxing to iframes.</description></item><item><title>HedgeDoc 1.10.3</title><link>https://hedgedoc.org/releases/1.10.3/</link><pubDate>Wed, 09 Apr 2025 22:17:33 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.3/</guid><description>Security fixes This release fixes a security issue of a possible XSS exploit which can be planted via a malicous SVG file upload.</description></item><item><title>HedgeDoc 1.10.2</title><link>https://hedgedoc.org/releases/1.10.2/</link><pubDate>Fri, 14 Feb 2025 21:14:11 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.2/</guid><description>PLEASE CHECK THIS IF YOU USE SAML AUTHENTICATION: This release had to set default values for the username and email address attribute mapping for SAML authentication for security reasons.</description></item><item><title>HedgeDoc 1.10.1</title><link>https://hedgedoc.org/releases/1.10.1/</link><pubDate>Sun, 02 Feb 2025 22:12:33 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.1/</guid><description>This release fixes a security issue where brute-forcing local email/passwords is possible because of missing rate-limits. We recommend upgrading as soon as possible, if you use local logins.</description></item><item><title>HedgeDoc 1.10.0</title><link>https://hedgedoc.org/releases/1.10.0/</link><pubDate>Sun, 01 Sep 2024 14:38:46 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.0/</guid><description>This release fixes a security issue when using MySQL/MariaDB. We recommend upgrading as soon as possible, when you use this database.</description></item><item><title>HedgeDoc 1.9.9</title><link>https://hedgedoc.org/releases/1.9.9/</link><pubDate>Sun, 30 Jul 2023 18:07:27 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.9/</guid><description>HedgeDoc has a new slogan! See our announcement for the details.
-This release fixes a security issue. We recommend upgrading as soon as possible.</description></item><item><title>HedgeDoc 1.9.8</title><link>https://hedgedoc.org/releases/1.9.8/</link><pubDate>Sun, 04 Jun 2023 19:35:20 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.8/</guid><description>Please note: This release dropped support for Node 14, which is end-of-life since May 2023. You now need at least Node 16 to run HedgeDoc.</description></item><item><title>HedgeDoc 1.9.7</title><link>https://hedgedoc.org/releases/1.9.7/</link><pubDate>Sun, 19 Feb 2023 21:36:11 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.7/</guid><description>Bugfixes Fix note titles with special characters producing invalid file names in user export zip file Fix night-mode toggle not working when page is loaded with night-mode enabled Contributors Francesco (translator) Gabriel Santiago Macedo (translator)</description></item><item><title>HedgeDoc 1.9.6</title><link>https://hedgedoc.org/releases/1.9.6/</link><pubDate>Sun, 06 Nov 2022 22:10:59 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.6/</guid><description>Bugfixes Fix migrations deleting all notes when SQLite is used</description></item><item><title>HedgeDoc 1.9.5</title><link>https://hedgedoc.org/releases/1.9.5/</link><pubDate>Sun, 30 Oct 2022 21:15:16 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.5/</guid><description>🚨 This release has a bug that leads to data-loss when using SQLite. We advise users of SQLite databases to skip this release and use 1.</description></item><item><title>HedgeDoc 1.9.4</title><link>https://hedgedoc.org/releases/1.9.4/</link><pubDate>Sun, 10 Jul 2022 20:06:09 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.4/</guid><description>Please note: This release dropped support for Node 12, which is end-of-life since April 2022. You now need at least Node 14.</description></item><item><title>HedgeDoc 1.9.3</title><link>https://hedgedoc.org/releases/1.9.3/</link><pubDate>Sun, 10 Apr 2022 20:19:22 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.3/</guid><description>This release fixes a security issue. We recommend upgrading as soon as possible.
-⚠️ Warning: If you deploy HedgeDoc and MariaDB with docker-compose using a checkout of our container repo, you will need to manually convert the character set of the database to utf8mb4 when updating.</description></item><item><title>HedgeDoc 1.9.2</title><link>https://hedgedoc.org/releases/1.9.2/</link><pubDate>Fri, 03 Dec 2021 20:05:27 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.2/</guid><description>Bugfixes Fix error in the session handler when requesting /metrics or /status</description></item><item><title>HedgeDoc 1.9.1</title><link>https://hedgedoc.org/releases/1.9.1/</link><pubDate>Thu, 02 Dec 2021 21:18:49 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.1/</guid><description>This release increases the minimum required Node versions to 12.20.0, 14.13.1 and 16. In general, only the latest releases of Node 12, 14 and 16 are officially supported by us, older minor versions can be dropped at any time.</description></item><item><title>HedgeDoc 1.9.0</title><link>https://hedgedoc.org/releases/1.9.0/</link><pubDate>Mon, 13 Sep 2021 20:22:51 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.0/</guid><description>Security Fixes CVE-2021-39175: XSS vector in slide mode speaker-view This release removes Google Analytics and Disqus domains from our default Content Security Policy, because they were repeatedly used to exploit security vulnerabilities.</description></item><item><title>HedgeDoc 1.8.2</title><link>https://hedgedoc.org/releases/1.8.2/</link><pubDate>Tue, 11 May 2021 19:41:11 +0000</pubDate><guid>https://hedgedoc.org/releases/1.8.2/</guid><description>This release fixes two security issues. We recommend upgrading as soon as possible.
-Security Fixes CVE-2021-29503: Improper Neutralization of Script-Related HTML Tags in Notes Fix a potential XSS-vector in the handling of usernames and profile pictures</description></item><item><title>HedgeDoc 1.8.1</title><link>https://hedgedoc.org/releases/1.8.1/</link><pubDate>Thu, 06 May 2021 20:37:47 +0000</pubDate><guid>https://hedgedoc.org/releases/1.8.1/</guid><description>Enhancements Speed up yarn install in production mode (as performed by bin/setup) by marking frontend-only dependencies as dev-dependencies. This also reduces the size of the docker container Speed up the frontend-build by using esbuild instead of terser to minify JavaScript Improve behavior of the &amp;lsquo;Quote&amp;rsquo;, &amp;lsquo;List&amp;rsquo;, &amp;lsquo;Unordered List&amp;rsquo; and &amp;lsquo;Check List&amp;rsquo; buttons in the editor to automatically apply to the complete first and last line of the selection Bugfixes Correct the 1.</description></item><item><title>HedgeDoc 1.8.0</title><link>https://hedgedoc.org/releases/1.8.0/</link><pubDate>Mon, 03 May 2021 20:49:15 +0000</pubDate><guid>https://hedgedoc.org/releases/1.8.0/</guid><description>This release fixes multiple security issues. We recommend upgrading as soon as possible.
-Please note: This release dropped support for Node 10, which is end-of-life since April 2021.</description></item><item><title>HedgeDoc 1.7.2</title><link>https://hedgedoc.org/releases/1.7.2/</link><pubDate>Fri, 15 Jan 2021 20:25:31 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.2/</guid><description>This release fixes a security issue. We recommend upgrading as soon as possible.
-Security Fixes CVE-2021-21259: Stored XSS in slide mode</description></item><item><title>HedgeDoc 1.7.1</title><link>https://hedgedoc.org/releases/1.7.1/</link><pubDate>Sun, 27 Dec 2020 20:21:12 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.1/</guid><description>This release fixes two security issues. We recommend upgrading as soon as possible.
-Security Fixes CVE-2020-26286: Arbitrary file upload
-An unauthenticated attacker can upload arbitrary files to the upload storage backend.</description></item><item><title>HedgeDoc 1.7.0</title><link>https://hedgedoc.org/releases/1.7.0/</link><pubDate>Mon, 21 Dec 2020 21:53:48 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.0/</guid><description>We have renamed to HedgeDoc! &amp;#x1f389;
-Many thanks to Éric Gaspar who designed our new logo!
-Have a look at our new website (which also explains the reasoning behind the renaming) at https://hedgedoc.</description></item><item><title>Demo instance</title><link>https://hedgedoc.org/demo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/demo/</guid><description>The demo instance is a publicly available instance for trying out HedgeDoc and can be found at demo.hedgedoc.org.
-While notes and accounts on the demo instance are not deleted periodically, you should not rely on the demo instance for production use.</description></item><item><title>History</title><link>https://hedgedoc.org/history/details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/history/details/</guid><description>If you don&amp;rsquo;t like text, there is also a visual explanation.
-It started with HackMD HackMD is the origin of this project, which was mostly developed by Max Wu and Yukai Huang.</description></item><item><title>Privacy Policy</title><link>https://hedgedoc.org/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/privacy-policy/</guid><description>Preamble: Hosting Details The HedgeDoc landing page is a static site that does not track, collect, store any information, or set any cookies.</description></item><item><title>Redirect to release page</title><link>https://hedgedoc.org/latest-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/latest-release/</guid><description> If your browsers doesn't redirect you to the release page, then click here</description></item><item><title>Team</title><link>https://hedgedoc.org/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/team/</guid><description>Core Developers David Mehren davidmehren Maintainer, Backend Yannick Bungers InnayTool Backend Erik Michelson ErikMichelson Frontend Tilman Vatteroth mrdrogdrog Frontend Sheogorath SISheogorath Server, Backend Éric Gaspar ericgaspar Logo Design Claudius Coenen ccoenen Frontend Philip Molares DerMolly Frontend, Backend Nick Sweeting pirate CLI Hugo Peixoto hugopeixoto Container</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HedgeDoc - Ideas grow better together on HedgeDoc - Collaborative markdown editor</title><link>https://hedgedoc.org/</link><description>Recent content in HedgeDoc - Ideas grow better together on HedgeDoc - Collaborative markdown editor</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Wed, 04 Feb 2026 19:27:41 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.10.6</title><link>https://hedgedoc.org/releases/1.10.6/</link><pubDate>Wed, 04 Feb 2026 19:27:41 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.6/</guid><description>&lt;h3 id="security-fixes"&gt;Security fixes&lt;/h3&gt;
+&lt;p&gt;This release contains two medium severity security fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-x74j-jmf9-534w"&gt;GHSA-x74j-jmf9-534w&lt;/a&gt; reports a bug where security headers for upload files were not set correctly.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-672m-p72w-gw28"&gt;GHSA-672m-p72w-gw28&lt;/a&gt; reports potential security issues with limited script execution in uploaded SVG files.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/HUSEYNKHANLI"&gt;@HUSEYNKHANLI&lt;/a&gt; and &lt;a href="https://github.com/drkim-dev"&gt;@drkim-dev&lt;/a&gt; for reporting!&lt;/p&gt;</description></item><item><title>HedgeDoc 1.10.5</title><link>https://hedgedoc.org/releases/1.10.5/</link><pubDate>Sat, 06 Dec 2025 16:45:55 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.5/</guid><description>&lt;p&gt;This release is just a fix for the docker container. It does not contain any
+changes to HedgeDoc itself.&lt;/p&gt;
+&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix the bundled healthcheck in the docker container&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.10.4</title><link>https://hedgedoc.org/releases/1.10.4/</link><pubDate>Fri, 05 Dec 2025 22:36:12 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.4/</guid><description>&lt;h3 id="security-fixes"&gt;Security fixes&lt;/h3&gt;
+&lt;p&gt;This release contains two low severity security fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-gmgw-rcmh-7x47"&gt;GHSA-gmgw-rcmh-7x47&lt;/a&gt; reports potential cross-site side-effects due to not applying sandboxing to iframes.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-6wm6-3vpq-6qvv"&gt;CVE-2025-66629&lt;/a&gt; reports a possible CSRF vulnerability when using certain social login providers because the &lt;code&gt;state&lt;/code&gt; parameter is not used and checked.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="enhancements"&gt;Enhancements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add &lt;code&gt;enableUploads&lt;/code&gt; (&lt;code&gt;CMD_ENABLE_UPLOADS&lt;/code&gt;) config option to restrict uploads to &lt;code&gt;registered&lt;/code&gt; users, &lt;code&gt;all&lt;/code&gt; users or
+&lt;code&gt;none&lt;/code&gt; to completely disable uploads.&lt;/li&gt;
+&lt;li&gt;Allow links to protocols such as xmpp, webcal or geo&lt;/li&gt;
+&lt;li&gt;Switch from deprecated shortid to nanoid module, with 10 character long aliases in &amp;ldquo;public&amp;rdquo; links&lt;/li&gt;
+&lt;li&gt;Ensure compatibility with Node 24&lt;/li&gt;
+&lt;li&gt;Protect user history from accidental or malicious deletion by adding a CSRF-like token&lt;/li&gt;
+&lt;li&gt;Many enhancements in the documentation at &lt;a href="https://docs.hedgedoc.org"&gt;docs.hedgedoc.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ignore the healthcheck endpoint in the &amp;ldquo;too busy&amp;rdquo; limiter&lt;/li&gt;
+&lt;li&gt;Send the referrer origin for YouTube embeddings due to their requirement&lt;/li&gt;
+&lt;li&gt;Force kill the server after a timeout when waiting for the realtime server to close connections on shutdown&lt;/li&gt;
+&lt;li&gt;Secure iframes with &lt;code&gt;credentialless&lt;/code&gt; and &lt;code&gt;sandbox&lt;/code&gt; attributes&lt;/li&gt;
+&lt;li&gt;Fix regexes for &lt;code&gt;[time=...]&lt;/code&gt;, &lt;code&gt;[name=...]&lt;/code&gt; and &lt;code&gt;[color=...]&lt;/code&gt; shortcodes in lists&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;state&lt;/code&gt; parameter for OAuth2 flows and PKCE where applicable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="node-compatibility"&gt;Node compatibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for Node 24 was verified. The docker image now uses Node 24 as its base image.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="contributors"&gt;Contributors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/neocturne"&gt;Nora Matthias Schiffer&lt;/a&gt; (#6096)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/4censord"&gt;4censord&lt;/a&gt; (#6102)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ZacheryFaria"&gt;Zachery Faria&lt;/a&gt; (#6105)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pl7ofit"&gt;pl7ofit&lt;/a&gt; (#6106)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lkiesow"&gt;Lars Kiesow&lt;/a&gt; (#6107)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/HarHarLinks"&gt;Kim Brose&lt;/a&gt; (#6114)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/axilleas"&gt;Achilleas Pipinellis&lt;/a&gt; (#6119)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Happy86"&gt;Andreas Boesen&lt;/a&gt; (#6148, #6149)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tharynot"&gt;Thary&lt;/a&gt; (#6155)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.10.3</title><link>https://hedgedoc.org/releases/1.10.3/</link><pubDate>Wed, 09 Apr 2025 22:17:33 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.3/</guid><description>&lt;h3 id="security-fixes"&gt;Security fixes&lt;/h3&gt;
+&lt;p&gt;This release fixes a security issue of a possible XSS exploit which can be planted via a malicous SVG file upload.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.10.2</title><link>https://hedgedoc.org/releases/1.10.2/</link><pubDate>Fri, 14 Feb 2025 21:14:11 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.2/</guid><description>&lt;p&gt;&lt;strong&gt;PLEASE CHECK THIS IF YOU USE SAML AUTHENTICATION:&lt;/strong&gt;
+This release had to set default values for the username and email address attribute mapping for SAML authentication for
+security reasons.
+If you use SAML authentication, please make sure to update your SAML configuration accordingly.
+See: &lt;a href="https://docs.hedgedoc.org/configuration/#saml-login"&gt;https://docs.hedgedoc.org/configuration/#saml-login&lt;/a&gt; &lt;code&gt;CMD_SAML_ATTRIBUTE_USERNAME&lt;/code&gt; or &lt;code&gt;CMD_SAML_ATTRIBUTE_EMAIL&lt;/code&gt;&lt;/p&gt;</description></item><item><title>HedgeDoc 1.10.1</title><link>https://hedgedoc.org/releases/1.10.1/</link><pubDate>Sun, 02 Feb 2025 22:12:33 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.1/</guid><description>&lt;p&gt;This release fixes a security issue where brute-forcing local email/passwords is possible because of missing rate-limits.
+We recommend upgrading as soon as possible, if you use local logins.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.10.0</title><link>https://hedgedoc.org/releases/1.10.0/</link><pubDate>Sun, 01 Sep 2024 14:38:46 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.0/</guid><description>&lt;p&gt;This release fixes a security issue when using MySQL/MariaDB. We recommend upgrading as soon as possible, when you use
+this database.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.9.9</title><link>https://hedgedoc.org/releases/1.9.9/</link><pubDate>Sun, 30 Jul 2023 18:07:27 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.9/</guid><description>&lt;p&gt;HedgeDoc has a new slogan! See &lt;a href="https://community.hedgedoc.org/t/and-the-new-slogan-is/"&gt;our announcement&lt;/a&gt; for the details.&lt;/p&gt;
+&lt;p&gt;This release fixes a security issue. We recommend upgrading as soon as possible.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.9.8</title><link>https://hedgedoc.org/releases/1.9.8/</link><pubDate>Sun, 04 Jun 2023 19:35:20 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.8/</guid><description>&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; This release dropped support for Node 14, which is end-of-life since May 2023.
+You now need at least Node 16 to run HedgeDoc. We recommend to use the latest LTS release of Node.js.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.9.7</title><link>https://hedgedoc.org/releases/1.9.7/</link><pubDate>Sun, 19 Feb 2023 21:36:11 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.7/</guid><description>&lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix note titles with special characters producing invalid file names in user export zip file&lt;/li&gt;
+&lt;li&gt;Fix night-mode toggle not working when page is loaded with night-mode enabled&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="contributors"&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Francesco (translator)&lt;/li&gt;
+&lt;li&gt;Gabriel Santiago Macedo (translator)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.9.6</title><link>https://hedgedoc.org/releases/1.9.6/</link><pubDate>Sun, 06 Nov 2022 22:10:59 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.6/</guid><description>&lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix migrations deleting all notes when SQLite is used&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.9.5</title><link>https://hedgedoc.org/releases/1.9.5/</link><pubDate>Sun, 30 Oct 2022 21:15:16 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.5/</guid><description>&lt;p&gt;🚨 This release has a &lt;a href="https://github.com/hedgedoc/hedgedoc/issues/2809"&gt;bug&lt;/a&gt; that leads to &lt;strong&gt;data-loss when using SQLite&lt;/strong&gt;.
+We advise users of SQLite databases to skip this release and use 1.9.6. 🚨&lt;/p&gt;</description></item><item><title>HedgeDoc 1.9.4</title><link>https://hedgedoc.org/releases/1.9.4/</link><pubDate>Sun, 10 Jul 2022 20:06:09 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.4/</guid><description>&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; This release dropped support for Node 12, which is end-of-life since April 2022.
+You now need at least Node 14.13.1 or Node 16 to run HedgeDoc. We don&amp;rsquo;t support more recent versions of Node.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.9.3</title><link>https://hedgedoc.org/releases/1.9.3/</link><pubDate>Sun, 10 Apr 2022 20:19:22 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.3/</guid><description>&lt;p&gt;This release fixes a security issue. We recommend upgrading as soon as possible.&lt;/p&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;Warning:&lt;/strong&gt; If you deploy HedgeDoc and MariaDB with docker-compose using a checkout of our &lt;a href="https://github.com/hedgedoc/container"&gt;container repo&lt;/a&gt;, you will need to manually convert the character set of the database to utf8mb4 when updating. See the &lt;a href="https://github.com/hedgedoc/container/pull/287"&gt;corresponding PR&lt;/a&gt; for more information.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.9.2</title><link>https://hedgedoc.org/releases/1.9.2/</link><pubDate>Fri, 03 Dec 2021 20:05:27 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.2/</guid><description>&lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix error in the session handler when requesting &lt;code&gt;/metrics&lt;/code&gt; or &lt;code&gt;/status&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.9.1</title><link>https://hedgedoc.org/releases/1.9.1/</link><pubDate>Thu, 02 Dec 2021 21:18:49 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.1/</guid><description>&lt;p&gt;This release increases the minimum required Node versions to &lt;code&gt;12.20.0&lt;/code&gt;, &lt;code&gt;14.13.1&lt;/code&gt; and &lt;code&gt;16&lt;/code&gt;.
+In general, only the latest releases of Node 12, 14 and 16 are officially supported by us, older minor versions can be dropped at any time.
+We recommend you run HedgeDoc with the latest release of Node 16.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.9.0</title><link>https://hedgedoc.org/releases/1.9.0/</link><pubDate>Mon, 13 Sep 2021 20:22:51 +0000</pubDate><guid>https://hedgedoc.org/releases/1.9.0/</guid><description>&lt;h2 id="security-fixes"&gt;Security Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-j748-779h-9697"&gt;CVE-2021-39175: XSS vector in slide mode speaker-view&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;This release removes Google Analytics and Disqus domains from our default Content Security Policy, because they were repeatedly used to exploit security vulnerabilities.&lt;br&gt;
+If you want to continue using Google Analytics or Disqus, you can re-enable them in the config.
+See &lt;a href="https://docs.hedgedoc.org/configuration/#web-security-aspects"&gt;the docs&lt;/a&gt; for details&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="features"&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HedgeDoc now automatically retries connecting to the database up to 30 times on startup&lt;/li&gt;
+&lt;li&gt;This release introduces the &lt;code&gt;csp.allowFraming&lt;/code&gt; config option, which controls whether embedding a HedgeDoc instance in other webpages is allowed.
+We &lt;strong&gt;strongly recommend disabling&lt;/strong&gt; this option to reduce the risk of XSS attacks&lt;/li&gt;
+&lt;li&gt;This release introduces the &lt;code&gt;csp.allowPDFEmbed&lt;/code&gt; config option, which controls whether embedding PDFs inside HedgeDoc notes is allowed. We recommend disabling this option if you don&amp;rsquo;t use the feature, to reduce the attack surface of XSS attacks&lt;/li&gt;
+&lt;li&gt;Add additional environment variables to configure the database.
+This allows easier configuration in containerized environments, such as Kubernetes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="enhancements"&gt;Enhancements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Further improvements to the frontend build process, reducing the initial bundle size by 60%&lt;/li&gt;
+&lt;li&gt;Improve the error handling of the &lt;code&gt;filesystem&lt;/code&gt; upload method&lt;/li&gt;
+&lt;li&gt;Improve the error message of failing migrations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix crash when trying to read the current Git commit on startup&lt;/li&gt;
+&lt;li&gt;Fix endless loop on shutdown when HedgeDoc can&amp;rsquo;t connect to the database&lt;/li&gt;
+&lt;li&gt;Ensure that all cookies are set with the &lt;code&gt;secure&lt;/code&gt; flag, if HedgeDoc is loaded via HTTPS&lt;/li&gt;
+&lt;li&gt;Fix session cookies being created on calls to &lt;code&gt;/metrics&lt;/code&gt; and &lt;code&gt;/status&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fix incorrect creation of S3 endpoint domain (thanks to &lt;a href="https://github.com/matejc"&gt;@matejc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Remove CDN support, fixing inconsistencies in library versions delivered to the client&lt;/li&gt;
+&lt;li&gt;Fix font display issues when having some variants of fonts used by HedgeDoc installed locally&lt;/li&gt;
+&lt;li&gt;Fix links between slides not working&lt;/li&gt;
+&lt;li&gt;Fix Vimeo integration using a deprecated API&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="miscellaneous"&gt;Miscellaneous&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed MSSQL support, as migrations from 2018 are broken with SQL Server and nobody seems to use it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="contributors"&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bogdan Cuza (translator)&lt;/li&gt;
+&lt;li&gt;Heimen Stoffels (translator)&lt;/li&gt;
+&lt;li&gt;igg17 (translator)&lt;/li&gt;
+&lt;li&gt;Klorophatu (translator)&lt;/li&gt;
+&lt;li&gt;Martin (translator)&lt;/li&gt;
+&lt;li&gt;Matija (translator)&lt;/li&gt;
+&lt;li&gt;Matthieu Devillers (translator)&lt;/li&gt;
+&lt;li&gt;Mindaugas (translator)&lt;/li&gt;
+&lt;li&gt;Quentin Pagès (translator)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.8.2</title><link>https://hedgedoc.org/releases/1.8.2/</link><pubDate>Tue, 11 May 2021 19:41:11 +0000</pubDate><guid>https://hedgedoc.org/releases/1.8.2/</guid><description>&lt;p&gt;This release fixes two security issues. We recommend upgrading as soon as possible.&lt;/p&gt;
+&lt;h2 id="security-fixes"&gt;Security Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-gjg7-4j2h-94fq"&gt;CVE-2021-29503: Improper Neutralization of Script-Related HTML Tags in Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fix a potential XSS-vector in the handling of usernames and profile pictures&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.8.1</title><link>https://hedgedoc.org/releases/1.8.1/</link><pubDate>Thu, 06 May 2021 20:37:47 +0000</pubDate><guid>https://hedgedoc.org/releases/1.8.1/</guid><description>&lt;h2 id="enhancements"&gt;Enhancements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Speed up &lt;code&gt;yarn install&lt;/code&gt; in production mode (as performed by &lt;code&gt;bin/setup&lt;/code&gt;) by marking frontend-only dependencies as dev-dependencies.
+This also reduces the size of the docker container&lt;/li&gt;
+&lt;li&gt;Speed up the frontend-build by using &lt;code&gt;esbuild&lt;/code&gt; instead of &lt;code&gt;terser&lt;/code&gt; to minify JavaScript&lt;/li&gt;
+&lt;li&gt;Improve behavior of the &amp;lsquo;Quote&amp;rsquo;, &amp;lsquo;List&amp;rsquo;, &amp;lsquo;Unordered List&amp;rsquo; and &amp;lsquo;Check List&amp;rsquo; buttons in the editor to automatically
+apply to the complete first and last line of the selection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Correct the 1.8.0 release notes to state that CVE-2021-29475 has been fixed since HedgeDoc 1.5.0.&lt;/li&gt;
+&lt;li&gt;Fix crash on startup when &lt;code&gt;useSSL&lt;/code&gt; or &lt;code&gt;csp.upgradeInsecureRequests&lt;/code&gt; is enabled (thanks to &lt;a href="https://github.com/mdegat01"&gt;@mdegat01&lt;/a&gt; for reporting)&lt;/li&gt;
+&lt;li&gt;Automatically enable &lt;code&gt;protocolUseSSL&lt;/code&gt; when &lt;code&gt;useSSL&lt;/code&gt; is also enabled&lt;/li&gt;
+&lt;li&gt;Fix the &amp;lsquo;Quote&amp;rsquo;, &amp;lsquo;List&amp;rsquo;, &amp;lsquo;Unordered List&amp;rsquo; and &amp;lsquo;Check List&amp;rsquo; buttons in the editor to not duplicate content
+when only parts of a line are selected (thanks to &lt;a href="https://github.com/AnomalRoil"&gt;@AnomalRoil&lt;/a&gt; for reporting)&lt;/li&gt;
+&lt;li&gt;Fix click handler for numbered task lists (thanks to &lt;a href="https://github.com/xoriade"&gt;@xoriade&lt;/a&gt; for reporting)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.8.0</title><link>https://hedgedoc.org/releases/1.8.0/</link><pubDate>Mon, 03 May 2021 20:49:15 +0000</pubDate><guid>https://hedgedoc.org/releases/1.8.0/</guid><description>&lt;p&gt;This release fixes multiple security issues. We recommend upgrading as soon as possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; This release dropped support for Node 10, which is end-of-life since April 2021. You now need at least Node 12 to run HedgeDoc, but we recommend running &lt;a href="https://github.com/nodejs/release#release-schedule"&gt;the latest LTS release&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>HedgeDoc 1.7.2</title><link>https://hedgedoc.org/releases/1.7.2/</link><pubDate>Fri, 15 Jan 2021 20:25:31 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.2/</guid><description>&lt;p&gt;This release fixes a security issue. We recommend upgrading as soon as possible.&lt;/p&gt;
+&lt;h2 id="security-fixes"&gt;Security Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-44w9-vm8p-3cxw"&gt;CVE-2021-21259: Stored XSS in slide mode&lt;/a&gt;&lt;br&gt;
+An attacker can inject arbitrary JavaScript into a HedgeDoc note.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensure the last line of the markdown editor is not covered by the status bar (thanks to @mhdrone for reporting!)&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.7.1</title><link>https://hedgedoc.org/releases/1.7.1/</link><pubDate>Sun, 27 Dec 2020 20:21:12 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.1/</guid><description>&lt;p&gt;This release fixes two security issues. We recommend upgrading as soon as possible.&lt;/p&gt;
+&lt;h2 id="security-fixes"&gt;Security Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-wcr3-xhv7-8gxc"&gt;CVE-2020-26286: Arbitrary file upload&lt;/a&gt;&lt;br&gt;
+An unauthenticated attacker can upload arbitrary files to the upload storage backend.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-g6w6-7xf9-m95p"&gt;CVE-2020-26287: Stored XSS in mermaid diagrams&lt;/a&gt;&lt;br&gt;
+An attacker can inject arbitrary script tags in HedgeDoc notes using mermaid diagrams.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.7.0</title><link>https://hedgedoc.org/releases/1.7.0/</link><pubDate>Mon, 21 Dec 2020 21:53:48 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.0/</guid><description>&lt;p&gt;We have renamed to HedgeDoc! &amp;#x1f389;&lt;br&gt;
+Many thanks to &lt;a href="https://github.com/ericgaspar/"&gt;Éric Gaspar&lt;/a&gt; who designed our new logo!&lt;br&gt;
+Have a look at our new website (which also explains the reasoning behind the renaming) at &lt;a href="https://hedgedoc.org"&gt;https://hedgedoc.org&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Demo instance</title><link>https://hedgedoc.org/demo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/demo/</guid><description>&lt;p&gt;The demo instance is a publicly available instance for trying out HedgeDoc and can be found at &lt;a href="https://demo.hedgedoc.org"&gt;demo.hedgedoc.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;While notes and accounts on the demo instance are not deleted periodically, &lt;strong&gt;you should not rely on the demo instance for production use&lt;/strong&gt;.&lt;br&gt;
+&lt;strong&gt;We cannot guarantee that your notes won&amp;rsquo;t be lost&lt;/strong&gt; because of hardware or software malfunctions.
+This is mainly due to the fact that this instance runs the latest unstable code from our repository.&lt;/p&gt;</description></item><item><title>History</title><link>https://hedgedoc.org/history/details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/history/details/</guid><description>&lt;p&gt;If you don&amp;rsquo;t like text, there is also a &lt;a href="https://hedgedoc.org/history/"&gt;visual explanation&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="it-started-with-hackmd"&gt;It started with HackMD&lt;/h2&gt;
+&lt;p&gt;HackMD is the origin of this project, which was mostly developed by Max Wu and
+Yukai Huang. Originally, this was open source under MIT license, but was
+&lt;a href="https://github.com/hackmdio/codimd/pull/578"&gt;relicensed in October 2017 to be AGPLv3&lt;/a&gt;.
+At the same time, &lt;a href="https://hackmd.io"&gt;hackmd.io&lt;/a&gt; was founded to offer a
+commercial version of HackMD.&lt;/p&gt;</description></item><item><title>Privacy Policy</title><link>https://hedgedoc.org/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/privacy-policy/</guid><description>&lt;h2 id="preamble-hosting-details"&gt;Preamble: Hosting Details&lt;/h2&gt;
+&lt;p&gt;The HedgeDoc landing page is a static site that does not track, collect, store any information, or set any cookies. There is no account on the website itself.&lt;/p&gt;</description></item><item><title>Redirect to release page</title><link>https://hedgedoc.org/latest-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/latest-release/</guid><description>If your browsers doesn't redirect you to the release page, then click &lt;a href="https://hedgedoc.org/releases/1.10.6/" title="link to the release"&gt;here&lt;/a&gt;</description></item><item><title>Team</title><link>https://hedgedoc.org/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/team/</guid><description>&lt;h2 id="core-developers"&gt;Core Developers&lt;/h2&gt;
+&lt;span class="d-flex flex-wrap flex-row py-5"&gt;
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/davidmehren.png" alt="David Mehren's Avatar"&gt;
+ &lt;span&gt;David Mehren&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/davidmehren"&gt;&lt;small&gt;davidmehren&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Maintainer, Backend&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/InnayTool.png" alt="Yannick Bungers's Avatar"&gt;
+ &lt;span&gt;Yannick Bungers&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/InnayTool"&gt;&lt;small&gt;InnayTool&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Backend&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/ErikMichelson.png" alt="Erik Michelson's Avatar"&gt;
+ &lt;span&gt;Erik Michelson&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/ErikMichelson"&gt;&lt;small&gt;ErikMichelson&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Frontend&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/mrdrogdrog.png" alt="Tilman Vatteroth's Avatar"&gt;
+ &lt;span&gt;Tilman Vatteroth&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/mrdrogdrog"&gt;&lt;small&gt;mrdrogdrog&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Frontend&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/SISheogorath.png" alt="Sheogorath's Avatar"&gt;
+ &lt;span&gt;Sheogorath&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/SISheogorath"&gt;&lt;small&gt;SISheogorath&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Server, Backend&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/ericgaspar.png" alt="Éric Gaspar's Avatar"&gt;
+ &lt;span&gt;Éric Gaspar&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/ericgaspar"&gt;&lt;small&gt;ericgaspar&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Logo Design&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/ccoenen.png" alt="Claudius Coenen's Avatar"&gt;
+ &lt;span&gt;Claudius Coenen&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/ccoenen"&gt;&lt;small&gt;ccoenen&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Frontend&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/DerMolly.png" alt="Philip Molares's Avatar"&gt;
+ &lt;span&gt;Philip Molares&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/DerMolly"&gt;&lt;small&gt;DerMolly&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Frontend, Backend&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/pirate.png" alt="Nick Sweeting's Avatar"&gt;
+ &lt;span&gt;Nick Sweeting&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/pirate"&gt;&lt;small&gt;pirate&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;CLI&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
+ &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/hugopeixoto.png" alt="Hugo Peixoto's Avatar"&gt;
+ &lt;span&gt;Hugo Peixoto&lt;/span&gt;
+ &lt;a class="mb-4" href="https://github.com/hugopeixoto"&gt;&lt;small&gt;hugopeixoto&lt;/small&gt;&lt;/a&gt;
+ &lt;strong&gt;Container&lt;/strong&gt;
+&lt;/span&gt;
+
+&lt;/span&gt;</description></item></channel></rss>
