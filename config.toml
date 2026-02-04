@@ -5,7 +5,7 @@
 ################################### Default Configuration ############################
 
 baseurl = "https://hedgedoc.org/"
-title = "HedgeDoc - Collaborative markdown editor"
+title = "HedgeDoc - Ideas grow better together"
 enableEmoji = true
 
 # post excert
