@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on HedgeDoc - Ideas grow better together</title><link>https://hedgedoc.org/releases/</link><description>Recent content in Releases on HedgeDoc - Ideas grow better together</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Tue, 24 Feb 2026 19:24:44 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.10.7</title><link>https://hedgedoc.org/releases/1.10.7/</link><pubDate>Tue, 24 Feb 2026 19:24:44 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.7/</guid><description>&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on HedgeDoc - Ideas grow better together</title><link>https://hedgedoc.org/releases/</link><description>Recent content in Releases on HedgeDoc - Ideas grow better together</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Wed, 15 Apr 2026 19:35:05 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.10.8</title><link>https://hedgedoc.org/releases/1.10.8/</link><pubDate>Wed, 15 Apr 2026 19:35:05 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.8/</guid><description>&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix data loss when 5+ users edit a document concurrently, caused by the OT client discarding operations during revision gap recovery (&lt;a href="https://github.com/hedgedoc/hedgedoc/issues/6342"&gt;#6342&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Add defensive null checks to &lt;code&gt;hex2rgb&lt;/code&gt; to prevent crashes from non-hex color values&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="maintenance"&gt;Maintenance&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Dependency updates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="contributors"&gt;Contributors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/bxff"&gt;Dex Devlon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.10.7</title><link>https://hedgedoc.org/releases/1.10.7/</link><pubDate>Tue, 24 Feb 2026 19:24:44 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.7/</guid><description>&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Random colors for user&amp;rsquo;s cursors and selections are now always in hex format to avoid conversion errors&lt;/li&gt;
 &lt;li&gt;Correctly close realtime connections if they disconnect during connection creation&lt;/li&gt;
