@@ -1,9 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on HedgeDoc - Ideas grow better together</title><link>https://hedgedoc.org/releases/</link><description>Recent content in Releases on HedgeDoc - Ideas grow better together</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Wed, 15 Apr 2026 19:35:05 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.10.8</title><link>https://hedgedoc.org/releases/1.10.8/</link><pubDate>Wed, 15 Apr 2026 19:35:05 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.8/</guid><description>&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Releases on HedgeDoc - Ideas grow better together</title><link>https://hedgedoc.org/releases/</link><description>Recent content in Releases on HedgeDoc - Ideas grow better together</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Thu, 18 Jun 2026 21:56:45 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/releases/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.11.0</title><link>https://hedgedoc.org/releases/1.11.0/</link><pubDate>Thu, 18 Jun 2026 21:56:45 +0000</pubDate><guid>https://hedgedoc.org/releases/1.11.0/</guid><description>&lt;h3 id="security-fixes"&gt;Security fixes&lt;/h3&gt;
+&lt;p&gt;This release contains four security fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-6c2w-8w96-3pcv"&gt;GHSA-6c2w-8w96-3pcv&lt;/a&gt; reports a possible HTML injection via the localpart of an email address.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-qj78-mjch-wwrv"&gt;GHSA-qj78-mjch-wwrv&lt;/a&gt; reports a possible Denial-of-Service attack using the YAML frontmatter parsing.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-8v9p-5j95-826j"&gt;GHSA-8v9p-5j95-826j&lt;/a&gt; reports a possible CSRF attack vector in the GitHub Gist export.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-2f9f-w8xq-276v"&gt;GHSA-2f9f-w8xq-276v&lt;/a&gt; reports a rate-limiting bypass by abusing the CF-Connecting-IP header.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to &lt;a href="https://github.com/chndlrx"&gt;Chandler Johnson&lt;/a&gt;, &lt;a href="https://github.com/taylorodell"&gt;taylorodell&lt;/a&gt; and &lt;a href="https://github.com/alanturing881"&gt;alanturing881&lt;/a&gt; for reporting!&lt;/p&gt;</description></item><item><title>HedgeDoc 1.10.8</title><link>https://hedgedoc.org/releases/1.10.8/</link><pubDate>Wed, 15 Apr 2026 19:35:05 +0000</pubDate><guid>https://hedgedoc.org/releases/1.10.8/</guid><description>&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix data loss when 5+ users edit a document concurrently, caused by the OT client discarding operations during revision gap recovery (&lt;a href="https://github.com/hedgedoc/hedgedoc/issues/6342"&gt;#6342&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Add defensive null checks to &lt;code&gt;hex2rgb&lt;/code&gt; to prevent crashes from non-hex color values&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="maintenance"&gt;Maintenance&lt;/h2&gt;
+&lt;h3 id="maintenance"&gt;Maintenance&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Dependency updates&lt;/li&gt;
 &lt;/ul&gt;
@@ -182,6 +190,4 @@ An attacker can inject arbitrary JavaScript into a HedgeDoc note.&lt;/li&gt;
 An unauthenticated attacker can upload arbitrary files to the upload storage backend.&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-g6w6-7xf9-m95p"&gt;CVE-2020-26287: Stored XSS in mermaid diagrams&lt;/a&gt;&lt;br&gt;
 An attacker can inject arbitrary script tags in HedgeDoc notes using mermaid diagrams.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.7.0</title><link>https://hedgedoc.org/releases/1.7.0/</link><pubDate>Mon, 21 Dec 2020 21:53:48 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.0/</guid><description>&lt;p&gt;We have renamed to HedgeDoc! &amp;#x1f389;&lt;br&gt;
-Many thanks to &lt;a href="https://github.com/ericgaspar/"&gt;Éric Gaspar&lt;/a&gt; who designed our new logo!&lt;br&gt;
-Have a look at our new website (which also explains the reasoning behind the renaming) at &lt;a href="https://hedgedoc.org"&gt;https://hedgedoc.org&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item></channel></rss>
