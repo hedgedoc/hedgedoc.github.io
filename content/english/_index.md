@@ -9,7 +9,7 @@ HedgeDoc (formerly known as CodiMD) is an open-source, web-based, self-hosted, c
 You can use it to easily collaborate on notes, graphs and even presentations in real-time.
 All you need to do is to share your note-link to your co-workers and they're ready to go.
 
-{{< button label="Read the install guide" link="https://docs.hedgedoc.org/setup/getting-started" >}}{{< button label="Try the demo" link="/demo/" outline=true >}}
+{{< button label="Read the install guide" link="https://docs.hedgedoc.org/setup/getting-started" >}}{{< button label="Try the demo" link="https://demo.hedgedoc.org/" outline=true >}}
 {{< /banner >}}
 
 
@@ -27,7 +27,7 @@ Installing HedgeDoc on your server is easy! We provide a ready to use bundle and
 Why should you use something you don't know, right? Head over to our demo page and test it out. Try it! It's free!
 Please read the information about the reliability of the demo.
 
-{{< button label="Visit the demo" link="/demo/" >}}
+{{< button label="Visit the demo" link="https://demo.hedgedoc.org/" >}}
 {{< /image-promo >}}
 
 
