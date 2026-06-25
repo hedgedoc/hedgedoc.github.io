@@ -32,6 +32,12 @@
 
     <link rel="canonical" href="{{ .Permalink }}" />
 
+    {{- if and .IsNode (eq .Section "releases") }}
+    {{- with .OutputFormats.Get "rss" }}
+    <link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }} - {{ $.Title }}">
+    {{- end }}
+    {{- end }}
+
     <!-- favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ `icons/apple-touch-icon.png`| absURL }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ `icons/favicon-32x32.png`| absURL }}">
