@@ -1,4 +1,4 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $data := index hugo.Data .Site.Language.Lang }}
 {{- with index $data.promo (.Get "id") }}
 
 <section class="{{ if isset $.Params "background" }}bg-{{$.Params.background}}{{ end }}{{ if eq $.Params.background "primary" }} text-white{{end}} section">

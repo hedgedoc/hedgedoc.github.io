@@ -1,4 +1,4 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $data := index hugo.Data .Site.Language.Lang }}
 {{- with index $data.banner (.Get "id") }}
 
 <!-- hero area -->
