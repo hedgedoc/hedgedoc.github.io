@@ -1,4 +1,4 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $data := index hugo.Data .Site.Language.Lang }}
 {{- with index $data.features (.Get "id") }}
 <section class="section {{ if isset $.Params "background" }}bg-{{$.Params.background}}{{ end }}">
   <div class="container">
