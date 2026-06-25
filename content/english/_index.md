@@ -1,8 +1,12 @@
 ---
 title: "HedgeDoc - Ideas grow better together"
-description : "Ideas grow better together"
+description : "HedgeDoc (formerly known as CodiMD) is an open-source, web-based, self-hosted, collaborative markdown editor."
 draft: false
+sitemap:
+  priority: 1.0
+  changefreq: monthly
 ---
+
 {{< banner id="index" title="HedgeDoc" subtitle="Ideas grow better together." >}}
 HedgeDoc (formerly known as CodiMD) is an open-source, web-based, self-hosted, collaborative markdown editor.
 

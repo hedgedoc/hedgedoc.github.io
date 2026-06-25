@@ -3,6 +3,9 @@ title: "Team"
 description : "The HedgeDoc team"
 draft: false
 noRobots: true
+sitemap:
+  priority: 0.4
+  changefreq: yearly
 ---
 
 ## Core Developers

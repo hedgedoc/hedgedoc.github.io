@@ -1,5 +1,9 @@
 ---
 title: History
+description: The History of the HedgeDoc project and its relations to CodiMD and HackMD
+sitemap:
+  priority: 0.7
+  changefreq: yearly
 ---
 <h3 class="mb-5 fw-normal">HedgeDoc is the community-driven fork of CodiMD, which is the open source counterpart to HackMD.
     Confused? Let us explain:</h3>
