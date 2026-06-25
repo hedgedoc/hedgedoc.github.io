@@ -105,5 +105,9 @@ weight = 1
 # copyright
 copyright = "By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/)."
 
+[taxonomies]
+category = ""
+tag = ""
+
 [markup.goldmark.renderer]
 unsafe= true
