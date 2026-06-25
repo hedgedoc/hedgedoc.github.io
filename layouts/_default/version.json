@@ -1,0 +1,13 @@
+{{- $releases := where .Site.Pages.ByExpiryDate "Section" "releases" -}}
+{{- if eq (len $releases) 0 -}}
+{}
+{{- else -}}
+{{- $latest := index $releases 0 -}}
+{
+  "name": "HedgeDoc",
+  "version": {{ $latest.File.ContentBaseName | jsonify }},
+  "date": {{ $latest.Params.date | jsonify }},
+  "url": {{ $latest.Permalink | jsonify }},
+  "github": {{ $latest.Params.githubLink | jsonify }}
+}
+{{- end -}}

@@ -111,3 +111,8 @@ tag = ""
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[outputFormats.Version]
+mediaType = "application/json"
+baseName = "version"
+notAlternative = true
