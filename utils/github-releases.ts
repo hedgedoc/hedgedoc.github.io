@@ -1,5 +1,5 @@
 /*
- SPDX-FileCopyrightText: 2020 The HedgeDoc developers (see AUTHORS file)
+ SPDX-FileCopyrightText: 2026 The HedgeDoc developers (see AUTHORS file)
 
  SPDX-License-Identifier: AGPL-3.0-only
 */
@@ -111,7 +111,11 @@ async function writeReleaseMarkdownFile(groupedDockerTags: Map<string, QuayImage
         size: asset.size
       }
     }),
-    githubLink: entry.html_url
+    githubLink: entry.html_url,
+    sitemap: {
+      priority: 0.4,
+      changefreq: 'never'
+    }
   };
 
   const content = `---

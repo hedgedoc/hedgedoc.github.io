@@ -1,5 +1,9 @@
 ---
 title: History
+description: Details about the history of the HedgeDoc project and its origins
+sitemap:
+  priority: 0.5
+  changefreq: yearly
 ---
 
 If you don't like text, there is also a [visual explanation](/history).
