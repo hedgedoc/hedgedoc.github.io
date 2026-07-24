@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HedgeDoc - Ideas grow better together</title><link>https://hedgedoc.org/</link><description>Recent content on HedgeDoc - Ideas grow better together</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Thu, 18 Jun 2026 21:56:45 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.11.0</title><link>https://hedgedoc.org/releases/1.11.0/</link><pubDate>Thu, 18 Jun 2026 21:56:45 +0000</pubDate><guid>https://hedgedoc.org/releases/1.11.0/</guid><description>&lt;h3 id="security-fixes"&gt;Security fixes&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HedgeDoc - Ideas grow better together</title><link>https://hedgedoc.org/</link><description>Recent content on HedgeDoc - Ideas grow better together</description><generator>Hugo</generator><language>en-us</language><copyright>By the HedgeDoc developers. Made with ![love](/images/heart.svg)️ and [Hugo](https://gohugo.io/).</copyright><lastBuildDate>Fri, 24 Jul 2026 19:39:28 +0000</lastBuildDate><atom:link href="https://hedgedoc.org/index.xml" rel="self" type="application/rss+xml"/><item><title>HedgeDoc 1.11.1</title><link>https://hedgedoc.org/releases/1.11.1/</link><pubDate>Fri, 24 Jul 2026 19:39:28 +0000</pubDate><guid>https://hedgedoc.org/releases/1.11.1/</guid><description>&lt;h3 id="security-fixes"&gt;Security fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-93w7-49m2-cqwg"&gt;GHSA-93w7-49m2-cqwg&lt;/a&gt; reports possible corruption of permission values due to missing validation. This should not impact permission checks, except when the note owner intentionally set their note permission to something invalid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="enhancements"&gt;Enhancements&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added external link warning setting (&lt;code&gt;externalLinkWarning&lt;/code&gt; in config.json or &lt;code&gt;CMD_EXTERNAL_LINK_WARNING&lt;/code&gt;) to disable the external link warning page entirely&lt;/li&gt;
+&lt;li&gt;Added external link whitelist setting (&lt;code&gt;externalLinkWhitelist&lt;/code&gt; in config.json or &lt;code&gt;CMD_EXTERNAL_LINK_WHITELIST&lt;/code&gt;) to skip warning page for certain domains&lt;/li&gt;
+&lt;li&gt;Added support for webp file uploads (for all backends except &lt;code&gt;imgur&lt;/code&gt;, since that does not support these)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="bugfixes"&gt;Bugfixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed external link warning for subpath instances&lt;/li&gt;
+&lt;li&gt;Restore native browser zoom-in keyboard shortcuts in the editor&lt;/li&gt;
+&lt;li&gt;Nested list items render properly again in the preview pane for slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="refactoring--clean-up"&gt;Refactoring / Clean-up&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed the old Temp database object and related API endpoints. This was used by a very old way of migrating the history and is no longer needed.&lt;/li&gt;
+&lt;li&gt;Removed unused &lt;code&gt;allowOrigin&lt;/code&gt; (environment variable &lt;code&gt;CMD_ALLOW_ORIGIN&lt;/code&gt;) config option.&lt;/li&gt;
+&lt;li&gt;Removed unnecessary/duplicate entries in the XSS filtering whitelist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="contributors"&gt;Contributors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/Shivam-Shukla0"&gt;Shivam Shukla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/tldev-de"&gt;Tobi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.11.0</title><link>https://hedgedoc.org/releases/1.11.0/</link><pubDate>Thu, 18 Jun 2026 21:56:45 +0000</pubDate><guid>https://hedgedoc.org/releases/1.11.0/</guid><description>&lt;h3 id="security-fixes"&gt;Security fixes&lt;/h3&gt;
 &lt;p&gt;This release contains four security fixes:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-6c2w-8w96-3pcv"&gt;GHSA-6c2w-8w96-3pcv&lt;/a&gt; reports a possible HTML injection via the localpart of an email address.&lt;/li&gt;
@@ -183,13 +209,6 @@ An attacker can inject arbitrary JavaScript into a HedgeDoc note.&lt;/li&gt;
 &lt;h2 id="bugfixes"&gt;Bugfixes&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Ensure the last line of the markdown editor is not covered by the status bar (thanks to @mhdrone for reporting!)&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>HedgeDoc 1.7.1</title><link>https://hedgedoc.org/releases/1.7.1/</link><pubDate>Sun, 27 Dec 2020 20:21:12 +0000</pubDate><guid>https://hedgedoc.org/releases/1.7.1/</guid><description>&lt;p&gt;This release fixes two security issues. We recommend upgrading as soon as possible.&lt;/p&gt;
-&lt;h2 id="security-fixes"&gt;Security Fixes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-wcr3-xhv7-8gxc"&gt;CVE-2020-26286: Arbitrary file upload&lt;/a&gt;&lt;br&gt;
-An unauthenticated attacker can upload arbitrary files to the upload storage backend.&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/hedgedoc/hedgedoc/security/advisories/GHSA-g6w6-7xf9-m95p"&gt;CVE-2020-26287: Stored XSS in mermaid diagrams&lt;/a&gt;&lt;br&gt;
-An attacker can inject arbitrary script tags in HedgeDoc notes using mermaid diagrams.&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>History</title><link>https://hedgedoc.org/history/details/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/history/details/</guid><description>&lt;p&gt;If you don&amp;rsquo;t like text, there is also a &lt;a href="https://hedgedoc.org/history/"&gt;visual explanation&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id="it-started-with-hackmd"&gt;It started with HackMD&lt;/h2&gt;
 &lt;p&gt;HackMD is the origin of this project, which was mostly developed by Max Wu and
@@ -197,7 +216,7 @@ Yukai Huang. Originally, this was open source under MIT license, but was
 &lt;a href="https://github.com/hackmdio/codimd/pull/578"&gt;relicensed in October 2017 to be AGPLv3&lt;/a&gt;.
 At the same time, &lt;a href="https://hackmd.io"&gt;hackmd.io&lt;/a&gt; was founded to offer a
 commercial version of HackMD.&lt;/p&gt;</description></item><item><title>Latest version</title><link>https://hedgedoc.org/latest-release/version.json</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/latest-release/version.json</guid><description/></item><item><title>Privacy Policy</title><link>https://hedgedoc.org/privacy-policy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/privacy-policy/</guid><description>&lt;h2 id="preamble-hosting-details"&gt;Preamble: Hosting Details&lt;/h2&gt;
-&lt;p&gt;The HedgeDoc landing page is a static site that does not track, collect, store any information, or set any cookies. There is no account on the website itself.&lt;/p&gt;</description></item><item><title>Redirect to the latest release page</title><link>https://hedgedoc.org/latest-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/latest-release/</guid><description>If your browsers doesn't redirect you to the release page, then click &lt;a href="https://hedgedoc.org/releases/1.11.0/" title="link to the release"&gt;here&lt;/a&gt;</description></item><item><title>Team</title><link>https://hedgedoc.org/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/team/</guid><description>&lt;h2 id="core-developers"&gt;Core Developers&lt;/h2&gt;
+&lt;p&gt;The HedgeDoc landing page is a static site that does not track, collect, store any information, or set any cookies. There is no account on the website itself.&lt;/p&gt;</description></item><item><title>Redirect to the latest release page</title><link>https://hedgedoc.org/latest-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/latest-release/</guid><description>If your browsers doesn't redirect you to the release page, then click &lt;a href="https://hedgedoc.org/releases/1.11.1/" title="link to the release"&gt;here&lt;/a&gt;</description></item><item><title>Team</title><link>https://hedgedoc.org/team/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hedgedoc.org/team/</guid><description>&lt;h2 id="core-developers"&gt;Core Developers&lt;/h2&gt;
 &lt;span class="d-flex flex-wrap flex-row py-5"&gt;
 &lt;span class="p-2 mb-5 d-flex flex-column align-items-center justify-content-center col-md-4"&gt;
  &lt;img class="rounded-circle mw-150px mb-2" src="https://github.com/davidmehren.png" alt="David Mehren's Avatar"&gt;
